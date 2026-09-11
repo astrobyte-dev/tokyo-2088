@@ -24,6 +24,7 @@ No payment processor is integrated. If monetization adds a third-party service, 
 | Cached weather | `Weather.getCurrentConditions`; temperature/observation time/condition | In memory; `OLD` after 1 hour, `--` after 2 hours; no use of observation location or coordinates |
 | Application Properties | 12 customer settings; formatting/units/plate preferences | Garmin-managed persistent properties; production code only reads |
 | `TokyoApp.onSettingsChanged` | Reloads settings, requests a redraw | No outbound communication or background job |
+| `TokyoApp.getSettingsView` / font-notice reader | Loads bundled licence strings on demand in the watch-face settings context | Offline display only; no customer properties, sensors or network |
 | Manifest/dependencies | Empty permissions and barrels; imports System, Time, ActivityMonitor, Weather, Graphics, WatchUi, Lang, Math, Application | No Communications, Position, Sensor streaming, analytics, payment SDK or custom server |
 
 These age thresholds are product choices, not freshness guarantees from Garmin. Data can be unavailable without an error. No continuous or medical-monitoring claim is made.

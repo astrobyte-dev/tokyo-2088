@@ -2,6 +2,18 @@
 
 This workflow creates a **local review package**, not an upload or installation. Use the existing installed Windows SDK; no SDK switch, toolchain download, asset regeneration or signing-key generation is part of this workflow.
 
+For the current authorized private beta, use the same helpers with `-Beta`:
+
+```powershell
+powershell.exe -NoProfile -File tools/build.ps1 test -Beta -DeveloperKey $releaseKeyPath -OutputDir build/windows/beta/validation-final
+powershell.exe -NoProfile -File tools/simulator.ps1 test -Beta -OutputDir build/windows/beta/validation-final
+powershell.exe -NoProfile -File tools/build.ps1 release -Beta -DeveloperKey $releaseKeyPath -OutputDir build/windows/beta/validation-final
+powershell.exe -NoProfile -File tools/export-store.ps1 -Beta -DeveloperKey $releaseKeyPath -SigningProvenance TemporaryDevelopment -OutputDir build/windows/beta/export-owner-1
+python tools/check-store-prep.py --beta --iq build/windows/beta/export-owner-1/TOKYO2088-BETA.iq
+```
+
+Each export needs a new folder. Beta mode uses committed `manifest-beta.xml` and `beta.jungle`, never rewrites the production manifest, and constrains output to a beta subfolder. `beta-tests.jungle` shares the same beta identity/resources while including native tests only for the test PRG. The final IQ excludes all fixtures. No export helper uploads or installs anything. The user's one-upload approval is conditional on live beta/account verification, not encoded as automatic submission in a build script.
+
 Garmin's official VS Code command is **Monkey C: Export Project**, which generates an `.iq` for manifest products. The script uses the corresponding native compiler package/release options (`-e -r`) and production jungle. [Official export instructions](https://developer.garmin.com/connect-iq/submit-an-app/), [compiler options](https://developer.garmin.com/connect-iq/monkey-c/compiler-options/)
 
 ## Prerequisites
@@ -44,7 +56,7 @@ The exporter guards the single manifest profile and exact production inputs (`so
 - `export.log` and `.exit-code.txt`: native compiler outcome.
 - `package-check.json` / log: package and PRG hashes/sizes, part numbers, settings and fixture checks. The included `dev_key.pub` is public signing material, not the private key.
 - `EXPORT_INFO.private.json`: source commit/dirty state, SDK location, UUID, version, hash and signing provenance. Remains in ignored local output; do not publish this private file blindly.
-- `notices/`: retained original and embedded-font notices. Their presence beside the IQ is not proof that Store customers receive them; [notice delivery remains a submission gate](LICENSING.md).
+- `notices/`: supplementary original and embedded-font notices. Current source also compiles the complete applicable font terms into the PRGs and supplies an offline settings reader; see [verified notice delivery](LICENSING.md). Historical pre-beta exports are preserved and do not gain these new resources retroactively.
 
 Repeat read-only package verification with:
 
@@ -55,6 +67,8 @@ Get-FileHash -Algorithm SHA256 build/windows/store-prep/export-review/TOKYO2088-
 
 The current `.iq` contains two part-number entries from Garmin's one primary product profile, with identical release PRGs. This is explained in [compatibility](COMPATIBILITY.md). Debug sidecars inside a native release export are expected and are inspected for excluded code; their presence does not make the PRG a debug/test build.
 
+Run a checker from the source revision that produced the artifact. The current checker expects the new full notice resources; it will correctly reject older preserved exports that lack them. Historical Store-prep hash/check results remain in [validation](VALIDATION.md).
+
 Production outputs are ignored by Git. The final review export and exact source/hash are recorded in [validation](VALIDATION.md). Reproduction requires retaining the private key, exact toolchain/profile versions and committed inputs. Signatures/archive metadata can affect package byte identity; compare recorded binary hashes rather than promising all future exports are byte-identical.
 
-Before any upload: finish the launch gates, choose the permanent key, confirm a recoverable private backup, choose the public version, review actual Store-form requirements, and obtain explicit owner authorization. This workflow does none of those external actions.
+Before public upload: finish launch gates, choose the permanent key, confirm private backup, choose the public version and obtain owner authorization. The separately authorized private beta uses the retained development key but still requires verified live owner-only access and the intended account. Any required new agreement must be handled directly by the owner. No paid merchant onboarding is presumed necessary for an unpaid beta.

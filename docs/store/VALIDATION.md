@@ -1,5 +1,19 @@
 # Executed release-preparation validation
 
+## Private beta preparation — current milestone
+
+The beta source uses separate UUID `ca80e764ffae413996a66e11abd76ed9` and name TOKYO 2088 BETA with the same primary profile, runtime renderer/resources and 12 phone properties. The new offline font-notice reader is reached only through Garmin's separate settings entry point. The production manifest and preserved wrist binary remain unchanged.
+
+Native Windows beta run: **9 passed, 0 failed, 0 errors; launcher exit 0**. The prior eight groups remain passing and `fontNoticeDelivery` verifies resource loading, all pages, complete text reconstruction and page boundaries. DejaVu/Arev is 4,763 characters / 41 pages; Noto/OFL is 4,243 characters / 37 pages. Initial development checks caught a notice-extraction error and strict release initialization error; both were fixed before the passing run and checked export.
+
+Logs: `build/windows/beta/validation-final/`. Renderer matrix sampled 34,752 bytes, power-cycle fixture 34,120 and repeated-update fixture 34,480; 240 fixed-time updates took 1,875ms in each seconds mode with one telemetry refresh. These are simulator samples/timings, not hardware peak-memory or battery measurements.
+
+The beta package checker verifies the alternate identity, primary profile only, original property schema, excluded fixtures and the complete applicable licence text **inside each PRG**. Final clean-source export identity is recorded in the evidence follow-up after committing the implementation. Temporary Windows key provenance is explicit; no key was generated or adopted for public release.
+
+**Not uploaded.** Browser control stopped because it could not confidently determine Opera's URL; neither the intended Garmin account nor live beta-only setting was observed. No new agreement, merchant flow, fee, public listing, phone installation or watch action occurred. Owner asked to open/sign in to the dashboard in Chrome/Edge. Reader visual UI, actual beta/phone route, settings transport/persistence and physical wear remain pending; native tests do not establish them.
+
+## Historical Store-preparation export (preserved)
+
 Executed on native Windows, 11 September 2026, using the installed Connect IQ SDK 9.1.0 (`2026-03-09-6a872a80b`) and primary `fenix8solar51mm` profile. No SDK or watch firmware was changed. Final committed export identity is recorded below.
 
 ## Tests and runtime

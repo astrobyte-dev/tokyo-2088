@@ -4,15 +4,31 @@
 
 The owner reports that the redraw candidate is running on their actual fenix 8 Solar 51mm and working well so far. That is positive **initial owner feedback**, not completion of the full checklist, overnight reliability or battery testing. The owner continues normal wear through tomorrow. This preparation did not access or reinstall the physical watch.
 
+## Current milestone: one private owner beta
+
+The owner approves one unpaid developer-beta upload using the existing development key, **only after verifying the intended existing account and live owner-only beta setting**. No public release, new agreements, merchant fees, payment activation, production-watch replacement or PR merge is authorized.
+
+| Stage | Current result |
+| --- | --- |
+| Beta package built and checked | PASS: separate stable UUID/name; shared production inputs; full notice text in both PRGs; 9 native tests pass. Exact committed export identity is in [validation](VALIDATION.md). |
+| Beta uploaded privately | **Not uploaded.** No account or beta-entry access scope has been observed in the live dashboard. |
+| Current blocker / next real action | Browser control stopped because it could not confidently identify Opera's current URL. Owner asked to open the Garmin developer dashboard in Chrome/Edge and sign in directly. Resume live verification before any upload; do not substitute a public test listing. |
+| Phone installation observed | Pending; there is no resulting beta Store link yet. Android app-opening route must be verified after upload. |
+| Settings transport / persistence | Pending owner phone observations. Separate-beta fresh defaults are expected; later same-beta-UUID update retention is a different test. |
+| Notice reader visual/device navigation | Full text and pagination pass native checks; visual UI and real watch menu navigation remain pending. |
+| Wear / overnight / battery | Pending; original wrist build and private archive retained. |
+
+Beta name **TOKYO 2088 BETA**, UUID `ca80e764ffae413996a66e11abd76ed9`. Keep this UUID/key for later beta updates. The production manifest/UUID, device profile and wrist artifact are unchanged. Concept provenance is confirmed as AI-generated during the project's ChatGPT design conversation, not from a Garmin listing; exclusive rights/trademark clearance are not asserted.
+
 ## Readiness checklist
 
 | Category | Status / action |
 | --- | --- |
-| Already verified | Fixed source inherited; 8 native test groups now pass, including both cleared-screen regressions and customer settings preservation; production release and native IQ export compile; package inspection excludes test/capture symbols. See [executed results](VALIDATION.md). |
+| Already verified | Fixed source inherited; 9 native groups pass under the beta UUID, including both cleared-screen regressions, settings preservation and complete offline notice pagination. Native beta IQ export passes, with fixtures excluded. See [executed results](VALIDATION.md). |
 | Already verified | One primary manifest profile; four palettes; custom/manual-city/hidden plate; no network/GPS/payment library or app permissions; real runtime artwork. |
 | Completed now | Neutral custom-text/city defaults; prompts and length messages; [settings guide/test](SETTINGS.md); [listing copy](LISTING.md); [privacy/data flow](PRIVACY.md); [Windows export](WINDOWS_EXPORT.md); [artwork](../../design/store/README.md); licensing and payment comparisons; compatibility plan. |
-| Work possible after review | Complete third-party notice delivery inside the final customer distribution, fix any review findings, assign the final version, refresh screenshots if rendering changes. Current notice sidecars are retained; Store-delivered notice availability is not yet verified. |
-| Owner decisions | Confirm Astrobyte branding/support contact and concept provenance; choose original-source licence, payment route/price, permanent release key and final version. No decisions are inferred from a public repository or proposed price. |
+| Completed notice delivery | Applicable full font terms are inside the new PRGs with a supported offline settings reader; native resource/pagination and byte inspection pass. Phone/device UI observations remain pending. Historical pre-beta IQ files remain unchanged. |
+| Owner decisions | Confirm Astrobyte branding/support/privacy contact; choose original-source licence, payment route/price, permanent public-release key and final version. Concept provenance and private-beta key use are now explicitly recorded. |
 | Garmin account/onboarding | Existing account status unknown; developer identity/contact/trader information, applicable agreements and Store-form requirements must be verified by the owner. Merchant onboarding/fees only if native paid distribution is selected. No account or merchant actions performed. |
 | Physical tests pending | Full event checklist, ordinary wear through tomorrow, overnight reliability and comparable battery run. New customer-default build has simulator validation only. |
 | Customer settings pending | Actual Store-installed phone → watch save/sync, restart persistence and update retention. Native callback tests do not establish phone delivery. |
@@ -30,13 +46,16 @@ The owner reports that the redraw candidate is running on their actual fenix 8 S
 - [ ] Owner reports extended physical results; review issue #1 and PR #2 separately.
 - [ ] Final candidate has repeatable primary native, simulator and physical results; comparable battery observations recorded with settings/conditions.
 - [ ] Normal customer settings workflow passes on an authorized Store-installed build.
-- [ ] Astrobyte identity, support channel/availability and privacy contact finalized; concept rights resolved.
-- [ ] Source licence selected; third-party notice delivery completed and checked in the actual customer payload.
+- [ ] Astrobyte identity, support channel/availability and privacy contact finalized; public rights/branding review completed (AI concept provenance recorded).
+- [x] Full font notices included in the beta PRGs and reader tested natively; sidecars are supplementary.
+- [ ] Source licence selected; real-device notice-reader navigation checked.
 - [ ] Permanent key selected and recoverable private backups verified; neither previous key discarded.
 - [ ] Merchant eligibility/account approved if paid; owner chooses route, price/refunds and explicitly authorizes fees/activation.
 - [ ] Final version and exact supported products reviewed, including Garmin profile aliases. No untested device expansion.
 - [ ] Final `.iq`, packaged PRGs, toolchain, source commit, signing provenance, artwork/captions and hashes recorded.
 - [ ] Store form validates current dimensions/limits and support/privacy details; no placeholders or unsupported claims.
-- [ ] Owner explicitly authorizes first upload. A beta upload is still an upload and is not pre-approved.
+- [x] Owner explicitly authorizes ONE private beta, conditional on live account/access-scope verification; temporary key approved for that beta.
+- [ ] Live beta-only checkbox and intended account verified, then one private upload completed.
+- [ ] Owner separately authorizes the first public submission and its permanent signing key.
 
-No automatic merge, issue closure, Store upload, payment integration or future watch installation is scheduled by this package.
+No automatic merge, issue closure, public Store upload, payment integration or replacement of the current wrist installation is authorized. Current private-beta status is recorded above.

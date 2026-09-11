@@ -25,7 +25,13 @@ No property IDs/types or enum meanings changed. Only the custom first-line/city 
 
 ## Prepared normal-customer test — not yet run
 
-Run only on an explicitly authorized Store-installed build after the current wear trial. A developer beta requires its own manifest ID and is private to the uploading account; see [distribution plan](COMPATIBILITY.md). No beta ID or upload has been created here.
+The owner now authorizes one private beta upload and a guided separate-beta phone test. `TOKYO 2088 BETA` uses UUID `ca80e764ffae413996a66e11abd76ed9`; the existing production face must remain installed. A fresh beta has its **own defaults and settings**: the absence of copied production/sideload settings is expected, not a migration failure. See [current status](README.md).
+
+The actual beta entry/link is not yet available: dashboard/account verification is blocked and no upload occurred. After upload, verify the beta-only entry and its Download route under the same Garmin account before giving the owner a phone link. Do not assume a desktop developer-dashboard URL deep-links into Android Connect IQ, or advertise global search as a way to find a private beta. Android opening/install behavior remains to be observed.
+
+Once installed separately, open **Connect IQ Store → Device → My Watch Faces → TOKYO 2088 BETA → Settings**. To replace ASTROBYTE, set **Identity plate → Custom** and enter the first/second lines, or choose **Manual city** and enter City text. Save, sync, return to the beta face and report what appears. Try another palette, reopen settings and restart the face to check persistence. Test return-from-glance/full redraw and low power. Use the existing working face as fallback without removing either application.
+
+The new offline font-notice reader is available through the watch face's own settings/customization entry. It is separate from the unchanged 12 phone-editable settings and does not write preferences. Check first/last pages and BACK navigation during the beta test; exact firmware labels and visual results are pending.
 
 | Step | Expected observation | Result |
 | --- | --- | --- |
@@ -40,6 +46,6 @@ Run only on an explicitly authorized Store-installed build after the current wea
 | Edit while face is not selected | Correct values on return, with full redraw | Pending |
 | Disconnect phone after sync | Clock/plate continue; optional cached fields expire gracefully | Pending |
 | Reopen settings and restart face/watch | Saved values remain; no reinstall required | Pending |
-| Authorized same-UUID, same-key Store update | Prior custom strings/enums retained | Pending |
+| Later separately authorized update to the SAME beta UUID/key | Prior beta custom strings/enums retained; separate from fresh installation | Pending |
 
 Native `customerSettingsPreservation` covers malformed text fallbacks, prior personal strings, overlength display-only shortening, blank manual city, enum range fallback and the actual settings callback. It passed alongside all redraw tests. The compiled IQ settings schema contains all 12 keys, prompts and neutral defaults. These are local/native checks, not a phone transport test.
