@@ -31,7 +31,7 @@
                     "fixturesExcluded":  "PASS",
                     "compiledSettings":  "PASS",
                     "packagedFontNoticeText":  "PASS",
-                    "storeAcceptance":  "NOT TESTED"
+                    "storeAcceptance":  "Private beta package/signature verified and entry created; not public-release approval"
                 },
     "nativeTests":  {
                         "errors":  0,
@@ -51,12 +51,33 @@
     "readerVisualInspection":  "PENDING",
     "overwriteGuard":  "PASS",
     "betaBuildOutputGuard":  "PASS",
-    "betaUploaded":  false,
-    "liveAccountVerified":  false,
-    "liveOwnerOnlyScopeVerified":  false,
+    "betaUploaded":  true,
+    "liveAccountVerified":  true,
+    "liveOwnerOnlyScopeVerified":  true,
     "phoneInstall":  "NOT OBSERVED",
     "settingsTransportAndPersistence":  "NOT OBSERVED",
     "physicalWearAndBattery":  "PENDING",
     "watchOperations":  "NONE",
-    "blocker":  "Browser safety check could not verify current Opera URL; no dashboard reached"
+    "blocker":  null,
+    "uploadVerification":  {
+                               "date":  "2026-09-11",
+                               "count":  1,
+                               "submittedBy":  "Owner",
+                               "verifiedBrowser":  "Chrome",
+                               "developerDisplayName":  "Astrobyte",
+                               "name":  "TOKYO 2088 BETA",
+                               "version":  "0.1.0",
+                               "internalVersion":  1,
+                               "badge":  "BETA",
+                               "price":  "Free",
+                               "scope":  "Owner-only download and testing, explicitly disclosed by Garmin",
+                               "dashboardStatus":  "Pending",
+                               "detailDownloadEnabled":  true,
+                               "entryLocation":  "Private local record; omitted from Git",
+                               "sourceAndRetainedIqRehashed":  "PASS",
+                               "temporaryKeyRetained":  "PASS",
+                               "newBuild":  "NONE",
+                               "publicRelease":  "NONE",
+                               "merchantOrPaymentActivation":  "NONE"
+                           }
 }

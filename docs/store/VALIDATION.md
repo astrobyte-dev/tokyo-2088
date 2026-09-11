@@ -14,10 +14,12 @@ The beta package checker verifies the alternate identity, primary profile only, 
 - IQ SHA-256: `cb5f5e6d3ba6bcb730c8421df84478d819e51c61ad41cc9384fbc40b3901738d`.
 - Each packaged PRG: **36,540 bytes**, SHA-256 `ac462d3575e37c866e47fedaf0ddbd56ec817b1db5836b800604983d4f6fe726`, matching the standalone beta release.
 - Native export/checker exit 0; existing-export and production-candidate-folder rejection guards pass. Complete resource text is verified in both primary-profile part entries.
-- A hash-verified private local IQ copy and resumable upload-status record are retained outside Git/cloud-sync. Upload count remains **zero**. Exact private location/key reference stays in the local record.
+- A hash-verified private local IQ copy and resumable upload-status record are retained outside Git/cloud-sync. **One private beta entry is now verified.** Exact entry URL, private location and key reference stay in the local record.
 - [Sanitized beta evidence](evidence/beta-owner-1.json). The evidence follow-up also makes the host text check tolerate Git's CRLF conversion; it does not change runtime/package inputs or generate another beta.
 
-**Not uploaded.** Browser control stopped because it could not confidently determine Opera's URL; neither the intended Garmin account nor live beta-only setting was observed. No new agreement, merchant flow, fee, public listing, phone installation or watch action occurred. Owner asked to open/sign in to the dashboard in Chrome/Edge. Reader visual UI, actual beta/phone route, settings transport/persistence and physical wear remain pending; native tests do not establish them.
+**Private upload completed and verified on 11 September 2026.** Chrome showed the intended Astrobyte account and the selected testing-only checkbox with Garmin's explicit owner-only download/test notice. The unchanged IQ size/hash matched this record before upload. Garmin verified the package and signature, expected beta manifest UUID and version 0.1.0. The owner personally handled the agreement and final Submit action. The resulting listing shows BETA, Free, version 0.1.0 (Internal: 1), the owner-only notice and an enabled Download button; the dashboard shows one beta entry with Status: Pending. That status is recorded as displayed, not represented as public approval or physical installation. The exact entry URL is private.
+
+Prepared cover, hero and labelled native simulator screenshot were accepted into the listing. Automatic device migration and review email notifications are off; monetization was No. No package rebuild, key change, merchant flow, fee, public release or watch operation occurred. The retained temporary key remains private and is approved for this beta only. The listing directs installation through mobile Connect IQ; actual Android opening/install, reader visual UI, settings transport/persistence and physical wear remain pending owner observations.
 
 ## Historical Store-preparation export (preserved)
 

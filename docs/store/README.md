@@ -11,9 +11,9 @@ The owner approves one unpaid developer-beta upload using the existing developme
 | Stage | Current result |
 | --- | --- |
 | Beta package built and checked | PASS: separate stable UUID/name; shared production inputs; full notice text in both PRGs; 9 native tests pass. Exact committed export identity is in [validation](VALIDATION.md). |
-| Beta uploaded privately | **Not uploaded.** No account or beta-entry access scope has been observed in the live dashboard. |
-| Current blocker / next real action | Browser control stopped because it could not confidently identify Opera's current URL. Owner asked to open the Garmin developer dashboard in Chrome/Edge and sign in directly. Resume live verification before any upload; do not substitute a public test listing. |
-| Phone installation observed | Pending; there is no resulting beta Store link yet. Android app-opening route must be verified after upload. |
+| Beta uploaded privately | **One owner-submitted beta verified in Chrome.** Intended Astrobyte account; live listing marked BETA, Free, version 0.1.0 (Internal: 1), with explicit owner-only download/test notice. |
+| Current blocker / next real action | No upload blocker. Dashboard shows one beta entry with Status: Pending; its detail-page Download button is enabled. Actual entry URL and account-specific record are retained privately. Next: owner opens the entry in Android Connect IQ under the same Garmin account. |
+| Phone installation observed | Pending. Listing directs installation through the mobile Connect IQ app; Android opening and installation have not been observed. |
 | Settings transport / persistence | Pending owner phone observations. Separate-beta fresh defaults are expected; later same-beta-UUID update retention is a different test. |
 | Notice reader visual/device navigation | Full text and pagination pass native checks; visual UI and real watch menu navigation remain pending. |
 | Wear / overnight / battery | Pending; original wrist build and private archive retained. |
@@ -29,7 +29,7 @@ Beta name **TOKYO 2088 BETA**, UUID `ca80e764ffae413996a66e11abd76ed9`. Keep thi
 | Completed now | Neutral custom-text/city defaults; prompts and length messages; [settings guide/test](SETTINGS.md); [listing copy](LISTING.md); [privacy/data flow](PRIVACY.md); [Windows export](WINDOWS_EXPORT.md); [artwork](../../design/store/README.md); licensing and payment comparisons; compatibility plan. |
 | Completed notice delivery | Applicable full font terms are inside the new PRGs with a supported offline settings reader; native resource/pagination and byte inspection pass. Phone/device UI observations remain pending. Historical pre-beta IQ files remain unchanged. |
 | Owner decisions | Confirm Astrobyte branding/support/privacy contact; choose original-source licence, payment route/price, permanent public-release key and final version. Concept provenance and private-beta key use are now explicitly recorded. |
-| Garmin account/onboarding | Existing account status unknown; developer identity/contact/trader information, applicable agreements and Store-form requirements must be verified by the owner. Merchant onboarding/fees only if native paid distribution is selected. No account or merchant actions performed. |
+| Garmin account/onboarding | Existing Astrobyte developer account verified; owner personally handled the displayed agreement and final submission. Private beta entry verified. No merchant enrollment, fees or payment activation performed; public-release onboarding remains separate. |
 | Physical tests pending | Full event checklist, ordinary wear through tomorrow, overnight reliability and comparable battery run. New customer-default build has simulator validation only. |
 | Customer settings pending | Actual Store-installed phone → watch save/sync, restart persistence and update retention. Native callback tests do not establish phone delivery. |
 | Submission gates | Owner-approved permanent key and private backup, rights/notices, support/privacy contacts, merchant approval if paid, final package/version/device review, complete testing, explicit approval for each upload/installation/payment activation. |
@@ -55,7 +55,7 @@ Beta name **TOKYO 2088 BETA**, UUID `ca80e764ffae413996a66e11abd76ed9`. Keep thi
 - [ ] Final `.iq`, packaged PRGs, toolchain, source commit, signing provenance, artwork/captions and hashes recorded.
 - [ ] Store form validates current dimensions/limits and support/privacy details; no placeholders or unsupported claims.
 - [x] Owner explicitly authorizes ONE private beta, conditional on live account/access-scope verification; temporary key approved for that beta.
-- [ ] Live beta-only checkbox and intended account verified, then one private upload completed.
+- [x] Live beta-only checkbox and intended account verified, then one private upload completed; resulting owner-only entry verified separately from installation.
 - [ ] Owner separately authorizes the first public submission and its permanent signing key.
 
 No automatic merge, issue closure, public Store upload, payment integration or replacement of the current wrist installation is authorized. Current private-beta status is recorded above.
