@@ -8,7 +8,14 @@ Native Windows beta run: **9 passed, 0 failed, 0 errors; launcher exit 0**. The 
 
 Logs: `build/windows/beta/validation-final/`. Renderer matrix sampled 34,752 bytes, power-cycle fixture 34,120 and repeated-update fixture 34,480; 240 fixed-time updates took 1,875ms in each seconds mode with one telemetry refresh. These are simulator samples/timings, not hardware peak-memory or battery measurements.
 
-The beta package checker verifies the alternate identity, primary profile only, original property schema, excluded fixtures and the complete applicable licence text **inside each PRG**. Final clean-source export identity is recorded in the evidence follow-up after committing the implementation. Temporary Windows key provenance is explicit; no key was generated or adopted for public release.
+The beta package checker verifies the alternate identity, primary profile only, original property schema, excluded fixtures and the complete applicable licence text **inside each PRG**. Final export was built from clean commit `c5c54b968cd812b69957b166012f16273a335e4c`, signed with the retained temporary Windows development key. No key was generated or adopted for public release.
+
+- IQ: `build/windows/beta/export-owner-1/TOKYO2088-BETA.iq`, **58,738 bytes**.
+- IQ SHA-256: `cb5f5e6d3ba6bcb730c8421df84478d819e51c61ad41cc9384fbc40b3901738d`.
+- Each packaged PRG: **36,540 bytes**, SHA-256 `ac462d3575e37c866e47fedaf0ddbd56ec817b1db5836b800604983d4f6fe726`, matching the standalone beta release.
+- Native export/checker exit 0; existing-export and production-candidate-folder rejection guards pass. Complete resource text is verified in both primary-profile part entries.
+- A hash-verified private local IQ copy and resumable upload-status record are retained outside Git/cloud-sync. Upload count remains **zero**. Exact private location/key reference stays in the local record.
+- [Sanitized beta evidence](evidence/beta-owner-1.json). The evidence follow-up also makes the host text check tolerate Git's CRLF conversion; it does not change runtime/package inputs or generate another beta.
 
 **Not uploaded.** Browser control stopped because it could not confidently determine Opera's URL; neither the intended Garmin account nor live beta-only setting was observed. No new agreement, merchant flow, fee, public listing, phone installation or watch action occurred. Owner asked to open/sign in to the dashboard in Chrome/Edge. Reader visual UI, actual beta/phone route, settings transport/persistence and physical wear remain pending; native tests do not establish them.
 

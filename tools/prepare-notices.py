@@ -29,7 +29,7 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--check',action='store_true');args=parser.parse_args()
     path=ROOT/'resources/strings/font-notices.xml';data=resource_bytes()
     if args.check:
-        assert path.read_bytes()==data, 'Regenerate font-notices.xml with tools/prepare-notices.py'
+        assert path.read_text(encoding='utf-8')==data.decode('utf-8'), 'Regenerate font-notices.xml with tools/prepare-notices.py'
     else:
         path.write_bytes(data)
     print('Packaged font notice text: PASS' if args.check else 'Generated Garmin font notice strings; font assets unchanged')

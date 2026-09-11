@@ -23,7 +23,7 @@ def check(iq=None, beta=False):
     strings = {s.attrib['id']: s.text for path in (ROOT/'resources/strings').glob('*.xml') for s in ET.parse(path).getroot()}
     spec=importlib.util.spec_from_file_location('notice_source',ROOT/'tools/prepare-notices.py')
     notices=importlib.util.module_from_spec(spec);spec.loader.exec_module(notices)
-    assert (ROOT/'resources/strings/font-notices.xml').read_bytes()==notices.resource_bytes()
+    assert (ROOT/'resources/strings/font-notices.xml').read_text(encoding='utf-8')==notices.resource_bytes().decode('utf-8')
     settings = ET.parse(ROOT/'resources/settings/settings.xml').getroot()
     assert properties['HeaderLine1'].text == 'YOUR NAME'
     assert properties['City'].text == 'YOUR CITY'
