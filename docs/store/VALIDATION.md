@@ -1,6 +1,6 @@
 # Executed release-preparation validation
 
-Executed on native Windows, 11 September 2026, using the installed Connect IQ SDK 9.1.0 (`2026-03-09-6a872a80b`) and primary `fenix8solar51mm` profile. No SDK or watch firmware was changed. Final committed export identity is recorded below after the clean-source review export.
+Executed on native Windows, 11 September 2026, using the installed Connect IQ SDK 9.1.0 (`2026-03-09-6a872a80b`) and primary `fenix8solar51mm` profile. No SDK or watch firmware was changed. Final committed export identity is recorded below.
 
 ## Tests and runtime
 
@@ -18,7 +18,24 @@ Logs remain under ignored `build/windows/store-prep/validation/`. A sanitized fr
 
 Native `-e -r` export succeeds with the production jungle. Inspection verifies the unchanged UUID, only the primary profile's two Garmin part-number entries, identical packaged release PRGs, all customer settings/prompts/defaults and exclusion of test/preview/fixture/capture symbols. No private key is in the package. Store acceptance, installation and phone settings are not inferred from compilation.
 
-The final export identity will be recorded in the follow-up evidence commit after exporting the committed source. The earlier pilot export remains separately under `build/windows/store-prep/export-validation/` and is not the preserved hardware build.
+Final review export, built from clean commit **`f912b162ccf667d49e586221aabba133bcb9dbb4`**:
+
+| Item | Recorded value |
+| --- | --- |
+| Local IQ path | `build/windows/store-prep/export-review/TOKYO2088-store-prep.iq` |
+| IQ size | **44,379 bytes** |
+| IQ SHA-256 | `a082dd6936afe3dc7afb54f4879f970750a31f1c66b424af586f9cba73f22529` |
+| Each packaged release PRG | **25,612 bytes**; SHA-256 `b18891337d16544063ea118b69d589c60789cd912a57ff59ec5b82f4e6a41d92` |
+| Signing | **Existing temporary Windows development key**, retained privately; permanent release choice pending |
+| Export / package checker | Native exit **0** / checker exit **0** |
+| Working tree at export | Clean |
+| Overwrite guards | Existing export directory rejected; hardware candidate directory rejected; existing export hash unchanged |
+
+The packaged PRG is byte-identical to the standalone production release used for simulator inspection/artwork. The native tests ran against the same source changes before their commit. This follow-up evidence commit changes documentation/evidence only; it does not create another runtime release. [Sanitized export evidence](evidence/export-review.json)
+
+The earlier pilot export remains separately under `build/windows/store-prep/export-validation/`; its IQ archive hash differs, while the packaged PRG hash matches. This illustrates why the actual final IQ is preserved and identified rather than assuming deterministic archive bytes. All notice sidecars were included in the final export folder. Neither IQ export is the preserved hardware build.
+
+Local documentation links, saved artwork dimensions/sRGB profiles and recorded artwork hashes passed inspection. The final diff passes `git diff --check`. The preserved 24,172-byte wrist candidate and its private archived copy were independently rehashed and still match the approved checksum; the existing temporary signing key remains present outside the repository.
 
 ## Hardware status remains separate
 
