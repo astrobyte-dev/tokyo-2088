@@ -1,0 +1,131 @@
+﻿{
+    "checkedDate":  "2026-09-11",
+    "source":  "Installed official Garmin compiler.json profiles; product profiles, not private device observations",
+    "profiles":  [
+                     {
+                         "id":  "fenix8solar51mm",
+                         "displayName":  "fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm",
+                         "deviceVersion":  "45fe3cbb0de8ea0a70e12628d2697915f1272301",
+                         "compilerJsonSha256":  "fc29aa311e8113365cda459f8df2f95409f690ac0af0573e561c5675616fa9cf",
+                         "resolution":  {
+                                            "height":  280,
+                                            "width":  280
+                                        },
+                         "displayType":  "mip",
+                         "deviceGroup":  "API level 6.0",
+                         "watchFaceMemory":  131072,
+                         "partNumbers":  [
+                                             {
+                                                 "number":  "006-B4533-00",
+                                                 "connectIQVersion":  "6.0.0",
+                                                 "firmwareVersion":  2125
+                                             },
+                                             {
+                                                 "number":  "006-B4776-00",
+                                                 "connectIQVersion":  "6.0.0",
+                                                 "firmwareVersion":  2125
+                                             }
+                                         ]
+                     },
+                     {
+                         "id":  "enduro3",
+                         "displayName":  "Enduro™ 3",
+                         "deviceVersion":  "45fe3cbb0de8ea0a70e12628d2697915f1272301",
+                         "compilerJsonSha256":  "4006ae7a8e0a8c0b19c426699b54f78a24d1217ae4640e5d2acb39f37051f77b",
+                         "resolution":  {
+                                            "height":  280,
+                                            "width":  280
+                                        },
+                         "displayType":  "mip",
+                         "deviceGroup":  "API level 6.0",
+                         "watchFaceMemory":  131072,
+                         "partNumbers":  [
+                                             {
+                                                 "number":  "006-B4575-00",
+                                                 "connectIQVersion":  "6.0.0",
+                                                 "firmwareVersion":  2125
+                                             }
+                                         ]
+                     },
+                     {
+                         "id":  "fenix7x",
+                         "displayName":  "fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2",
+                         "deviceVersion":  "45fe3cbb0de8ea0a70e12628d2697915f1272301",
+                         "compilerJsonSha256":  "f6fda6e297b55e6484b69171aa275279ab27c67936678a53904dc50cec904d74",
+                         "resolution":  {
+                                            "height":  280,
+                                            "width":  280
+                                        },
+                         "displayType":  "mip",
+                         "deviceGroup":  "API level 5.2",
+                         "watchFaceMemory":  131072,
+                         "partNumbers":  [
+                                             {
+                                                 "number":  "006-B3907-00",
+                                                 "connectIQVersion":  "5.2.0",
+                                                 "firmwareVersion":  2316
+                                             },
+                                             {
+                                                 "number":  "006-B3910-00",
+                                                 "connectIQVersion":  "5.2.0",
+                                                 "firmwareVersion":  2316
+                                             },
+                                             {
+                                                 "number":  "006-B4135-00",
+                                                 "connectIQVersion":  "5.2.0",
+                                                 "firmwareVersion":  2316
+                                             },
+                                             {
+                                                 "number":  "006-B4341-00",
+                                                 "connectIQVersion":  "5.2.0",
+                                                 "firmwareVersion":  2316
+                                             }
+                                         ]
+                     },
+                     {
+                         "id":  "fenix8solar47mm",
+                         "displayName":  "fēnix® 8 Solar 47mm",
+                         "deviceVersion":  "45fe3cbb0de8ea0a70e12628d2697915f1272301",
+                         "compilerJsonSha256":  "1c84f8452e68bdac2784eaeeb768bceb72c38b1e1cb6b1cd33304598ad4c0bb2",
+                         "resolution":  {
+                                            "height":  260,
+                                            "width":  260
+                                        },
+                         "displayType":  "mip",
+                         "deviceGroup":  "API level 6.0",
+                         "watchFaceMemory":  131072,
+                         "partNumbers":  [
+                                             {
+                                                 "number":  "006-B4532-00",
+                                                 "connectIQVersion":  "6.0.0",
+                                                 "firmwareVersion":  2125
+                                             }
+                                         ]
+                     },
+                     {
+                         "id":  "fenix847mm",
+                         "displayName":  "fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm",
+                         "deviceVersion":  "45fe3cbb0de8ea0a70e12628d2697915f1272301",
+                         "compilerJsonSha256":  "69fe4244e3ab33fe12619b54850bae2d2ad2bf7214e818f8bb2195a10d13522d",
+                         "resolution":  {
+                                            "height":  454,
+                                            "width":  454
+                                        },
+                         "displayType":  "amoled",
+                         "deviceGroup":  "API level 6.0",
+                         "watchFaceMemory":  131072,
+                         "partNumbers":  [
+                                             {
+                                                 "number":  "006-B4536-00",
+                                                 "connectIQVersion":  "6.0.0",
+                                                 "firmwareVersion":  2125
+                                             },
+                                             {
+                                                 "number":  "006-B4775-00",
+                                                 "connectIQVersion":  "6.0.0",
+                                                 "firmwareVersion":  2125
+                                             }
+                                         ]
+                     }
+                 ]
+}

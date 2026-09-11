@@ -7,3 +7,23 @@
 - **Concept board**: user-supplied visual reference at `design/reference/tokyo-2088-concept-board.png`. Reference use only, excluded from Monkey C resource paths. Ownership/licensing for public redistribution is not established here.
 
 Asset regeneration uses Python/Pillow and reads the bundled font subsets and numeral JSON. Original runtime icon and weather/battery primitives were drawn for this project.
+
+## Distribution preparation
+
+The bundled DejaVu TTFs also contain the Arev copyright and permission terms in
+their name-table licence metadata. The full embedded licence text is preserved
+in [DEJAVU-EMBEDDED-LICENSE.txt](assets-src/DEJAVU-EMBEDDED-LICENSE.txt), in addition
+to the original notice above. Retain both files when distributing the fonts or
+derived font resources. No existing notice has been removed or replaced.
+Only trailing spaces were normalized in the new embedded-licence transcription.
+
+The source font files and their embedded names remain unchanged. Generated
+BMFonts use the `Tokyo` family label. Third-party font terms continue to apply
+independently of the owner's still-undecided licence for original project code.
+
+Store artwork in `design/store` uses an actual runtime simulator capture and
+the bundled DejaVu fonts for captions. It does not use the concept board or
+Garmin device enclosure/logo artwork. See the [commercial asset audit](docs/store/LICENSING.md)
+for remaining provenance and distribution-delivery decisions. The concept board
+already in Git remains a reference with unconfirmed public redistribution rights;
+its presence in the repository does not establish permission to reuse it.

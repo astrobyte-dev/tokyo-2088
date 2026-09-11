@@ -3,6 +3,8 @@
 /build/
 /dist/
 *.prg
+*.iq
+*.iq.debug.xml
 *.prg.debug.xml
 *.prg.settings.json
 *.zip

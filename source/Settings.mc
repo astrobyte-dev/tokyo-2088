@@ -19,8 +19,8 @@ class FaceSettings {
     }
     function reload() {
         palette=number("Palette",0,3); headerMode=number("HeaderMode",0,3);
-        line1=text("HeaderLine1","COREY"); line2=text("HeaderLine2","PERSONAL TERMINAL");
-        city=text("City","HOBART"); citySubtitle=text("CitySubtitle","LOCAL EDITION");
+        line1=text("HeaderLine1","YOUR NAME"); line2=text("HeaderLine2","PERSONAL TERMINAL");
+        city=text("City","YOUR CITY"); citySubtitle=text("CitySubtitle","LOCAL EDITION");
         readable=flag("Readable",false); clockMode=number("ClockMode",0,2);
         leadingZero=flag("LeadingZero",true); seconds=number("Seconds",0,1);
         tempUnits=number("TempUnits",0,2); footer=flag("Footer",true);

@@ -1,5 +1,7 @@
 # TOKYO 2088
 
+**Store preparation:** [review package, customer settings, payment/licensing decisions and launch gates](docs/store/README.md). The new customer-default build passes eight native test groups and production export checks; it has not replaced the build on the owner's wrist. The preserved redraw candidate has positive initial owner feedback; overnight and battery validation remain pending. PR #2 stays unmerged and issue #1 stays open.
+
 **Windows redraw candidate:** the same-minute cleared-surface regression now passes after a minimal full-update fix. Physical issue #1 remains open. See [Windows results and evidence](docs/WINDOWS_REDRAW_RESULTS.md) and [Windows build/signing/retest instructions](docs/WINDOWS_BUILD_AND_RETEST.md). The Linux milestone below is historical.
 
 Native Monkey C / Connect IQ watch face for **fēnix 8 Solar 51mm (`fenix8solar51mm`), 280 × 280 MIP**. Classic Red is the default.
