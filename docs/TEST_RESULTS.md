@@ -1,5 +1,7 @@
 # Test results — 11 September 2026
 
+**Later Windows validation:** [seven native groups and redraw evidence](WINDOWS_REDRAW_RESULTS.md). The Linux four-group milestone below remains historical; physical issue #1 is still open.
+
 The primary-device milestone now runs. The earlier login/device-package blocker is resolved. **Owner hardware report: installed and initially working, but intermittent complete black screen with no visible IQ icon. Defect OPEN; trigger, duration and recovery unknown.** See [investigation](BLACK_SCREEN_INVESTIGATION.md).
 
 | Required category | Actual status | Evidence |

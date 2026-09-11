@@ -1,0 +1,4 @@
+project.manifest = tests/capture-seconds-manifest.xml
+base.sourcePath = source;tests
+base.resourcePath = resources
+base.excludeAnnotations = test;preview

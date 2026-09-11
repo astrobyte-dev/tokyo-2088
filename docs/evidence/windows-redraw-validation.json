@@ -1,0 +1,114 @@
+{
+    "date":  "2026-09-11",
+    "reviewedCommit":  "7244158815f65233be23fc3cd213c609dabceb8d",
+    "branch":  "fix/windows-mip-redraw",
+    "sdk":  "9.1.0",
+    "device":  "fenix8solar51mm",
+    "deviceApi":  "6.0.0",
+    "signing":  "temporary Windows development key; original key unavailable",
+    "uuid":  "d8c8adfe21c74bdd97fa2088ac010001",
+    "version":  "0.1.0",
+    "baselineTests":  {
+                          "wrapperExit":  1,
+                          "nativeExit":  0,
+                          "errors":  2,
+                          "failed":  0,
+                          "passed":  5
+                      },
+    "candidateTests":  {
+                           "wrapperExit":  0,
+                           "nativeExit":  0,
+                           "errors":  0,
+                           "failed":  0,
+                           "passed":  7
+                       },
+    "assetChecks":  40,
+    "physicalIssue":  "unresolved; no install performed",
+    "artifacts":  [
+                      {
+                          "nativeCompilerExit":  0,
+                          "path":  "build/windows/baseline/TOKYO2088-fenix8solar51mm-debug.prg",
+                          "sha256":  "fda3f1359a11ccb6d0c0a4acb185c5e8c6dfc9cb8adc3b4c3dbacc2f44b180df",
+                          "bytes":  113980
+                      },
+                      {
+                          "nativeCompilerExit":  0,
+                          "path":  "build/windows/baseline/TOKYO2088-fenix8solar51mm-test.prg",
+                          "sha256":  "b8d4dc32f9c2fd57db85b71888071b7368b1e6539f637f8d9ede8750500c9022",
+                          "bytes":  126476
+                      },
+                      {
+                          "nativeCompilerExit":  0,
+                          "path":  "build/windows/baseline/TOKYO2088-fenix8solar51mm-release.prg",
+                          "sha256":  "862d609871bc01c6ba51c98dbfa8491de9bb8acf5797c0a48c381bb572c535bc",
+                          "bytes":  24236
+                      },
+                      {
+                          "nativeCompilerExit":  0,
+                          "path":  "build/windows/candidate/TOKYO2088-fenix8solar51mm-debug.prg",
+                          "sha256":  "09f607089c70e0b79e0b8f1d363a034677263e345735cbe568452ec7c02be3ca",
+                          "bytes":  113852
+                      },
+                      {
+                          "nativeCompilerExit":  0,
+                          "path":  "build/windows/candidate/TOKYO2088-fenix8solar51mm-test.prg",
+                          "sha256":  "7a9d13fbc759086f941963f972abf3c10ac7b9fbcde8101945aa4c518f5edf7a",
+                          "bytes":  128076
+                      },
+                      {
+                          "nativeCompilerExit":  0,
+                          "path":  "build/windows/candidate/TOKYO2088-fenix8solar51mm-release.prg",
+                          "sha256":  "7e3c596c7f85eabd7fe535a3025d431e0d4e298726099b279a93363833dbd038",
+                          "bytes":  24172
+                      },
+                      {
+                          "nativeCompilerExit":  0,
+                          "path":  "build/windows/baseline-final/TOKYO2088-fenix8solar51mm-test.prg",
+                          "sha256":  "aed5e62fb8cf83f798b2f10e662f28066cafe5b70dd2c43054f5c3e8b99fdad5",
+                          "bytes":  128444
+                      }
+                  ],
+    "captures":  [
+                     {
+                         "sha256":  "80a9b6e9fe771bb63a3c0bda0defc2b0642464e761eb42301d1378d0c2610808",
+                         "path":  "design/simulator/windows-redraw/baseline-low-power-window.jpg"
+                     },
+                     {
+                         "sha256":  "4aff8005345ed574f84aa4f0a6886800fcd37d6e0730cda7ec36ce59641ffabf",
+                         "path":  "design/simulator/windows-redraw/baseline-production-active.png"
+                     },
+                     {
+                         "sha256":  "e2497235f4f4fca166e8ad981b7f8a79cbbfd53558f6cab449124c018849a41a",
+                         "path":  "design/simulator/windows-redraw/baseline-production-low-power-window-crop.png"
+                     },
+                     {
+                         "sha256":  "d4eed3efad8d51a0bef9cf21a16de69c235462e535341f71a2f52ed05d7f9dd7",
+                         "path":  "design/simulator/windows-redraw/baseline-reset-seconds-off.png"
+                     },
+                     {
+                         "sha256":  "d70062c61d4a79f04bab596a8251641ddc5adcd355b2a629b12d54631496651e",
+                         "path":  "design/simulator/windows-redraw/baseline-reset-seconds-on.png"
+                     },
+                     {
+                         "sha256":  "011b3a4e3638a79303e805965ebdeb7e0d3bc0bfcbdc6cc78bc414803a24cb0b",
+                         "path":  "design/simulator/windows-redraw/candidate-active-window.jpg"
+                     },
+                     {
+                         "sha256":  "b3b1989e60c6ff643a377dafd302532c5b16385270156cba28336c3292629467",
+                         "path":  "design/simulator/windows-redraw/candidate-production-active-window-crop.png"
+                     },
+                     {
+                         "sha256":  "6962f79d7717be73ad5f71cb1cc3518a5087d8c9d3fac0a1fa1bdccec85dd0ab",
+                         "path":  "design/simulator/windows-redraw/candidate-production-low-power.png"
+                     },
+                     {
+                         "sha256":  "cf03376baefbb951998036302c353b273b3e21bf710815a240a665925b30e87d",
+                         "path":  "design/simulator/windows-redraw/candidate-reset-seconds-off.png"
+                     },
+                     {
+                         "sha256":  "fac73733ea632fae9086ffdd83bf7196c6f5d4ce3bd07b75a2e316d566e151cf",
+                         "path":  "design/simulator/windows-redraw/candidate-reset-seconds-on.png"
+                     }
+                 ],
+    "candidateReleaseNativeRunExit":  0
+}
