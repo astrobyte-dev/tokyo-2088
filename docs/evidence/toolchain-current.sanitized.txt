@@ -1,0 +1,7 @@
+Compiler directory: <USER_HOME>/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-9.2.0-2026-06-09-92a1605b2/
+Connect IQ Compiler version: 9.2.0
+SDK Manager active configuration: present
+Device directory: <USER_HOME>/.Garmin/ConnectIQ/Devices/fenix8solar51mm
+fenix8solar51mm {'height': 280, 'width': 280} mip ARGB2222
+Watch-face memory limit: 131072 bytes; API level 6.0
+Package version: 3d0fb192a2cf01699aefd0f384af3f527e5885bd

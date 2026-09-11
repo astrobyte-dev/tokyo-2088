@@ -1,0 +1,10 @@
+Memory Usage Stats
+Memory Usage: 18.2/123.8kB
+Peak Memory: 20.0kB
+Object Usage: 93/65535
+Peak Objects: 114
+New resource allocations in last onUpdate(): 0
+awake: false
+dirty: false
+lastMinute: 29818919
+lastSample: 1789135198

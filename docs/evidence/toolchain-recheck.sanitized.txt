@@ -1,0 +1,4 @@
+Compiler directory: <USER_HOME>/.local/share/garmin-toolchain/sdk-9.2.0
+Connect IQ Compiler version: 9.2.0
+SDK Manager active configuration: absent; using explicit/local fallback
+Device package not found: <USER_HOME>/.Garmin/ConnectIQ/Devices/fenix8solar51mm

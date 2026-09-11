@@ -1,0 +1,9 @@
+<fonts>
+ <font id="hero" filename="hero.fnt"/>
+ <font id="tokyo" filename="tokyo.fnt"/>
+ <font id="micro" filename="micro.fnt"/>
+ <font id="label" filename="label.fnt"/>
+ <font id="data" filename="data.fnt"/>
+ <font id="date" filename="date.fnt"/>
+ <font id="plateSmall" filename="plateSmall.fnt"/>
+</fonts>

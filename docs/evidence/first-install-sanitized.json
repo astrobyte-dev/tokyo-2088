@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-11T07:15:05.453998+00:00",
+  "source": "dist/TOKYO2088-fenix8solar51mm.prg",
+  "deviceDescription": "fenix 8 - 51mm, Solar",
+  "devicePartNumber": "006-B4533-00",
+  "deviceSoftwareVersionRaw": "2331",
+  "bytes": 24188,
+  "expectedSHA256": "8a3469f4ab629d809d22b4ba61fd060f329919b1d7013f0b679ef0ea2f29ac64",
+  "readbackSHA256": "8a3469f4ab629d809d22b4ba61fd060f329919b1d7013f0b679ef0ea2f29ac64",
+  "readbackMatches": true,
+  "existingTokyoFile": false,
+  "backupRequired": false,
+  "transfer": "GIO MTP copy, no overwrite; GIO MTP load_contents readback",
+  "physicalWatchExecution": "PENDING owner report",
+  "scope": "Only the release PRG was written to the watch.",
+  "mtpUnmountCommandExitCode": 0,
+  "mtpMountStillListed": false,
+  "destinationPath": "Internal Storage/GARMIN/Apps/TOKYO2088-fenix8solar51mm.prg",
+  "sanitization": "Device-specific MTP URI and absolute local source path omitted. Original report retained locally. Execution status below is historical, at transfer time; see BLACK_SCREEN_INVESTIGATION.md for subsequent owner report."
+}

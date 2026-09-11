@@ -1,0 +1,42 @@
+<settings>
+<setting propertyKey="@Properties.Palette" title="@Strings.PaletteTitle"><settingConfig type="list">
+<listEntry value="0">@Strings.Palette0</listEntry>
+<listEntry value="1">@Strings.Palette1</listEntry>
+<listEntry value="2">@Strings.Palette2</listEntry>
+<listEntry value="3">@Strings.Palette3</listEntry>
+</settingConfig></setting>
+<setting propertyKey="@Properties.HeaderMode" title="@Strings.HeaderModeTitle"><settingConfig type="list">
+<listEntry value="0">@Strings.HeaderMode0</listEntry>
+<listEntry value="1">@Strings.HeaderMode1</listEntry>
+<listEntry value="2">@Strings.HeaderMode2</listEntry>
+<listEntry value="3">@Strings.HeaderMode3</listEntry>
+</settingConfig></setting>
+<setting propertyKey="@Properties.HeaderLine1" title="@Strings.HeaderLine1Title"><settingConfig type="alphaNumeric" maxLength="64">
+</settingConfig></setting>
+<setting propertyKey="@Properties.HeaderLine2" title="@Strings.HeaderLine2Title"><settingConfig type="alphaNumeric" maxLength="64">
+</settingConfig></setting>
+<setting propertyKey="@Properties.City" title="@Strings.CityTitle"><settingConfig type="alphaNumeric" maxLength="64">
+</settingConfig></setting>
+<setting propertyKey="@Properties.CitySubtitle" title="@Strings.CitySubtitleTitle"><settingConfig type="alphaNumeric" maxLength="64">
+</settingConfig></setting>
+<setting propertyKey="@Properties.Readable" title="@Strings.ReadableTitle"><settingConfig type="boolean">
+</settingConfig></setting>
+<setting propertyKey="@Properties.ClockMode" title="@Strings.ClockModeTitle"><settingConfig type="list">
+<listEntry value="0">@Strings.ClockMode0</listEntry>
+<listEntry value="1">@Strings.ClockMode1</listEntry>
+<listEntry value="2">@Strings.ClockMode2</listEntry>
+</settingConfig></setting>
+<setting propertyKey="@Properties.LeadingZero" title="@Strings.LeadingZeroTitle"><settingConfig type="boolean">
+</settingConfig></setting>
+<setting propertyKey="@Properties.Seconds" title="@Strings.SecondsTitle"><settingConfig type="list">
+<listEntry value="0">@Strings.Seconds0</listEntry>
+<listEntry value="1">@Strings.Seconds1</listEntry>
+</settingConfig></setting>
+<setting propertyKey="@Properties.TempUnits" title="@Strings.TempUnitsTitle"><settingConfig type="list">
+<listEntry value="0">@Strings.TempUnits0</listEntry>
+<listEntry value="1">@Strings.TempUnits1</listEntry>
+<listEntry value="2">@Strings.TempUnits2</listEntry>
+</settingConfig></setting>
+<setting propertyKey="@Properties.Footer" title="@Strings.FooterTitle"><settingConfig type="boolean">
+</settingConfig></setting>
+</settings>

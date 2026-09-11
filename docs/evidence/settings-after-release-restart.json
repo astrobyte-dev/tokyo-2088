@@ -1,0 +1,6 @@
+{
+  "Custom first line": "ASTROBYTE INDUSTRIAL SYSTEMS 2088 / A VERY LONG IDENTITY PLATE",
+  "Custom second line": "HOBART PERSONAL TERMINAL / ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890",
+  "City subtitle": "LOCAL EDITION",
+  "note": "Full custom fields read from simulator App Settings Editor after running the release program. The Manual city selector/field has an ambiguous accessibility label and is not asserted in this record."
+}

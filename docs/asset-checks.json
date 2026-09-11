@@ -1,0 +1,9 @@
+{
+  "host_asset_cases_passed": 40,
+  "checks": [
+    "unmasked design content within 280px circle",
+    "4x4x4 RGB palette only",
+    "1-bit glyph coverage and advance bounds"
+  ],
+  "native_runtime_tests": "NOT ASSESSED BY THIS SCRIPT; see docs/TEST_RESULTS.md"
+}

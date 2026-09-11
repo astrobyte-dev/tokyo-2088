@@ -1,0 +1,4 @@
+Sanitized excerpt of the Linux simulator-host crash, before Openbox was used.
+Not a physical-device crash log or proof of a Monkey C runtime failure.
+connectiq: line 8: [PID REDACTED] Segmentation fault (core dumped) "$MB_HOME"/simulator
+Full original host log retained locally.

@@ -1,0 +1,9 @@
+Inspected installed SDK 9.2.0 documentation, 2026-09-11. These are NOT installed device compiler/simulator packages.
+
+fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm Attribute Value Id fenix8solar51mm Screen Shape round Screen Size 280 x 280 Display Colors 64 Touch True Buttons enter, up, menu, down, esc Launcher Icon Size 40 x 40 App Types App Type Memory Limit Notes Audio Content Provider 524288 Background 65536 Requires Permission Data Field 131072 Glance 65536 Build as Watch App or Widget Watch App 786432 Watch Face 131072 Widget 786432 Requires 4.x SDK 
+
+fēnix® 8 Solar 47mm Attribute Value Id fenix8solar47mm Screen Shape round Screen Size 260 x 260 Display Colors 64 Touch True Buttons enter, up, menu, down, esc Launcher Icon Size 40 x 40 App Types App Type Memory Limit Notes Audio Content Provider 524288 Background 65536 Requires Permission Data Field 131072 Glance 65536 Build as Watch App or Widget Watch App 786432 Watch Face 131072 Widget 786432 Requires 4.x SDK 
+
+fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2 Attribute Value Id fenix7x Screen Shape round Screen Size 280 x 280 Display Colors 64 Touch True Buttons enter, up, menu, down, esc Launcher Icon Size 40 x 40 App Types App Type Memory Limit Notes Audio Content Provider 524288 Background 65536 Requires Permission Data Field 262144 Glance 65536 Build as Watch App or Widget Watch App 786432 Watch Face 131072 Widget 786432 Requires 4.x SDK 
+
+fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm Attribute Value Id fenix847mm Screen Shape round Screen Size 454 x 454 Display Colors 65536 Touch True Buttons enter, up, menu, down, esc Launcher Icon Size 65 x 65 App Types App Type Memory Limit Notes Audio Content Provider 524288 Background 65536 Requires Permission Data Field 131072 Glance 65536 Build as Watch App or Widget Watch App 786432 Watch Face 131072 Widget 786432 Requires 4.x SDK 

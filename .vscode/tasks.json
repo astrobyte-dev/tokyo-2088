@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "TOKYO: build primary release", "type": "shell", "command": "./tools/build.sh", "args": ["release"], "group": {"kind": "build", "isDefault": true}, "problemMatcher": []},
+    {"label": "TOKYO: build primary debug", "type": "shell", "command": "./tools/build.sh", "args": ["debug"], "problemMatcher": []},
+    {"label": "TOKYO: start simulator", "type": "shell", "command": "./tools/simulator.sh", "args": ["start"], "problemMatcher": []},
+    {"label": "TOKYO: run primary", "type": "shell", "command": "./tools/simulator.sh", "args": ["run"], "problemMatcher": []},
+    {"label": "TOKYO: build tests", "type": "shell", "command": "./tools/build.sh", "args": ["test"], "problemMatcher": []},
+    {"label": "TOKYO: run tests", "type": "shell", "command": "./tools/simulator.sh", "args": ["test"], "problemMatcher": []},
+    {"label": "TOKYO: asset checks", "type": "shell", "command": "python3", "args": ["tools/check_assets.py"], "problemMatcher": []}
+  ]
+}

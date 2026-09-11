@@ -1,0 +1,170 @@
+{
+  "12-hour-pm-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "131512b01f140f75906f86e63914ca2268f747fae662aeb81d57964a6990bfa4"
+  },
+  "2359-long-low-power-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "f18b030995519d7657e39a3694362ce05b5461a0b32663260811059100464355"
+  },
+  "after-year-rollover-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "a7839cceb85f290b4b4de8cf00b0bcf13de0f935bd02fff72147ed74275f2388"
+  },
+  "before-midnight-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "f18b030995519d7657e39a3694362ce05b5461a0b32663260811059100464355"
+  },
+  "before-year-rollover-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "061c4856b25d818d56421628f1899b797cc5a8529f2e96990f6067ab22a67a55"
+  },
+  "before-year-rollover-low-battery-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "58ef66e7593ba6dec14a29ab94dbc504aa267a42b3cb182fe13ff901997a91b9"
+  },
+  "classic-red-0827-280-4x-nearest.png": {
+    "pixels": [
+      1120,
+      1120
+    ],
+    "sha256": "cad61caba5b28ad9daa13e3bf8c312ec0b10ce64334d327cced6e9a8265fabfa"
+  },
+  "classic-red-0827-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "6179a600b6aa9cad71027d7023ec15e1f17c5abcfb9ba1301585e00871bc7ebb"
+  },
+  "hidden-active-seconds-disabled-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "5c768ce729752775e82a4605b5a02633b645b024d706824e16b6b07467d83861"
+  },
+  "hidden-low-power-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "5c768ce729752775e82a4605b5a02633b645b024d706824e16b6b07467d83861"
+  },
+  "hobart-0827-280-4x-nearest.png": {
+    "pixels": [
+      1120,
+      1120
+    ],
+    "sha256": "a129c692f13159c5b2043a56e7f3663eb0d396632c02f56178757573dc981ea7"
+  },
+  "hobart-0827-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "a0fb6621e0e6ab84920ad26602a09ea63e7ca5165d4befdf5c392eda14f78fd5"
+  },
+  "hobart-0828-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "558e5af88b59fa813babc77914faa2d1ce1cea15a26ce1e53a430b87a4ec9d70"
+  },
+  "live-midnight-completed-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "60d27046844622346e607431346646a0118604b68c6b6bf47d7255fb74df4123"
+  },
+  "live-midnight-start-confirmed-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "8ae2de4aa8938cd0b06c53f9b3546d12eeaa30f543e825cde3df901bc7c49519"
+  },
+  "long-custom-header-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "b9fbfc7b1d58c97c892121ae32edbaa9290e39634701253b2d535d730e6577a4"
+  },
+  "release-low-power-after-running-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "1f10ec26cdb7c40d6de8380aed01180e5cf887236768153c04c35affbe6821e7"
+  },
+  "release-low-power-minute-check-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "1211c6ab1018d4397bba62531d472c13fc8a90bb3f4bf90a5ca3a25e861284f3"
+  },
+  "release-original-0827-280-4x-nearest.png": {
+    "pixels": [
+      1120,
+      1120
+    ],
+    "sha256": "e4023f996e5eab568cc565e401d600071070a1e76a19a81d4be2d7c3d9b3b57d"
+  },
+  "release-original-0827-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "1211c6ab1018d4397bba62531d472c13fc8a90bb3f4bf90a5ca3a25e861284f3"
+  },
+  "release-retained-hidden-seconds-0827-280-4x-nearest.png": {
+    "pixels": [
+      1120,
+      1120
+    ],
+    "sha256": "ef6e21d1ee253a40f518ab5939f47cd56ee2587ee618f8ed5d516ae02cf02404"
+  },
+  "release-retained-hidden-seconds-0827-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "1c3d210c7524a31857ea101be922087dd391d8125c0eb0225434d73e4401e9c3"
+  },
+  "seconds-off-low-power-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "5c768ce729752775e82a4605b5a02633b645b024d706824e16b6b07467d83861"
+  },
+  "seconds-on-active-280.png": {
+    "pixels": [
+      280,
+      280
+    ],
+    "sha256": "b7af1adf702b0e53dbb6739e75b686ae808894c502fee49985a4777e528ba4a8"
+  }
+}

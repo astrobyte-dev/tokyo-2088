@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "device": "fenix8solar51mm",
+  "sdk": "9.2.0",
+  "deviceApi": "6.0.2",
+  "appMinApi": "3.2.0",
+  "releaseBytes": 24188,
+  "releaseSHA256": "8a3469f4ab629d809d22b4ba61fd060f329919b1d7013f0b679ef0ea2f29ac64",
+  "buildLog": "docs/evidence/primary-release-compile.log",
+  "physicalTesting": "PENDING",
+  "nativeTests": {
+    "passed": 4,
+    "failed": 0,
+    "errors": 0,
+    "launcherExitCode": 1
+  },
+  "sourceHashes": {
+    "source/Data.mc": "d0ec40da0aae620fc4695fe25f8bf685f54af1a2256c373be9af8d9a131f3fa4",
+    "source/Settings.mc": "bc60acf32849e3953f04e9affbc6dd11410398cc5ca069c67613563824d84eb5",
+    "source/TokyoApp.mc": "e21ffa203e2a2840ea94157e6a8cf59d07b6c26e6caa9f2bf8cd692d21219376",
+    "source/TokyoView.mc": "c43020eb1f10ae38e282a19417bb6ce6eabcb43f4175159bfe034be6d4001974"
+  }
+}

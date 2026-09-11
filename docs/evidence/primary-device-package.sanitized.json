@@ -1,0 +1,39 @@
+{
+  "deviceId": "fenix8solar51mm",
+  "deviceVersion": "3d0fb192a2cf01699aefd0f384af3f527e5885bd",
+  "deviceFamily": "round-280x280",
+  "deviceGroup": "API level 6.0",
+  "displayType": "mip",
+  "resolution": {
+    "height": 280,
+    "width": 280
+  },
+  "bitsPerPixel": 8,
+  "pixelFormat": "ARGB2222",
+  "launcherIcon": {
+    "height": 40,
+    "width": 40
+  },
+  "watchFace": {
+    "memoryLimit": 131072,
+    "type": "watchFace"
+  },
+  "partNumbers": [
+    {
+      "connectIQVersion": "6.0.2",
+      "firmwareVersion": 2235,
+      "number": "006-B4533-00"
+    },
+    {
+      "connectIQVersion": "6.0.2",
+      "firmwareVersion": 2235,
+      "number": "006-B4776-00"
+    }
+  ],
+  "graphicsResourcePoolSize": 1048576,
+  "activeSDK": "<USER_HOME>/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-9.2.0-2026-06-09-92a1605b2/",
+  "sourceHashes": {
+    "compiler.json": "b988edeee92b829be16982c9812e29d8e0136c21068fef568204deada19a278b",
+    "simulator.json": "df0386444b58205a6dbae8c4d85ce0dd42f4d8a7fd81034884096d41fb9538cb"
+  }
+}

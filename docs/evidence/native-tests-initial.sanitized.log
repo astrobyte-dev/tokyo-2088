@@ -1,0 +1,37 @@
+------------------------------------------------------------------------------
+Executing test formatting...
+
+Error: Unexpected Type Error
+Details: Failed invoking <symbol>
+Stack: 
+  - API code 0x300001ae 
+  - formatting() at <PROJECT>/tests/FaceTests.mc:34 0x1000095a 
+  - evaluate_test_entries_0_to_3() at <PROJECT>/bin/gen/006-B4533-00/source/UnitTests.mcgen:53 0x10000fa5 
+  - runTest() at <PROJECT>/bin/gen/006-B4533-00/source/UnitTests.mcgen:72 0x1000103d 
+ERROR
+------------------------------------------------------------------------------
+Executing test headerSettings...
+
+Error: Unhandled Exception
+Exception: ASSERTION FAILED
+Stack: 
+  - API code 0x30000203 
+  - API code 0x300001ba 
+  - headerSettings() at <PROJECT>/tests/FaceTests.mc:39 0x10000337 
+  - evaluate_test_entries_0_to_3() at <PROJECT>/bin/gen/006-B4533-00/source/UnitTests.mcgen:55 0x10000fc0 
+  - runTest() at <PROJECT>/bin/gen/006-B4533-00/source/UnitTests.mcgen:72 0x1000103d 
+ERROR
+------------------------------------------------------------------------------
+Executing test rendererMatrix...
+DEBUG (11:32): Renderer matrix complete; memory snapshot=25728
+PASS
+
+==============================================================================
+RESULTS
+Test:                               Status:
+formatting                          ERROR
+headerSettings                      ERROR
+rendererMatrix                      PASS
+Ran 3 tests
+
+FAILED (passed=1, failed=0, errors=2)
