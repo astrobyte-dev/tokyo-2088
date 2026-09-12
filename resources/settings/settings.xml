@@ -1,42 +1,42 @@
 <settings>
-<setting propertyKey="@Properties.Palette" title="@Strings.PaletteTitle"><settingConfig type="list">
+<setting propertyKey="@Properties.Palette" title="@Strings.PaletteTitle" prompt="@Strings.PaletteHelp"><settingConfig type="list">
 <listEntry value="0">@Strings.Palette0</listEntry>
 <listEntry value="1">@Strings.Palette1</listEntry>
 <listEntry value="2">@Strings.Palette2</listEntry>
 <listEntry value="3">@Strings.Palette3</listEntry>
 </settingConfig></setting>
-<setting propertyKey="@Properties.HeaderMode" title="@Strings.HeaderModeTitle"><settingConfig type="list">
+<setting propertyKey="@Properties.HeaderMode" title="@Strings.HeaderModeTitle" prompt="@Strings.HeaderModeHelp"><settingConfig type="list">
 <listEntry value="0">@Strings.HeaderMode0</listEntry>
 <listEntry value="1">@Strings.HeaderMode1</listEntry>
 <listEntry value="2">@Strings.HeaderMode2</listEntry>
 <listEntry value="3">@Strings.HeaderMode3</listEntry>
 </settingConfig></setting>
-<setting propertyKey="@Properties.HeaderLine1" title="@Strings.HeaderLine1Title"><settingConfig type="alphaNumeric" maxLength="64">
+<setting propertyKey="@Properties.HeaderLine1" title="@Strings.HeaderLine1Title" prompt="@Strings.CustomTextHelp"><settingConfig type="alphaNumeric" maxLength="64" errorMessage="@Strings.TextLengthError">
 </settingConfig></setting>
-<setting propertyKey="@Properties.HeaderLine2" title="@Strings.HeaderLine2Title"><settingConfig type="alphaNumeric" maxLength="64">
+<setting propertyKey="@Properties.HeaderLine2" title="@Strings.HeaderLine2Title" prompt="@Strings.CustomTextHelp"><settingConfig type="alphaNumeric" maxLength="64" errorMessage="@Strings.TextLengthError">
 </settingConfig></setting>
-<setting propertyKey="@Properties.City" title="@Strings.CityTitle"><settingConfig type="alphaNumeric" maxLength="64">
+<setting propertyKey="@Properties.City" title="@Strings.CityTitle" prompt="@Strings.CityHelp"><settingConfig type="alphaNumeric" maxLength="64" errorMessage="@Strings.TextLengthError">
 </settingConfig></setting>
-<setting propertyKey="@Properties.CitySubtitle" title="@Strings.CitySubtitleTitle"><settingConfig type="alphaNumeric" maxLength="64">
+<setting propertyKey="@Properties.CitySubtitle" title="@Strings.CitySubtitleTitle" prompt="@Strings.CitySubtitleHelp"><settingConfig type="alphaNumeric" maxLength="64" errorMessage="@Strings.TextLengthError">
 </settingConfig></setting>
-<setting propertyKey="@Properties.Readable" title="@Strings.ReadableTitle"><settingConfig type="boolean">
+<setting propertyKey="@Properties.Readable" title="@Strings.ReadableTitle" prompt="@Strings.ReadableHelp"><settingConfig type="boolean">
 </settingConfig></setting>
-<setting propertyKey="@Properties.ClockMode" title="@Strings.ClockModeTitle"><settingConfig type="list">
+<setting propertyKey="@Properties.ClockMode" title="@Strings.ClockModeTitle" prompt="@Strings.ClockHelp"><settingConfig type="list">
 <listEntry value="0">@Strings.ClockMode0</listEntry>
 <listEntry value="1">@Strings.ClockMode1</listEntry>
 <listEntry value="2">@Strings.ClockMode2</listEntry>
 </settingConfig></setting>
-<setting propertyKey="@Properties.LeadingZero" title="@Strings.LeadingZeroTitle"><settingConfig type="boolean">
+<setting propertyKey="@Properties.LeadingZero" title="@Strings.LeadingZeroTitle" prompt="@Strings.ZeroHelp"><settingConfig type="boolean">
 </settingConfig></setting>
-<setting propertyKey="@Properties.Seconds" title="@Strings.SecondsTitle"><settingConfig type="list">
+<setting propertyKey="@Properties.Seconds" title="@Strings.SecondsTitle" prompt="@Strings.SecondsHelp"><settingConfig type="list">
 <listEntry value="0">@Strings.Seconds0</listEntry>
 <listEntry value="1">@Strings.Seconds1</listEntry>
 </settingConfig></setting>
-<setting propertyKey="@Properties.TempUnits" title="@Strings.TempUnitsTitle"><settingConfig type="list">
+<setting propertyKey="@Properties.TempUnits" title="@Strings.TempUnitsTitle" prompt="@Strings.TempHelp"><settingConfig type="list">
 <listEntry value="0">@Strings.TempUnits0</listEntry>
 <listEntry value="1">@Strings.TempUnits1</listEntry>
 <listEntry value="2">@Strings.TempUnits2</listEntry>
 </settingConfig></setting>
-<setting propertyKey="@Properties.Footer" title="@Strings.FooterTitle"><settingConfig type="boolean">
+<setting propertyKey="@Properties.Footer" title="@Strings.FooterTitle" prompt="@Strings.FooterHelp"><settingConfig type="boolean">
 </settingConfig></setting>
 </settings>

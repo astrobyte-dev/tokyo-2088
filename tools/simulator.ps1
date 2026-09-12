@@ -1,8 +1,13 @@
 param(
     [ValidateSet('start','debug','test','release','capture','capture-seconds')][string]$Mode = 'start',
-    [string]$OutputDir = 'build/windows/candidate'
+    [string]$OutputDir = 'build/windows/candidate',
+    [switch]$Beta
 )
 . "$PSScriptRoot/toolchain.ps1"
+if ($Beta) {
+    if ($Mode -notin @('test','release')) { throw 'Beta simulator mode supports test or release only.' }
+    if (-not $PSBoundParameters.ContainsKey('OutputDir')) { $OutputDir='build/windows/beta/validation' }
+}
 if ($Mode -eq 'start') {
     # Interactive simulator is needed for captures and runtime inspection.
     Start-Process -FilePath (Join-Path $sdkRoot 'bin\simulator.exe') -WorkingDirectory (Join-Path $sdkRoot 'bin')
@@ -11,6 +16,7 @@ if ($Mode -eq 'start') {
 Push-Location "$PSScriptRoot/.."
 try {
     $program = Join-Path $OutputDir "TOKYO2088-fenix8solar51mm-$Mode.prg"
+    if ($Beta) { $program = Join-Path $OutputDir "TOKYO2088-BETA-fenix8solar51mm-$Mode.prg" }
     if (-not (Test-Path -LiteralPath $program)) { throw "Build $Mode first: $program" }
     $runArgs = @($program,'fenix8solar51mm')
     if ($Mode -eq 'test') { $runArgs += '/t' }

@@ -1,0 +1,42 @@
+﻿{
+    "date":  "2026-09-11",
+    "environment":  "Native Windows Garmin simulator",
+    "sdk":  "9.1.0 / 2026-03-09-6a872a80b",
+    "profile":  "fenix8solar51mm",
+    "testBuildExit":  0,
+    "testLauncherExit":  0,
+    "framework":  {
+                      "errors":  0,
+                      "failed":  0,
+                      "passed":  8
+                  },
+    "groups":  [
+                   "customerSettingsPreservation",
+                   "formatting",
+                   "headerSettings",
+                   "rendererMatrix",
+                   "repeatedPowerCycles",
+                   "resetSurfaceSecondsOff",
+                   "resetSurfaceSecondsOn",
+                   "repeatedUpdateCost"
+               ],
+    "releaseBuildExit":  0,
+    "releaseRunExit":  0,
+    "releasePrgBytes":  25612,
+    "releasePrgSha256":  "b18891337d16544063ea118b69d589c60789cd912a57ff59ec5b82f4e6a41d92",
+    "sampledSimulatorMemoryBytes":  {
+                                        "updateCost":  31632,
+                                        "powerCycles":  31272,
+                                        "rendererMatrix":  31904
+                                    },
+    "fixedTime240UpdatesMilliseconds":  {
+                                            "secondsOff":  5329,
+                                            "secondsActive":  5703
+                                        },
+    "telemetryRefreshes":  1,
+    "phoneSettings":  "NOT TESTED",
+    "storeAcceptance":  "NOT TESTED",
+    "physicalStorePrepBuild":  "NOT INSTALLED",
+    "overnightAndBattery":  "PENDING",
+    "rawLogs":  "Ignored local build/windows/store-prep/validation; no private device logs in this evidence"
+}

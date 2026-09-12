@@ -1,9 +1,9 @@
 <properties>
 <property id="Palette" type="number">0</property>
 <property id="HeaderMode" type="number">0</property>
-<property id="HeaderLine1" type="string">COREY</property>
+<property id="HeaderLine1" type="string">YOUR NAME</property>
 <property id="HeaderLine2" type="string">PERSONAL TERMINAL</property>
-<property id="City" type="string">HOBART</property>
+<property id="City" type="string">YOUR CITY</property>
 <property id="CitySubtitle" type="string">LOCAL EDITION</property>
 <property id="Readable" type="boolean">false</property>
 <property id="ClockMode" type="number">0</property>
