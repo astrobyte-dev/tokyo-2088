@@ -14,7 +14,20 @@ Prepared on separate branch `polish/customer-settings` from PR #3 / `release/sto
 - [Five native product captures and labelled canvases](../../design/store/README.md) show all four palettes and the fictional `NIGHT SHIFT / FIELD TERMINAL` custom header. Garmin's App Settings Editor changed the real running release; **File → Save Screen Capture** produced the untouched 280 × 280 PNGs. No fixture renderer, generated concept art, recolouring or altered product pixels were used.
 - The simulator editor initially looked for a missing schema under its prior beta-test registration. The same compiler-generated release schema was transferred with Garmin's supported `monkeydo /a` to that registered simulator filename. A short `POLISH.prg` alias remained byte-identical to the release. These are simulator-only files and do not belong on the watch. The final regression launcher later stalled before executing tests; its local connection was stopped and the simulator restarted normally. The completed run above is the recorded test result.
 
-Final standalone release: `build/windows/beta/polish-0.1.1/validation-final/TOKYO2088-BETA-fenix8solar51mm-release.prg`, **37,052 bytes**, SHA-256 `d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1`. The reader UI and final product captures used this exact binary content. Clean-source IQ export identity is recorded in the evidence follow-up.
+Final standalone release: `build/windows/beta/polish-0.1.1/validation-final/TOKYO2088-BETA-fenix8solar51mm-release.prg`, **37,052 bytes**, SHA-256 `d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1`. The reader UI and final product captures used this exact binary content.
+
+| Clean-source candidate export | Recorded result |
+| --- | --- |
+| Source commit | `e75af5febecfb829f0eda2a9627ba43150f222d9`; clean working tree at export |
+| Native production beta export/checker | **PASS / exit 0**, using existing Windows SDK 9.1.0 and primary profile only |
+| IQ path | `build/windows/beta/polish-0.1.1/export-review/TOKYO2088-BETA.iq` |
+| IQ identity | **59,397 bytes**; SHA-256 `27522cdf71b3992ea9a7fde0927fe0d57e0e7c44eaec5f9d7dfc72cbfdfb1487` |
+| Both packaged PRGs | **37,052 bytes** each; same SHA-256 as the standalone/captured release above |
+| Settings comparison to installed beta | All 12 complete property definitions, defaults, types and enums identical; only the seven intended display/help strings differ |
+| Notice/package checks | Complete applicable licence text in both PRGs, original stable beta UUID, fixtures excluded, exported labels/help match source |
+| Signing and preservation | Packaged public signing key matches owner-1; retained private key, both installed-beta IQ copies and owner-1 source/hash record rechecked unchanged |
+
+[Sanitized candidate evidence](evidence/beta-polish-0.1.1.json). Export and compatibility-check logs remain in the candidate output directory. This follow-up records evidence and corrects raw UI screenshot extensions to JPEG; it does not rebuild or alter the IQ.
 
 **Hold for separate upload approval.** No new beta has been uploaded or installed. The preserved installed owner beta remains `export-owner-1/TOKYO2088-BETA.iq` with source/hash evidence in [beta-owner-1.json](evidence/beta-owner-1.json), unchanged. Owner-confirmed installation, phone settings opening and palette/custom-header delivery remain valid for that beta. All other settings, restart persistence, same-beta update retention, physical notice navigation, extended/overnight reliability and battery checks remain unconfirmed. The short [update-retention test](SETTINGS.md#later-same-beta-update-retention-test--waiting-for-upload-approval) waits for upload approval and owner observations; it explicitly requires updating the same beta **without uninstalling**.
 
