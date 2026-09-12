@@ -26,18 +26,23 @@ class FontNoticeView extends WatchUi.View {
         content=WatchUi.loadResource(resource) as Lang.String;
     }
     function lineEnd(dc,start) {
-        var end=start;var lastSpace=-1;
-        while(end<content.length()) {
-            var ch=content.substring(end,end+1);
-            if(ch.equals("\n")) {return end+1;}
-            if(dc.getTextWidthInPixels(content.substring(start,end+1),font)>width) {
-                if(lastSpace>=start) {return lastSpace+1;}
-                return end>start ? end : start+1;
-            }
-            if(ch.equals(" ")) {lastSpace=end;}
-            end+=1;
+        // Measuring every growing prefix for all pages trips the settings-context
+        // watchdog. Binary-search the fitting prefix using native font metrics.
+        var remaining=content.substring(start,content.length());
+        var newline=remaining.find("\n");
+        var limit=newline==null ? remaining.length() : newline;
+        var low=0;var high=limit;
+        while(low<high) {
+            var mid=((low+high+1)/2).toNumber();
+            if(dc.getTextWidthInPixels(remaining.substring(0,mid),font)<=width) {low=mid;}
+            else {high=mid-1;}
         }
-        return end;
+        if(low==limit) {return start+limit+(newline==null ? 0 : 1);}
+        var end=start+low;
+        for(var i=end-1;i>=start;i-=1) {
+            if(content.substring(i,i+1).equals(" ")) {return i+1;}
+        }
+        return end>start ? end : start+1;
     }
     function onLayout(dc) {
         // A centered rectangle inside the round screen, clear of the curved edge.

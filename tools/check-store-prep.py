@@ -51,7 +51,8 @@ def check(iq=None, beta=False):
     beta_app=ET.parse(ROOT/'manifest-beta.xml').find('iq:application',NS)
     assert beta_app.attrib['id']==BETA_UUID and BETA_UUID!=UUID
     assert beta_app.attrib['name']=='@Strings.BetaAppName' and strings['BetaAppName']=='TOKYO 2088 BETA'
-    assert {k:v for k,v in beta_app.attrib.items() if k not in ('id','name')}=={k:v for k,v in app.attrib.items() if k not in ('id','name')}
+    # Beta versions advance independently; production identity/version stay preserved.
+    assert {k:v for k,v in beta_app.attrib.items() if k not in ('id','name','version')}=={k:v for k,v in app.attrib.items() if k not in ('id','name','version')}
     assert [ET.tostring(c) for c in beta_app]==[ET.tostring(c) for c in app]
     jungle = (ROOT/('beta.jungle' if beta else 'monkey.jungle')).read_text().splitlines()
     assert 'project.manifest = '+('manifest-beta.xml' if beta else 'manifest.xml') in jungle
@@ -75,6 +76,7 @@ def check(iq=None, beta=False):
         manifest = ET.fromstring(read('manifest.xml')).find('iq:application',NS)
         assert manifest.attrib['id'] == (BETA_UUID if beta else UUID) and manifest.attrib['entry'] == 'TokyoApp'
         assert manifest.attrib['name']==('@Strings.BetaAppName' if beta else '@Strings.AppName')
+        assert manifest.attrib['version'] == (beta_app if beta else app).attrib['version']
         assert len(manifest.find('iq:permissions',NS)) == 0
         products = list(manifest.find('iq:products',NS))
         # The installed primary Garmin product profile maps to fenix/tactix parts.
@@ -99,9 +101,13 @@ def check(iq=None, beta=False):
             assert set(compiled) == set(properties)
             assert compiled['HeaderLine1']['defaultValue'] == 'YOUR NAME'
             assert compiled['City']['defaultValue'] == 'YOUR CITY'
-            for setting in compiled.values():
-                assert setting['configPrompt']
-                assert any(setting['configPrompt'] in lang for lang in data['languages'].values())
+            for source_setting in settings:
+                key = source_setting.attrib['propertyKey'].removeprefix('@Properties.')
+                setting = compiled[key]
+                for source_field, compiled_field in (('title','configTitle'),('prompt','configPrompt')):
+                    string_id = source_setting.attrib[source_field].removeprefix('@Strings.')
+                    assert setting[compiled_field] == string_id
+                    assert any(lang.get(string_id) == strings[string_id] for lang in data['languages'].values()), 'Packaged settings wording differs from source'
             binaries.append({'partNumber':product.attrib['partNumber'], 'bytes':len(prg),
                              'sha256':hashlib.sha256(prg).hexdigest(),
                              'minFirmwareVersion':product.attrib['minFirmwareVersion']})
