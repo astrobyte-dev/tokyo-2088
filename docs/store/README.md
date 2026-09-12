@@ -12,13 +12,16 @@ The owner approves one unpaid developer-beta upload using the existing developme
 | --- | --- |
 | Beta package built and checked | PASS: separate stable UUID/name; shared production inputs; full notice text in both PRGs; 9 native tests pass. Exact committed export identity is in [validation](VALIDATION.md). |
 | Beta uploaded privately | **One owner-submitted beta verified in Chrome.** Intended Astrobyte account; live listing marked BETA, Free, version 0.1.0 (Internal: 1), with explicit owner-only download/test notice. |
-| Current blocker / next real action | No upload blocker. Dashboard shows one beta entry with Status: Pending; its detail-page Download button is enabled. Actual entry URL and account-specific record are retained privately. Next: owner opens the entry in Android Connect IQ under the same Garmin account. |
-| Phone installation observed | Pending. Listing directs installation through the mobile Connect IQ app; Android opening and installation have not been observed. |
-| Settings transport / persistence | Pending owner phone observations. Separate-beta fresh defaults are expected; later same-beta-UUID update retention is a different test. |
+| Current blocker / next real action | No installation blocker reported. At upload verification the dashboard showed Status: Pending and an enabled Download button; account-specific details remain private. Next: owner confirms saving changed settings to the watch and restart persistence on the installed beta. |
+| Store-to-phone/watch installation | **Owner-reported success, 12 September 2026:** existing owner-only beta installed on the actual watch through Android Connect IQ. |
+| Phone settings screen | **Visibly loaded** with watch-face controls, per the owner's update referencing their supplied screenshot. |
+| Settings transport / persistence | Saving changed settings to the watch and restart persistence **not yet confirmed**. Separate-beta fresh defaults are expected; later same-beta-UUID update retention is a different pending test. |
 | Notice reader visual/device navigation | Full text and pagination pass native checks; visual UI and real watch menu navigation remain pending. |
 | Wear / overnight / battery | Pending; original wrist build and private archive retained. |
 
 Beta name **TOKYO 2088 BETA**, UUID `ca80e764ffae413996a66e11abd76ed9`. Keep this UUID/key for later beta updates. The production manifest/UUID, device profile and wrist artifact are unchanged. Concept provenance is confirmed as AI-generated during the project's ChatGPT design conversation, not from a Garmin listing; exclusive rights/trademark clearance are not asserted.
+
+Optional wording suggestions for later: “Larger telemetry” → “Larger data text”; “Equipment footer” → “Show bottom label”. Recorded only, not implemented during this test; the current beta remains unchanged. See the [owner validation update](VALIDATION.md#owner-phonewatch-update--12-september-2026).
 
 ## Readiness checklist
 
@@ -27,10 +30,10 @@ Beta name **TOKYO 2088 BETA**, UUID `ca80e764ffae413996a66e11abd76ed9`. Keep thi
 | Already verified | Fixed source inherited; 9 native groups pass under the beta UUID, including both cleared-screen regressions, settings preservation and complete offline notice pagination. Native beta IQ export passes, with fixtures excluded. See [executed results](VALIDATION.md). |
 | Already verified | One primary manifest profile; four palettes; custom/manual-city/hidden plate; no network/GPS/payment library or app permissions; real runtime artwork. |
 | Completed now | Neutral custom-text/city defaults; prompts and length messages; [settings guide/test](SETTINGS.md); [listing copy](LISTING.md); [privacy/data flow](PRIVACY.md); [Windows export](WINDOWS_EXPORT.md); [artwork](../../design/store/README.md); licensing and payment comparisons; compatibility plan. |
-| Completed notice delivery | Applicable full font terms are inside the new PRGs with a supported offline settings reader; native resource/pagination and byte inspection pass. Phone/device UI observations remain pending. Historical pre-beta IQ files remain unchanged. |
+| Completed notice delivery | Applicable full font terms are inside the new PRGs with a supported offline settings reader; native resource/pagination and byte inspection pass. Notice-reader visuals/device navigation remain pending. Historical pre-beta IQ files remain unchanged. |
 | Owner decisions | Confirm Astrobyte branding/support/privacy contact; choose original-source licence, payment route/price, permanent public-release key and final version. Concept provenance and private-beta key use are now explicitly recorded. |
 | Garmin account/onboarding | Existing Astrobyte developer account verified; owner personally handled the displayed agreement and final submission. Private beta entry verified. No merchant enrollment, fees or payment activation performed; public-release onboarding remains separate. |
-| Physical tests pending | Full event checklist, ordinary wear through tomorrow, overnight reliability and comparable battery run. New customer-default build has simulator validation only. |
+| Physical tests pending | Beta installation is owner-reported successful. Full event checklist, extended wear, overnight reliability and comparable battery run remain pending. |
 | Customer settings pending | Actual Store-installed phone → watch save/sync, restart persistence and update retention. Native callback tests do not establish phone delivery. |
 | Submission gates | Owner-approved permanent key and private backup, rights/notices, support/privacy contacts, merchant approval if paid, final package/version/device review, complete testing, explicit approval for each upload/installation/payment activation. |
 

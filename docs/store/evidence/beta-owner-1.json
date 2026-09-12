@@ -54,10 +54,30 @@
     "betaUploaded":  true,
     "liveAccountVerified":  true,
     "liveOwnerOnlyScopeVerified":  true,
-    "phoneInstall":  "NOT OBSERVED",
-    "settingsTransportAndPersistence":  "NOT OBSERVED",
+    "phoneInstall":  "OWNER-REPORTED SUCCESS: existing owner-only beta installed on actual watch through Android Connect IQ",
+    "phoneSettingsScreen":  "VISIBLY LOADED: watch-face controls displayed, per owner update referencing supplied screenshot",
+    "settingsTransportAndPersistence":  "NOT YET CONFIRMED: saving changed settings to watch and restart persistence",
     "physicalWearAndBattery":  "PENDING",
-    "watchOperations":  "NONE",
+    "watchOperations":  "Owner reports beta installation; no agent watch operations",
+    "ownerValidationUpdate":  {
+                                  "date":  "2026-09-12",
+                                  "evidenceSource":  "Owner report, including reference to supplied phone settings screenshot",
+                                  "sameBetaUuidUpdateRetention":  "PENDING",
+                                  "currentBetaChanged":  false,
+                                  "rebuildOrReinstallPerformedForUpdate":  false,
+                                  "publicRelease":  "NONE",
+                                  "deferredWordingSuggestions":  [
+                                                                    {
+                                                                        "current":  "Larger telemetry",
+                                                                        "suggested":  "Larger data text"
+                                                                    },
+                                                                    {
+                                                                        "current":  "Equipment footer",
+                                                                        "suggested":  "Show bottom label"
+                                                                    }
+                                                                ],
+                                  "wordingChangesImplemented":  false
+                              },
     "blocker":  null,
     "uploadVerification":  {
                                "date":  "2026-09-11",

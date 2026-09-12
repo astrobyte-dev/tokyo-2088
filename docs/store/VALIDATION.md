@@ -19,7 +19,22 @@ The beta package checker verifies the alternate identity, primary profile only, 
 
 **Private upload completed and verified on 11 September 2026.** Chrome showed the intended Astrobyte account and the selected testing-only checkbox with Garmin's explicit owner-only download/test notice. The unchanged IQ size/hash matched this record before upload. Garmin verified the package and signature, expected beta manifest UUID and version 0.1.0. The owner personally handled the agreement and final Submit action. The resulting listing shows BETA, Free, version 0.1.0 (Internal: 1), the owner-only notice and an enabled Download button; the dashboard shows one beta entry with Status: Pending. That status is recorded as displayed, not represented as public approval or physical installation. The exact entry URL is private.
 
-Prepared cover, hero and labelled native simulator screenshot were accepted into the listing. Automatic device migration and review email notifications are off; monetization was No. No package rebuild, key change, merchant flow, fee, public release or watch operation occurred. The retained temporary key remains private and is approved for this beta only. The listing directs installation through mobile Connect IQ; actual Android opening/install, reader visual UI, settings transport/persistence and physical wear remain pending owner observations.
+Prepared cover, hero and labelled native simulator screenshot were accepted into the listing. Automatic device migration and review email notifications are off; monetization was No. No package rebuild, key change, merchant flow, fee, public release or watch operation occurred during that upload session. The retained temporary key remains private and is approved for this beta only.
+
+### Owner phone/watch update — 12 September 2026
+
+| Check | Recorded result |
+| --- | --- |
+| Store-to-phone/watch installation | **Owner-reported success.** The owner reports the existing owner-only beta installed on their actual watch through the Android Connect IQ app. |
+| Phone settings screen | **Visibly loaded**, displaying the watch-face controls, per the owner's update referencing their supplied screenshot. |
+| Saving changed settings to the watch | **Not yet confirmed.** Opening the settings screen does not establish save/sync delivery. |
+| Restart persistence | **Not yet confirmed.** |
+| Font-notice reader visuals/device navigation | **Pending.** The phone controls screenshot does not validate the separate notice reader. |
+| Extended wear and battery observations | **Pending.** |
+
+This update records owner feedback only; the current beta and its recorded artifact identity are unchanged. No rebuild, reinstall, upload or public release was performed for this update. Later same-beta-UUID update retention remains a separate pending test.
+
+Optional customer-facing wording suggestions for later: “Larger telemetry” → “Larger data text”; “Equipment footer” → “Show bottom label”. These suggestions are deferred and **not implemented during this test**.
 
 ## Historical Store-preparation export (preserved)
 
@@ -62,6 +77,6 @@ Local documentation links, saved artwork dimensions/sRGB profiles and recorded a
 
 ## Hardware status remains separate
 
-The owner reported the **prior 24,172-byte redraw candidate** running well on their actual fenix 8 Solar 51mm. Positive initial feedback is recorded on PR #2 and issue #1. The current Store-prep release has not been installed. Full wrist-raise/return-from-glance/notification/idle-minute checklist, overnight reliability, comparable battery testing and ordinary phone-to-watch settings remain pending. No black-screen-resolution claim, issue closure or merge follows from these simulator results.
+The owner reported the **prior 24,172-byte redraw candidate** running well on their actual fenix 8 Solar 51mm. Positive initial feedback is recorded on PR #2 and issue #1. The historical production Store-prep export has not been reported installed; the separate owner-only beta now has owner-reported installation success as recorded above. Full wrist-raise/return-from-glance/notification/idle-minute checklist, overnight reliability, comparable battery testing and phone-to-watch settings save/sync and restart persistence remain pending. No black-screen-resolution claim, issue closure or merge follows from these results.
 
 The wrist artifact's exact identity and signing provenance remain in [signing](SIGNING.md). Existing private hardware backups and temporary signing key remain locally retained.

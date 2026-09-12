@@ -24,7 +24,7 @@ The font licence does not automatically become the licence of an image, document
 
 Verification: the package checker finds the **entire expected UTF-8 text** in each exported PRG, not merely a URL or marker. Native `fontNoticeDelivery` loads the real resources through Garmin, opens the app's settings entry point, renders all pages and reconstructs all characters without omission (4,763 DejaVu/Arev characters, 4,243 Noto/OFL characters). Boundary navigation is checked. Sidecars are retained only as supplementary copies; no signed archive is hand-edited.
 
-The compiled delivery mechanism and native reader test pass. Visual inspection of the settings reader, real-device menu navigation and phone installation remain pending because browser/computer control stopped during account preparation. Do not mark those observations complete. After the authorized beta is installed, select its watch-face settings/customization entry and **Font notices**; choose a licence, use UP/DOWN to page and BACK to return. Exact firmware menu labels still require owner confirmation.
+The compiled delivery mechanism and native reader test pass. On 12 September 2026 the owner reported successful beta installation through Android Connect IQ and a visibly loaded phone settings screen with watch-face controls. Font-notice reader visuals and real-device menu navigation remain pending; phone controls do not validate the separate reader. On the installed beta, select its watch-face settings/customization entry and **Font notices**; choose a licence, use UP/DOWN to page and BACK to return. Exact firmware menu labels still require owner confirmation.
 
 ## Original-source licence options — owner decision
 
