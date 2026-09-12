@@ -1,5 +1,20 @@
 # Store artwork — actual simulator rendering
 
+## Final presentation and readability review — 12 September 2026
+
+Reviewed the five existing **native 280 × 280 production-release frames at native pixel dimensions**, not only the enlarged listing canvases. These are simulator observations; physical lighting, eyesight and viewing-distance readability have not been measured.
+
+| Area | Observation in the actual-size frames | Decision |
+| --- | --- | --- |
+| Original identity subtitle | `INDUSTRIES` is intentionally small, grey and thinner than the white first line. Its letters remain distinct in these frames, with black space above the accent rule and no clipping or contact with the first line. It requires more deliberate reading than the clock. | Retain; enlargement has no demonstrated net benefit here. Do not advertise effortless small-text reading. |
+| Custom identity subtitle | `FIELD TERMINAL` uses the existing heavier small plate font and remains within the plate width, clear of the first line and accent rule. This example does not prove readability of every possible long entry. | Retain the established fitting/abbreviation behaviour. |
+| Bottom data row | White values occupy four separate columns. The grey BAT/BPM/STEP/temperature labels are small but separated from the values, horizontal rule and decorative footer; no clipping or column collisions are visible in the captured readings. Cyan shows 80 BPM; the other frames show unavailable HR. | Retain. The existing Larger data text option enlarges values where they fit, not the unit labels; it is not enabled or demonstrated by this set. |
+| Composition and palettes | The stacked hours/minutes remain dominant; vertical Tokyo lettering, battery stripe and palette accents keep their established positions. All five frames retain black edge clearance; no cropped product pixels or overlapping elements are visible. | Preserve the oversized time, lettering, restrained palettes and spacing. |
+
+**The current visual design is frozen. No visual/code change is proposed or implemented.** No before/after pair is needed or fabricated: the actual-size reviewed images below are unchanged. This is an image/readability review, not a fresh simulator run, exhaustive value matrix or physical readability certification. Longer values, stale-weather labels and other settings retain their previously recorded test coverage; they are not newly demonstrated by these five images.
+
+Ready-to-review screenshot order: **1 Classic Red, 2 Neon Cyan, 3 Monochrome, 4 Amber, 5 Custom header**. Use the existing labelled canvases linked below; [Store copy](../../docs/store/LISTING.md#screenshot-order-and-captions) supplies matching captions/alt text. Raw files, canvas files and the artwork hash manifest remain unchanged. Each canvas identifies beta 0.1.1 and simulated data; check that this remains accurate for the eventual public package. Live form acceptance of these five canvases remains unverified.
+
 ## Local polish candidate 0.1.1 — 12 September 2026
 
 Five new **native Windows simulator Save Screen Capture** PNGs show the actual production beta release on `fenix8solar51mm`. Palettes and custom text were selected through Garmin's App Settings Editor and saved to the running face. The clock renderer, fonts, layout and property schema are unchanged. The captured PRG and final standalone release are byte-identical: SHA-256 `d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1`. These are local candidate images, not photographs of the installed owner beta.

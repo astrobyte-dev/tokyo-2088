@@ -1,6 +1,38 @@
 # Executed release-preparation validation
 
+## Owner 0.1.1 update and final presentation review — 12 September 2026
+
+**Portal evidence: companion Codex task's handoff, relayed by the owner.** That task directly performed and observed the 0.1.1 upload. Garmin displayed **Status: Verified**, **Signature: Verified** and the unchanged beta manifest identity. After final submission, the existing listing showed **version 0.1.1 (Internal: 2)**, **BETA**, and the explicit **owner-only download/test notice**. These are completed portal checks attributed to the companion task, not a fresh portal inspection by this presentation task.
+
+**Physical evidence: owner report.** The owner confirms updating the existing beta to 0.1.1 through Connect IQ, retained custom text/palette after updating and restarting, both physical notice readers and return to the working face. Portal submission and physical installation are separate results. No public-release approval is inferred; the earlier export and 0.1.0 records below remain historical evidence.
+
+| Check | Current recorded result |
+| --- | --- |
+| Portal package/signature verification | **Companion Codex handoff:** Status: Verified; Signature: Verified; unchanged beta manifest identity. |
+| Existing listing after final submission | **Companion Codex handoff:** version 0.1.1 (Internal: 2), BETA and explicit owner-only download/test notice. |
+| Same-beta update | **Owner-reported success:** existing owner-only beta updated to 0.1.1 through Connect IQ. |
+| Update retention | **Owner-reported success:** custom identity text and palette survived the update. |
+| Restart persistence | **Owner-reported success:** the same text and palette survived a subsequent watch restart. |
+| DejaVu / Arev physical notice reader | **Owner-reported success:** opened and navigated. |
+| Noto / SIL OFL physical notice reader | **Owner-reported success:** opened and navigated. |
+| Exit from notices | **Owner-reported success:** returned to the working face. |
+| Other settings / exhaustive notice-page inspection | Not separately confirmed; do not extend the report to all controls, every page or all lighting conditions. |
+| Extended/overnight reliability | **Untested.** Returning to a working face is not a sustained reliability result. |
+| Measured battery use | **Untested / pending.** No drain measurement or battery-life claim. |
+
+No personal text, palette choice, account identifiers, private settings or device logs are included. The report does not separately establish the identity-mode value, exact uninstall/reset history or a new long-duration update test. [Structured evidence](evidence/beta-polish-0.1.1.json) retains the original export facts and records the companion portal handoff separately from the owner hardware report.
+
+Repository inspection: clean `polish/customer-settings` at review commit `a4719cd455c442d01f9a45fa029ae09ab48d62b2`; PR #4 still targets `release/store-prep`, PR #3 targets `fix/windows-mip-redraw`, PR #2 targets `main`; all remain open, as does issue #1. Local presentation work is isolated on `polish/final-presentation`. The owner subsequently authorized committing and pushing these eight documentation/evidence files and opening a PR against `polish/customer-settings`, stacked on PR #4. The current visual design is frozen; runtime code and image assets are unchanged.
+
+The existing five **280 × 280 native production captures** were reviewed at their native pixel dimensions for subtitle/data-row spacing and clipping. No demonstrable rendering improvement was identified: retain the original composition and fonts. [Detailed observations and raw frames](../../design/store/README.md#final-presentation-and-readability-review--12-september-2026). No visual change means no new before/after render is claimed. [Revised Store copy and ordered screenshot set](LISTING.md) use the existing genuine, labelled images.
+
+Preservation checks re-read the unchanged 0.1.1 IQ (SHA-256 `27522cdf71b3992ea9a7fde0927fe0d57e0e7c44eaec5f9d7dfc72cbfdfb1487`), both retained 0.1.0 IQ copies, the original owner-1 evidence and the retained private-key hash. Source commit remains `e75af5febecfb829f0eda2a9627ba43150f222d9`; review commit remains `a4719cd455c442d01f9a45fa029ae09ab48d62b2`. Source, property IDs/types, beta/production manifests, devices, fonts, screenshots and signing identity are unchanged. This pass changes documentation/evidence only: no rebuild, native-test rerun, upload, installation, live listing edit or payment action.
+
+Local presentation checks: **PASS** for Markdown links/anchors, JSON parsing, unchanged original package/source/native-test facts, all raw/canvas/notice screenshot hashes, and exact whole-frame pixels in each canvas and review sheet. `git diff --check` passes. The changed files contain no private key, credential, local private path, beta listing URL or personal settings; no binaries are added. These are documentation/artifact checks, separate from the earlier 9 passing native tests and the new owner report.
+
 ## Local polish candidate 0.1.1 — 12 September 2026
+
+Historical preparation result; the companion portal handoff and later owner hardware report above supersede the pending upload/hardware statements in this section.
 
 Prepared on separate branch `polish/customer-settings` from PR #3 / `release/store-prep` commit `94d838247db84e2a257193fb2017be8c92c6a8af`. Local and remote heads matched; the initial working tree was clean. Existing branches and the installed beta were retained. The source change simplifies two setting labels and mode help, fixes an observed notice-reader startup watchdog failure, and advances only the beta version to 0.1.1. All 12 property IDs/types, enums, defaults, stored-value handling, clock renderer and assets remain unchanged; no dynamic settings-field hiding is added. Beta UUID `ca80e764ffae413996a66e11abd76ed9` and retained temporary key are reused. The separate production manifest is byte-for-byte unchanged.
 
@@ -31,7 +63,7 @@ Final standalone release: `build/windows/beta/polish-0.1.1/validation-final/TOKY
 
 **Hold for separate upload approval.** No new beta has been uploaded or installed. The preserved installed owner beta remains `export-owner-1/TOKYO2088-BETA.iq` with source/hash evidence in [beta-owner-1.json](evidence/beta-owner-1.json), unchanged. Owner-confirmed installation, phone settings opening and palette/custom-header delivery remain valid for that beta. All other settings, restart persistence, same-beta update retention, physical notice navigation, extended/overnight reliability and battery checks remain unconfirmed. The short [update-retention test](SETTINGS.md#later-same-beta-update-retention-test--waiting-for-upload-approval) waits for upload approval and owner observations; it explicitly requires updating the same beta **without uninstalling**.
 
-## Private beta preparation — current milestone
+## Private beta preparation — historical 0.1.0 milestone
 
 The beta source uses separate UUID `ca80e764ffae413996a66e11abd76ed9` and name TOKYO 2088 BETA with the same primary profile, runtime renderer/resources and 12 phone properties. The new offline font-notice reader is reached only through Garmin's separate settings entry point. The production manifest and preserved wrist binary remain unchanged.
 
@@ -110,6 +142,8 @@ The earlier pilot export remains separately under `build/windows/store-prep/expo
 Local documentation links, saved artwork dimensions/sRGB profiles and recorded artwork hashes passed inspection. The final diff passes `git diff --check`. The preserved 24,172-byte wrist candidate and its private archived copy were independently rehashed and still match the approved checksum; the existing temporary signing key remains present outside the repository.
 
 ## Hardware status remains separate
+
+Historical snapshot before the 0.1.1 handoffs above; the current summary records completed upload, retention, restart and notice-navigation checks separately.
 
 The owner reported the **prior 24,172-byte redraw candidate** running well on their actual fenix 8 Solar 51mm. Positive initial feedback is recorded on PR #2 and issue #1. The historical production Store-prep export has not been reported installed; the separate owner-only beta now has owner-confirmed installation, phone settings opening and palette/custom header delivery on the actual Garmin fenix 8 Solar 51mm. Restart persistence, font-notice navigation, full wrist-raise/return-from-glance/notification/idle-minute checklist, extended/overnight reliability and comparable battery testing remain pending. No black-screen-resolution claim, issue closure or merge follows from these results.
 

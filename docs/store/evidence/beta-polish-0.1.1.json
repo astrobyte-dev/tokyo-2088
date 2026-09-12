@@ -1,6 +1,6 @@
 {
   "date": "2026-09-12",
-  "status": "LOCAL_CANDIDATE_NOT_UPLOADED_OR_INSTALLED",
+  "status": "COMPANION_CONFIRMED_0.1.1_UPLOAD_AND_OWNER_REPORTED_HARDWARE_CHECKS",
   "branch": "polish/customer-settings",
   "baseCommit": "94d838247db84e2a257193fb2017be8c92c6a8af",
   "sourceCommit": "e75af5febecfb829f0eda2a9627ba43150f222d9",
@@ -91,7 +91,7 @@
       ]
     },
     "nativeSimulatorOpeningClippingNavigationAndReturn": "PASS",
-    "ownerPhysicalNavigation": "PENDING",
+    "ownerPhysicalNavigation": "OWNER-REPORTED: both notices opened and navigated; exiting returned to the working face",
     "rawWindowEvidence": [
       {
         "file": "design/store/runtime/polish-0.1.1/notices/dejavu-first.jpg",
@@ -125,11 +125,80 @@
   },
   "artworkManifest": "design/store/artwork/polish-0.1.1/artwork-manifest.json",
   "hardwareStatus": {
-    "installedOwnerBeta": "Owner-confirmed installation, phone settings opening, palette and custom-header delivery",
-    "restartPersistence": "NOT REPORTED",
-    "sameBetaUpdateRetention": "PENDING SEPARATE UPLOAD APPROVAL AND OWNER OBSERVATIONS",
-    "otherSettingsExtendedReliabilityAndBattery": "PENDING"
+    "installedOwnerBeta": "OWNER-REPORTED: existing owner-only beta updated to 0.1.1 through Connect IQ; earlier installation, phone settings access and settings delivery confirmations retained",
+    "sameBetaUpdateRetention": "OWNER-REPORTED: custom identity text and palette survived the update",
+    "restartPersistence": "OWNER-REPORTED: custom identity text and palette survived a subsequent watch restart",
+    "physicalNoticeNavigation": "OWNER-REPORTED: DejaVu / Arev and Noto / SIL OFL opened and navigated",
+    "returnFromNotices": "OWNER-REPORTED: returned to the working face",
+    "otherSettings": "NOT SEPARATELY CONFIRMED",
+    "extendedReliability": "UNTESTED",
+    "overnightReliability": "UNTESTED",
+    "measuredBatteryUse": "UNTESTED"
   },
-  "uploadAuthorized": false,
-  "candidateInstalled": false
+  "uploadAuthorized": true,
+  "candidateInstalled": true,
+  "statusAtExport": "LOCAL_CANDIDATE_NOT_UPLOADED_OR_INSTALLED",
+  "ownerValidationUpdate": {
+    "recordedDate": "2026-09-12",
+    "evidenceSource": "Owner report in conversation; physical-watch results only",
+    "version": "0.1.1",
+    "existingOwnerOnlyBetaUpdatedThroughConnectIQ": true,
+    "customTextAndPaletteRetainedAfterUpdate": true,
+    "customTextAndPaletteRetainedAfterWatchRestart": true,
+    "dejavuArevOpenedAndNavigated": true,
+    "notoSilOflOpenedAndNavigated": true,
+    "exitingNoticesReturnedToWorkingFace": true,
+    "identityModeValue": "NOT SEPARATELY REPORTED",
+    "exhaustivePageAndClippingCheckOnHardware": "NOT SEPARATELY REPORTED",
+    "overnightReliability": "UNTESTED",
+    "measuredBatteryUse": "UNTESTED",
+    "personalSettingsOrDeviceLogsIncluded": false,
+    "extendedReliability": "UNTESTED"
+  },
+  "presentationReview": {
+    "date": "2026-09-12",
+    "branch": "polish/final-presentation",
+    "reviewBaseCommit": "a4719cd455c442d01f9a45fa029ae09ab48d62b2",
+    "nativeFramesReviewed": 5,
+    "nativeDimensions": [
+      280,
+      280
+    ],
+    "observation": "No visible clipping or collisions in these captures; original subtitle and unit labels are small. Physical viewing conditions and exhaustive values are not established.",
+    "renderingChanged": false,
+    "screenshotsChanged": false,
+    "newBuild": false,
+    "nativeTestsRerun": false,
+    "preservedArtifactAndKeyHashesRechecked": true,
+    "storeCopy": "docs/store/LISTING.md",
+    "screenshotOrder": [
+      "Classic Red",
+      "Neon Cyan",
+      "Monochrome",
+      "Amber",
+      "Custom header"
+    ],
+    "visualDesignFrozen": true
+  },
+  "companionUploadHandoff": {
+    "evidenceSource": "Companion Codex task handoff, relayed by the owner in this conversation",
+    "performedAndObservedBy": "Companion Codex task",
+    "freshPortalInspectionByPresentationTask": false,
+    "uploadCompleted": true,
+    "packageVerification": {
+      "status": "Verified",
+      "signature": "Verified",
+      "betaManifestIdentity": "Unchanged",
+      "appUuid": "ca80e764ffae413996a66e11abd76ed9"
+    },
+    "afterFinalSubmission": {
+      "sameExistingListing": true,
+      "version": "0.1.1",
+      "internalVersion": 2,
+      "badge": "BETA",
+      "explicitOwnerOnlyDownloadTestNoticeObserved": true
+    },
+    "physicalWatchResultsSource": "Separate ownerValidationUpdate; not inferred from upload acceptance",
+    "privateAccountOrListingIdentifiersIncluded": false
+  }
 }
