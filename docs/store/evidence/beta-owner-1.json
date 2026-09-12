@@ -54,17 +54,26 @@
     "betaUploaded":  true,
     "liveAccountVerified":  true,
     "liveOwnerOnlyScopeVerified":  true,
-    "phoneInstall":  "OWNER-REPORTED SUCCESS: existing owner-only beta installed on actual watch through Android Connect IQ",
-    "phoneSettingsScreen":  "VISIBLY LOADED: watch-face controls displayed, per owner update referencing supplied screenshot",
-    "settingsTransportAndPersistence":  "NOT YET CONFIRMED: saving changed settings to watch and restart persistence",
+    "phoneInstall":  "OWNER-CONFIRMED: existing owner-only beta installed on actual Garmin fenix 8 Solar 51mm through Android Connect IQ",
+    "phoneSettingsScreen":  "OWNER-CONFIRMED: opens and displays watch-face controls; earlier owner update referenced supplied screenshot",
+    "settingsDelivery":  {
+                             "palette":  "OWNER-CONFIRMED: Android Connect IQ palette changes reach the actual watch face",
+                             "customHeader":  "OWNER-CONFIRMED: Android Connect IQ custom identity text changes reach the actual watch header"
+                         },
+    "restartPersistence":  "NOT YET REPORTED",
+    "settingsTransportAndPersistence":  "PARTIAL: palette and custom header delivery owner-confirmed; restart persistence not yet reported",
+    "fontNoticeNavigation":  "PENDING",
+    "extendedReliability":  "PENDING",
     "physicalWearAndBattery":  "PENDING",
-    "watchOperations":  "Owner reports beta installation; no agent watch operations",
+    "watchOperations":  "Owner confirms beta installation and palette/custom header changes; no agent watch operations",
     "ownerValidationUpdate":  {
                                   "date":  "2026-09-12",
-                                  "evidenceSource":  "Owner report, including reference to supplied phone settings screenshot",
+                                  "evidenceSource":  "Owner hardware confirmation of installation, phone settings opening and palette/custom header delivery; earlier report referenced supplied phone settings screenshot",
+                                  "device":  "Garmin fenix 8 Solar 51mm",
                                   "sameBetaUuidUpdateRetention":  "PENDING",
                                   "currentBetaChanged":  false,
                                   "rebuildOrReinstallPerformedForUpdate":  false,
+                                  "settingsChangesPerformedForUpdate":  false,
                                   "publicRelease":  "NONE",
                                   "deferredWordingSuggestions":  [
                                                                     {

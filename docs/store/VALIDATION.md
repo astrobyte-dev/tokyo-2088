@@ -25,14 +25,17 @@ Prepared cover, hero and labelled native simulator screenshot were accepted into
 
 | Check | Recorded result |
 | --- | --- |
-| Store-to-phone/watch installation | **Owner-reported success.** The owner reports the existing owner-only beta installed on their actual watch through the Android Connect IQ app. |
-| Phone settings screen | **Visibly loaded**, displaying the watch-face controls, per the owner's update referencing their supplied screenshot. |
-| Saving changed settings to the watch | **Not yet confirmed.** Opening the settings screen does not establish save/sync delivery. |
+| Store-to-phone/watch installation | **Owner-confirmed success.** The existing owner-only beta is installed on the owner's actual Garmin fenix 8 Solar 51mm through the Android Connect IQ app. |
+| Phone settings screen | **Owner-confirmed:** opens and displays the watch-face controls; the earlier owner update also referenced a supplied screenshot showing the loaded screen. |
+| Palette settings delivery | **Owner-confirmed:** changing the palette in Android Connect IQ successfully changes the face on the actual watch. |
+| Custom header settings delivery | **Owner-confirmed:** changing custom identity text in Android Connect IQ successfully changes the header on the actual watch. |
 | Restart persistence | **Not yet confirmed.** |
 | Font-notice reader visuals/device navigation | **Pending.** The phone controls screenshot does not validate the separate notice reader. |
-| Extended wear and battery observations | **Pending.** |
+| Extended wear/reliability and battery observations | **Pending.** |
 
-This update records owner feedback only; the current beta and its recorded artifact identity are unchanged. No rebuild, reinstall, upload or public release was performed for this update. Later same-beta-UUID update retention remains a separate pending test.
+The owner's additional hardware confirmation establishes successful phone-to-watch delivery for palette and custom header changes. Restart persistence has not been reported and is separate from settings delivery; other settings and later same-beta-UUID update retention are not established by these observations.
+
+This update records owner feedback only; the current beta build and its recorded artifact identity are unchanged. No new build, installation, settings change, upload or public release was performed for this documentation update.
 
 Optional customer-facing wording suggestions for later: “Larger telemetry” → “Larger data text”; “Equipment footer” → “Show bottom label”. These suggestions are deferred and **not implemented during this test**.
 
@@ -77,6 +80,6 @@ Local documentation links, saved artwork dimensions/sRGB profiles and recorded a
 
 ## Hardware status remains separate
 
-The owner reported the **prior 24,172-byte redraw candidate** running well on their actual fenix 8 Solar 51mm. Positive initial feedback is recorded on PR #2 and issue #1. The historical production Store-prep export has not been reported installed; the separate owner-only beta now has owner-reported installation success as recorded above. Full wrist-raise/return-from-glance/notification/idle-minute checklist, overnight reliability, comparable battery testing and phone-to-watch settings save/sync and restart persistence remain pending. No black-screen-resolution claim, issue closure or merge follows from these results.
+The owner reported the **prior 24,172-byte redraw candidate** running well on their actual fenix 8 Solar 51mm. Positive initial feedback is recorded on PR #2 and issue #1. The historical production Store-prep export has not been reported installed; the separate owner-only beta now has owner-confirmed installation, phone settings opening and palette/custom header delivery on the actual Garmin fenix 8 Solar 51mm. Restart persistence, font-notice navigation, full wrist-raise/return-from-glance/notification/idle-minute checklist, extended/overnight reliability and comparable battery testing remain pending. No black-screen-resolution claim, issue closure or merge follows from these results.
 
 The wrist artifact's exact identity and signing provenance remain in [signing](SIGNING.md). Existing private hardware backups and temporary signing key remain locally retained.
