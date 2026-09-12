@@ -52,6 +52,11 @@ core.*
 !/docs/evidence/source-state.json
 !/docs/evidence/toolchain-current.sanitized.txt
 !/docs/evidence/toolchain-recheck.sanitized.txt
+!/docs/evidence/windows-baseline-tests.sanitized.log
+!/docs/evidence/windows-candidate-tests.sanitized.log
+!/docs/evidence/windows-redraw-validation.json
+!/docs/evidence/windows-release-memory.txt
+!/docs/evidence/windows-release-memory.jpg
 
 # Never stage raw watch activity, health, location or settings files.
 *.fit

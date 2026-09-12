@@ -1,5 +1,7 @@
 # Intermittent black screen on fenix8solar51mm, no IQ icon
 
+**Update:** a [Windows candidate and executed regression](WINDOWS_REDRAW_RESULTS.md) address the same-minute renderer flaw. The hardware issue remains open. The original handoff below records the pre-fix source and evidence; it is retained as history.
+
 Status: **OPEN — owner-reported hardware defect; not diagnosed or fixed.** Recorded 11 September 2026.
 
 The owner reports that TOKYO 2088 is installed and initially works on the actual Garmin fēnix 8 Solar 51mm, but the screen occasionally goes completely black. There is **no visible IQ error icon**. The trigger, duration and recovery method have not been established. Absence of an IQ icon does not rule out a runtime failure. Previously passing simulator checks do not establish that this hardware defect is resolved.

@@ -57,12 +57,13 @@ class TokyoView extends WatchUi.WatchFace {
         var subtitleFont=settings.headerMode==0 ? :micro : :small;
         text(dc,144,37,subtitleFont,fitted(dc,plate[1],142,subtitleFont),0xaaaaaa,true);
     }
+    // Small clock seam: native fixtures override these without changing update logic.
+    function currentClock() {return System.getClockTime();}
+    function currentMoment() {return Time.now();}
     function onUpdate(dc) {
-        var clock=System.getClockTime(); var now=Time.now(); var minute=now.value()/60;
-        if(!dirty && minute==lastMinute) {
-            if(awake && settings.seconds==1) {drawSeconds(dc,clock.sec);}
-            return;
-        }
+        var clock=currentClock(); var now=currentMoment(); var minute=now.value()/60;
+        // A full update may receive a cleared device DC. Reconstruct the whole
+        // MIP face every time; only telemetry acquisition is throttled below.
         if(lastSample<0 || now.value()-lastSample>=60 || now.value()<lastSample) {data.refresh(settings,now.value());lastSample=now.value();}
         var info=Gregorian.info(now,Time.FORMAT_SHORT);
         var is24=settings.clockMode==1 || (settings.clockMode==0 && System.getDeviceSettings().is24Hour);

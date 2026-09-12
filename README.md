@@ -1,5 +1,7 @@
 # TOKYO 2088
 
+**Windows redraw candidate:** the same-minute cleared-surface regression now passes after a minimal full-update fix. Physical issue #1 remains open. See [Windows results and evidence](docs/WINDOWS_REDRAW_RESULTS.md) and [Windows build/signing/retest instructions](docs/WINDOWS_BUILD_AND_RETEST.md). The Linux milestone below is historical.
+
 Native Monkey C / Connect IQ watch face for **fēnix 8 Solar 51mm (`fenix8solar51mm`), 280 × 280 MIP**. Classic Red is the default.
 
 **Hardware defect open:** the owner reports that the installed face initially works on the fēnix 8 Solar 51mm but occasionally goes completely black, with no visible IQ error icon. Trigger, duration and recovery are unknown. Prior simulator passes do not resolve this defect. Start with [the investigation and source map](docs/BLACK_SCREEN_INVESTIGATION.md).
