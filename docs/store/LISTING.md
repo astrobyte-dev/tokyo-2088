@@ -1,6 +1,6 @@
-# Store copy — draft for owner review
+# Store copy — ready for owner review
 
-Do not paste the administrative notes into the public listing. Publisher **Astrobyte** and approximately **A$3.99 one-time** are proposals. Payments are not implemented or activated. Final price, support contact and privacy-contact details require owner decisions.
+Local presentation pass, 12 September 2026, based on reviewed beta 0.1.1. No live listing edit or public submission. Copy only the customer-facing sections below into the eventual approved listing; review notes and release gates are not customer copy. Price, public version, support/privacy contacts and publication remain owner decisions.
 
 ## Title
 
@@ -8,55 +8,65 @@ TOKYO 2088
 
 ## Short description
 
-Industrial stacked time, four palettes and a personal identity plate for your MIP watch.
-
-This 88-character draft is editorial copy; the current upload form's text limit still needs verification.
+Oversized stacked time, four restrained palettes and an identity plate you can make your own.
 
 ## Full description
 
-TOKYO 2088 turns your watch into a compact industrial instrument. Large stacked hours and minutes sit beside vertical Tokyo lettering, a fixed 2088 design mark and a restrained battery stripe.
+Oversized hours and minutes. Vertical Tokyo lettering. An industrial identity plate above a compact row of everyday data. TOKYO 2088 brings a restrained future-city look to the fenix 8 Solar 51mm MIP display.
 
-Make the identity plate your own: keep the Astrobyte design, enter two custom lines, choose a manually entered city label, or hide the plate. Classic Red, Neon Cyan, Monochrome and Amber are all included in the same watch face.
+Choose Classic Red, Neon Cyan, Monochrome or Amber. All four palettes and identity options are included in the same face.
 
-Features:
+**Make the plate yours**
 
-- Local time and date, with follow-watch, 12-hour or 24-hour format and optional hour leading zero.
-- Full MIP layout in low power. Seconds are off by default, with an optional while-active mode.
-- Battery percentage and stripe, steps, recent heart rate and cached outdoor temperature when Garmin makes them available.
-- Optional larger data values, Celsius/Fahrenheit or follow-watch units, and a decorative equipment footer.
+Keep the original ASTROBYTE / INDUSTRIES plate, select Custom for your own first and second lines, choose Manual city for a city label and subtitle you enter yourself, or hide the plate. Manual city does not use GPS or look up your location. The clock always follows your watch's local time; the Tokyo theme does not change your timezone.
 
-Launch baseline: **fenix 8 Solar 51mm**, 280 × 280 MIP. Check the listing's Compatible Devices before installing. Additional devices and AMOLED support are not promised.
+**Time and everyday data**
 
-Customize through the Connect IQ Store app: Device → My Watch Faces → TOKYO 2088 → Settings, then Save and sync. Text is displayed in uppercase; supported custom characters are printable ASCII. Unsupported characters become `?`, and long labels are shortened on screen. The original entered value is retained. A blank manual city falls back to the Original plate.
+- Local time and date, with follow-watch, 12-hour or 24-hour format and an optional hour leading zero.
+- Battery percentage and stripe, steps, recent heart rate and outdoor temperature when available.
+- Seconds off by default. Choose While active to show them during the watch's active state; they disappear in low power.
+- Larger data text where space permits, temperature-unit choices and an optional decorative TERMINAL // AC-01 bottom label.
 
-City text is entirely manual. The Tokyo theme does not change the watch's local timezone. `2088` is a fictional design mark, not the current year. Neon Cyan names a palette; it does not imply an illuminated MIP display.
+Weather uses Garmin's cached outdoor conditions, not the watch's temperature sensor. Availability and freshness depend on Garmin's weather data; the face does not fetch weather itself. Missing or expired readings show `--`. Weather older than one hour is marked `OLD` and expires after two hours. Heart rate is a recent reading, not continuous monitoring. Time continues without a phone connection.
 
-Heart rate is a recent reading, not continuous live monitoring. Weather depends on Garmin's cached conditions and may require the phone's Garmin services to refresh. Missing or expired values display `--`; weather aged over one hour is marked `OLD` and expires after two hours. The clock does not require a phone connection. No automatic city lookup, GPS tracking, custom web service or on-watch text editor is included.
+Open the face's Settings in the Connect IQ app, choose your options, then Save and sync. Select Custom or Manual city to activate the matching text fields. Text is displayed in uppercase; unsupported characters become `?`. Long text is shortened on screen without changing the saved entry. A blank city label uses the original plate.
 
-Images show the native Garmin simulator with simulated data, not a photograph or physical readability/battery evidence.
+Designed for the fenix 8 Solar 51mm, 280 × 280 MIP. Check Compatible Devices before installing. Neon Cyan is a colour name, not a glowing-screen effect; 2088 is a design mark, not the current year.
 
-Read the settings guide, privacy explanation and third-party font notices linked with this listing. For support, use Contact Developer after the owner's actual support channel is configured. Battery life and overnight reliability depend on physical testing; no measured drain or battery-life promise is made.
+Product images are native Garmin simulator captures with simulated data, not watch photographs. Full font notices are available offline from the watch face's settings menu.
 
-## Payment disclosure — choose only after route approval
+## Screenshot order and captions
 
-- Garmin-native option: “One-time purchase through the Connect IQ Store. All four palettes and plate customization are included. See the Store checkout for your local price and Garmin's purchase/refund options.”
-- KiezelPay option, only after a separately approved integration: “Payment required through KiezelPay after [owner-approved trial, if any]. All four palettes and plate customization are included. Price, unlocking, purchase restoration and refund instructions: [verified final links/details].” This option is **not current functionality** and is not ready to publish.
+Use these existing labelled canvases in this exact order. The unchanged native frames remain linked alongside each one; no new render or image regeneration is needed. The five-image review sheet is a review aid, not an extra listing slot. File-size, dimension, count and text limits still require a check in the eventual public submission form.
 
-Do not advertise the current unmonetized package as a finished paid release or a free app that will later require payment without clear disclosure.
+| Order | Existing listing canvas | Caption / alt text | Native 280 × 280 |
+| --- | --- | --- | --- |
+| 1 | [Classic Red](../../design/store/artwork/polish-0.1.1/classic-red-final-720x840.png) | Classic Red with the original identity plate. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/classic-red-final-280.png) |
+| 2 | [Neon Cyan](../../design/store/artwork/polish-0.1.1/neon-cyan-720x840.png) | Neon Cyan, the same layout with a cyan accent. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/neon-cyan-280.png) |
+| 3 | [Monochrome](../../design/store/artwork/polish-0.1.1/monochrome-720x840.png) | Monochrome with white and grey details. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/monochrome-280.png) |
+| 4 | [Amber](../../design/store/artwork/polish-0.1.1/amber-720x840.png) | Amber with a warm accent. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/amber-280.png) |
+| 5 | [Custom header](../../design/store/artwork/polish-0.1.1/custom-header-720x840.png) | Custom plate: NIGHT SHIFT / FIELD TERMINAL, a fictional text example in Classic Red. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/custom-header-280.png) |
 
-## Release notes — proposed first Store release
+[Five-image review sheet](../../design/store/artwork/polish-0.1.1/palettes-and-custom-review.png) · [Actual-size readability review and provenance](../../design/store/README.md#final-presentation-and-readability-review--12-september-2026)
 
-- Industrial stacked-time MIP layout and four included colour palettes.
+These existing canvases identify local beta 0.1.1. They are ready for review now; confirm that the version label still accurately describes the final public package before using them in a public listing. Manual city, active seconds and larger-data mode are explained by the copy, not represented as pictured in this screenshot set.
+
+## Release notes — proposed first public release
+
+- Oversized stacked time with four included palettes.
 - Original, Custom, Manual city and Hidden identity plates.
-- Neutral new-installation text defaults and clearer settings help; existing stored text remains authoritative.
-- Full redraw on every full update, including same-minute callbacks; separate telemetry sampling remains cached.
+- Clear settings help, optional larger data text and a decorative bottom label toggle.
+- Offline DejaVu / Arev and Noto / SIL OFL notices.
 
-Internal caveat: the redraw change passes native regression and has positive initial owner hardware feedback. Extended wear, phone settings and battery validation remain outstanding. Version `0.1.0` is retained during preparation; choose the first public version before submission.
+## Support copy — ready after the contact channel is configured
 
-## Support copy
+For help, use Contact Developer and describe the problem, app version and what you were doing immediately beforehand. Keep personal identity text, serial numbers, health/location information and raw device logs out of public reports.
 
-Explain what happened, the watch model, app version, seconds mode and the action immediately before the problem. For a blank screen, note the time, duration, IQ icon if any and what restored the display. A photograph can help; avoid including private information. Public GitHub issues are a proposed support route, pending owner choice. Do not post serial numbers, health/location data, raw device logs or private settings publicly.
+If a saved text field is not showing, check that Identity plate is set to Custom or Manual city, then Save and sync. `--` means the reading is unavailable; zero steps is a valid reading. If the face repeatedly blanks or fails to open, select a built-in watch face and contact support.
 
-If the face fails to open or repeatedly blanks, use a built-in watch face and contact support. Settings changes require Save and a successful sync; selecting Custom or Manual city is necessary to display those text fields. `--` means unavailable data, and zero steps remains a valid reading. This face does not initiate continuous sensors or fetch weather directly.
+## Review notes — not listing copy
 
-No support email, response-time guarantee, business registration or legal entity has been invented.
+- Owner reports the existing owner-only beta updated to 0.1.1 through Connect IQ. Custom identity text and palette survived the update and a subsequent restart. Both notices opened and navigated on the physical watch, and exiting returned to the working face. These physical-watch results are owner reports, not a complete settings matrix. Separately, the companion Codex task's handoff records its directly performed/observed upload: Status: Verified, Signature: Verified, unchanged beta manifest identity, then the existing listing at 0.1.1 (Internal: 2), BETA and explicit owner-only download/test access.
+- Overnight reliability, extended wear and measured battery use remain untested. Make no battery-life, all-conditions readability or continuous-reliability promise.
+- No price, paid unlock, trial or future payment requirement is advertised here. No payment code exists. Resolve distribution/price separately in [PAYMENTS.md](PAYMENTS.md) before publication; this pass does not select a route or activate payments.
+- Finalize publisher/branding, rights/source licence, real support and privacy contacts, public version and signing custody; validate the actual public package and Store form. See the [remaining release requirements](README.md#remaining-public-release-requirements).

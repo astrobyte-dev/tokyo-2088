@@ -1,68 +1,51 @@
-# TOKYO 2088 — release preparation
+# TOKYO 2088 - release preparation
 
-**Review package, not a Store launch.** Prepared 11 September 2026 on `release/store-prep`, branched from the fixed implementation at `d8a86d2332805272b6cf4f2d8fa11fb6436e4b37`. PR #2 remains unmerged and issue #1 remains open. The initial checkout was clean.
+**Presentation review only; no public launch.** The companion Codex task's handoff confirms the completed **0.1.1 owner-only beta upload**; physical update and watch checks are **owner-reported**. Custom identity text and palette survived its Connect IQ update and a subsequent watch restart. Both font notices opened and navigated on the physical watch, and exiting returned to the working face. Overnight reliability and measured battery use remain untested.
 
-The owner reports that the redraw candidate is running on their actual fenix 8 Solar 51mm and working well so far. That is positive **initial owner feedback**, not completion of the full checklist, overnight reliability or battery testing. The owner continues normal wear through tomorrow. This preparation did not access or reinstall the physical watch.
+## Current milestone: owner-tested beta 0.1.1
 
-## Current milestone: one private owner beta
+The companion Codex task directly performed and observed the upload, according to its handoff relayed by the owner: Garmin displayed **Status: Verified**, **Signature: Verified** and the unchanged beta manifest identity. After final submission, the existing listing showed **0.1.1 (Internal: 2)**, **BETA**, and the explicit **owner-only download/test notice**. Physical update, retention, restart and notice-navigation results below are attributed separately to the owner. Earlier 0.1.0 records remain historical evidence. No account-specific URL, personal settings or device logs are included here.
 
-**Local follow-up candidate:** `polish/customer-settings` starts at PR #3 commit `94d8382`, with a clean initial working tree. It prepares beta **0.1.1** using the same UUID/key: simpler labels and mode help, a targeted notice-reader startup watchdog fix, and [five actual simulator product captures](../../design/store/README.md). The installed **0.1.0 owner beta**, source/hash evidence and signing key are preserved. No candidate upload/installation has occurred. See [candidate validation](VALIDATION.md#local-polish-candidate-011--12-september-2026) and the short [later retention test](SETTINGS.md#later-same-beta-update-retention-test--waiting-for-upload-approval).
-
-The owner approves one unpaid developer-beta upload using the existing development key, **only after verifying the intended existing account and live owner-only beta setting**. No public release, new agreements, merchant fees, payment activation, production-watch replacement or PR merge is authorized.
-
-| Stage | Current result |
+| Check | Current result |
 | --- | --- |
-| Beta package built and checked | PASS: separate stable UUID/name; shared production inputs; full notice text in both PRGs; 9 native tests pass. Exact committed export identity is in [validation](VALIDATION.md). |
-| Beta uploaded privately | **One owner-submitted beta verified in Chrome.** Intended Astrobyte account; live listing marked BETA, Free, version 0.1.0 (Internal: 1), with explicit owner-only download/test notice. |
-| Current blocker / next real action | Installation and palette/custom header delivery are owner-confirmed. At upload verification the dashboard showed Status: Pending and an enabled Download button; account-specific details remain private. Next pending observation: restart persistence on the installed beta. |
-| Store-to-phone/watch installation | **Owner-confirmed, 12 September 2026:** existing owner-only beta installed on the actual Garmin fenix 8 Solar 51mm through Android Connect IQ. |
-| Phone settings screen | **Owner-confirmed:** opens and displays the watch-face controls. |
-| Palette settings delivery | **Owner-confirmed:** Android Connect IQ palette changes reach the actual watch face. |
-| Custom header settings delivery | **Owner-confirmed:** Android Connect IQ custom identity text changes reach the actual watch header. |
-| Restart persistence / update retention | Restart persistence **not yet reported**, separate from successful settings delivery. Separate-beta fresh defaults are expected; later same-beta-UUID update retention is a different pending test. |
-| Notice reader visual/device navigation | Local 0.1.1 candidate passes native first/middle/last-page and navigation checks after fixing a settings-opening watchdog failure. Owner physical navigation remains pending; the installed beta is unchanged. |
-| Extended wear / reliability / overnight / battery | Pending; original wrist build and private archive retained. |
+| Beta package and native tests | Existing 0.1.1 production beta export/checker passed; 9 native groups passed, 0 failed, 0 errors. Not rebuilt or rerun during this presentation pass. |
+| Portal upload and existing listing | Companion Codex handoff: package/signature Verified, unchanged beta identity; submitted listing 0.1.1 (Internal: 2), BETA, owner-only notice. |
+| Connect IQ update | Owner-reported: existing owner-only beta updated to 0.1.1. |
+| Phone settings access and delivery | Earlier owner-confirmed phone settings opening, palette delivery and custom-header delivery remain recorded. |
+| Update retention | Owner-reported: custom identity text and palette survived the update. |
+| Restart persistence | Owner-reported separately: custom identity text and palette survived a subsequent restart. |
+| Physical notice navigation | Owner-reported: DejaVu / Arev and Noto / SIL OFL opened and navigated; exiting returned to the working face. |
+| Other controls / comprehensive event checks | Pending; no blanket pass for all settings, every notice page, wake/glance events or every viewing condition. |
+| Extended/overnight reliability | Untested. Returning to a working face is not extended reliability evidence. |
+| Measured battery use | Untested; no drain or battery-life claim. |
 
-Beta name **TOKYO 2088 BETA**, UUID `ca80e764ffae413996a66e11abd76ed9`. Keep this UUID/key for later beta updates. The production manifest/UUID, device profile and wrist artifact are unchanged. Concept provenance is confirmed as AI-generated during the project's ChatGPT design conversation, not from a Garmin listing; exclusive rights/trademark clearance are not asserted.
+[Executed validation and owner report](VALIDATION.md#owner-011-update-and-final-presentation-review--12-september-2026) and [structured evidence](evidence/beta-polish-0.1.1.json) keep native checks, image observations, companion portal observations and owner hardware results separate. The [settings matrix](SETTINGS.md) retains outstanding cases and the repeatable update-retention procedure.
 
-The previously deferred “Larger data text” and “Show bottom label” wording is implemented **only in the local 0.1.1 candidate**, with help identifying the decorative TERMINAL // AC-01 label and which Identity plate mode activates each text field. The installed beta remains unchanged. See the [owner validation update](VALIDATION.md#owner-phonewatch-update--12-september-2026).
+## Preserved identities and artifacts
 
-## Readiness checklist
+- Beta: **TOKYO 2088 BETA**, UUID `ca80e764ffae413996a66e11abd76ed9`, existing retained signing key. No signing-policy change.
+- 0.1.1 build source: `e75af5febecfb829f0eda2a9627ba43150f222d9`; review commit: `a4719cd455c442d01f9a45fa029ae09ab48d62b2`.
+- Preserved IQ: `build/windows/beta/polish-0.1.1/export-review/TOKYO2088-BETA.iq`, 59,397 bytes, SHA-256 `27522cdf71b3992ea9a7fde0927fe0d57e0e7c44eaec5f9d7dfc72cbfdfb1487`.
+- Original 0.1.0 IQ copies, source/hash evidence and private signing key are retained and rechecked unchanged. Original wrist artifacts remain preserved.
+- Separate production manifest/UUID `d8c8adfe21c74bdd97fa2088ac010001`, property schema, supported profile and resources are unchanged. Beta success does not imply retention across a different app UUID.
 
-| Category | Status / action |
-| --- | --- |
-| Already verified | Fixed source inherited; 9 native groups pass under the beta UUID, including both cleared-screen regressions, settings preservation and complete offline notice pagination. Native beta IQ export passes, with fixtures excluded. See [executed results](VALIDATION.md). |
-| Already verified | One primary manifest profile; four palettes; custom/manual-city/hidden plate; no network/GPS/payment library or app permissions; real runtime artwork. |
-| Completed now | Neutral custom-text/city defaults; prompts and length messages; [settings guide/test](SETTINGS.md); [listing copy](LISTING.md); [privacy/data flow](PRIVACY.md); [Windows export](WINDOWS_EXPORT.md); [artwork](../../design/store/README.md); licensing and payment comparisons; compatibility plan. |
-| Completed notice delivery | Applicable full font terms are inside the PRGs. Local candidate simulator visual/navigation checks pass; owner physical navigation remains pending. Historical and installed beta IQ files remain unchanged. |
-| Owner decisions | Confirm Astrobyte branding/support/privacy contact; choose original-source licence, payment route/price, permanent public-release key and final version. Concept provenance and private-beta key use are now explicitly recorded. |
-| Garmin account/onboarding | Existing Astrobyte developer account verified; owner personally handled the displayed agreement and final submission. Private beta entry verified. No merchant enrollment, fees or payment activation performed; public-release onboarding remains separate. |
-| Physical tests pending | Beta installation is owner-confirmed. Full event checklist, extended wear/reliability, overnight reliability and comparable battery run remain pending. |
-| Customer settings delivery / pending checks | Phone settings opening and palette/custom header delivery to the actual Garmin fenix 8 Solar 51mm are owner-confirmed. Restart persistence, other settings and update retention remain unconfirmed. |
-| Submission gates | Owner-approved permanent key and private backup, rights/notices, support/privacy contacts, merchant approval if paid, final package/version/device review, complete testing, explicit approval for each upload/installation/payment activation. |
+## Final presentation pass
 
-## Review order
+The clean starting branch was `polish/customer-settings` at `a4719cd`; local documentation/evidence work is isolated on `polish/final-presentation`. PR #4 still targets `release/store-prep`, PR #3 targets `fix/windows-mip-redraw`, and PR #2 targets `main`. All remain open; issue #1 remains open. The owner subsequently authorized committing and pushing the eight documentation/evidence files and opening a PR against `polish/customer-settings`, stacked on PR #4. The current visual design is frozen. This handoff does not authorize code changes, rebuilding, live Store edits, signing changes, payments, merges or public publication.
 
-1. [Customer listing and release notes](LISTING.md), [settings](SETTINGS.md), [privacy](PRIVACY.md).
-2. [Payment route comparison](PAYMENTS.md), [licensing](LICENSING.md), [signing](SIGNING.md).
-3. [Compatibility and tester distribution](COMPATIBILITY.md), [export workflow](WINDOWS_EXPORT.md), [actual validation](VALIDATION.md).
-4. [Runtime artwork and specifications](../../design/store/README.md).
+[Ready-to-review Store copy](LISTING.md) explains manual city entry, optional active-state seconds and weather availability. [Screenshot order](LISTING.md#screenshot-order-and-captions): Classic Red, Neon Cyan, Monochrome, Amber, Custom header. Use the existing genuine labelled canvases with their unchanged raw captures.
 
-## Launch checklist — intentionally unfinished
+[Actual-size readability review](../../design/store/README.md#final-presentation-and-readability-review--12-september-2026) found no clipping/collisions in these five 280 x 280 frames. The original subtitle and bottom labels remain small; no demonstrable visual improvement justified changing the renderer, fonts or composition. No new before/after render is claimed. All 12 setting IDs/types and runtime behaviour are unchanged.
 
-- [ ] Owner reports extended physical results; review issue #1 and PR #2 separately.
-- [ ] Final candidate has repeatable primary native, simulator and physical results; comparable battery observations recorded with settings/conditions.
-- [ ] Normal customer settings workflow passes on an authorized Store-installed build.
-- [ ] Astrobyte identity, support channel/availability and privacy contact finalized; public rights/branding review completed (AI concept provenance recorded).
-- [x] Full font notices included in the beta PRGs and reader tested natively; sidecars are supplementary.
-- [ ] Source licence selected; real-device notice-reader navigation checked.
-- [ ] Permanent key selected and recoverable private backups verified; neither previous key discarded.
-- [ ] Merchant eligibility/account approved if paid; owner chooses route, price/refunds and explicitly authorizes fees/activation.
-- [ ] Final version and exact supported products reviewed, including Garmin profile aliases. No untested device expansion.
-- [ ] Final `.iq`, packaged PRGs, toolchain, source commit, signing provenance, artwork/captions and hashes recorded.
-- [ ] Store form validates current dimensions/limits and support/privacy details; no placeholders or unsupported claims.
-- [x] Owner explicitly authorizes ONE private beta, conditional on live account/access-scope verification; temporary key approved for that beta.
-- [x] Live beta-only checkbox and intended account verified, then one private upload completed; resulting owner-only entry verified separately from installation.
-- [ ] Owner separately authorizes the first public submission and its permanent signing key.
+## Remaining public-release requirements
 
-No automatic merge, issue closure, public Store upload, payment integration or replacement of the current wrist installation is authorized. Current private-beta status is recorded above.
+- **Physical validation:** complete the outstanding settings/event cases, extended and overnight wear, and a comparable measured battery run with settings/conditions recorded privately. Review issue #1 separately; do not infer resolution from this limited report.
+- **Publisher and rights:** confirm Astrobyte/TOKYO 2088 branding and contributor/asset rights, select the original-source licence, and finalize the real support channel and privacy contact/notice. Full font notices are packaged; physical opening/navigation is now owner-confirmed.
+- **Signing and public artifact:** explicitly choose permanent public-release signing custody and verify recoverable private backups. Preserve the established beta key/UUID. Select the public version and validate its exact source/package hashes under the unchanged intended production identity and supported profile before submission; current evidence is for beta 0.1.1.
+- **Distribution decision:** choose free or paid distribution. If paid, separately authorize and complete the selected payment/merchant requirements and accurate pricing/refund disclosures. No payment code or activation is introduced here.
+- **Final listing review:** check live screenshot dimensions/count/size and text limits, final artwork/version-label accuracy, compatible devices and working support/privacy links. No placeholder or unsupported battery/readability claim should reach the public listing.
+- **Release approval:** obtain explicit public-submission authorization and any separately required repository integration approval. No merge, issue closure, public publication or further beta upload is authorized by this presentation task.
+
+## Review references
+
+[Listing](LISTING.md) / [Settings](SETTINGS.md) / [Privacy](PRIVACY.md) / [Licensing](LICENSING.md) / [Signing](SIGNING.md) / [Payment decisions](PAYMENTS.md) / [Compatibility](COMPATIBILITY.md) / [Export workflow](WINDOWS_EXPORT.md) / [Validation](VALIDATION.md) / [Artwork](../../design/store/README.md)
