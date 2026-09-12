@@ -1,5 +1,36 @@
 # Executed release-preparation validation
 
+## Local polish candidate 0.1.1 — 12 September 2026
+
+Prepared on separate branch `polish/customer-settings` from PR #3 / `release/store-prep` commit `94d838247db84e2a257193fb2017be8c92c6a8af`. Local and remote heads matched; the initial working tree was clean. Existing branches and the installed beta were retained. The source change simplifies two setting labels and mode help, fixes an observed notice-reader startup watchdog failure, and advances only the beta version to 0.1.1. All 12 property IDs/types, enums, defaults, stored-value handling, clock renderer and assets remain unchanged; no dynamic settings-field hiding is added. Beta UUID `ca80e764ffae413996a66e11abd76ed9` and retained temporary key are reused. The separate production manifest is byte-for-byte unchanged.
+
+**Final native Windows tests: 9 passed, 0 failed, 0 errors; launcher exit 0.** Redraw (seconds off/on), settings preservation, renderer matrix, repeated power cycles, formatting/header checks, repeated updates and complete font-notice delivery pass. Release compilation also exits 0. Logs: `build/windows/beta/polish-0.1.1/validation-final/`. Test-context samples: renderer 34,848 bytes, power cycles 34,168, repeated updates 34,528; 240 fixed-time callbacks took 1,844ms / 1,828ms (seconds off/on), with one telemetry refresh. These are simulator diagnostics, not hardware peak-memory, reliability or battery evidence.
+
+### Actual reader UI and capture findings
+
+- Opening DejaVu/Arev through **Settings → Trigger App Settings → DejaVu / Arev** initially crashed the native release: `Watchdog Tripped Error - Code Executed Too Long`. Direct native pagination tests had passed; they did not establish successful interactive opening. The failed local run is retained under `polish-0.1.1/validation/release-run.log`.
+- The fix uses binary search with the same native font-width metrics instead of measuring every growing text prefix while paginating. Complete licence resources are unchanged. Native tests reconstruct all 4,763 / 4,243 characters and retain 41 / 37 pages.
+- On the corrected production beta release, both notices opened normally. DejaVu/Arev pages **1, 21, 41** and Noto/OFL pages **1, 19, 37** were visibly readable with clear title/footer and no clipped text. UP/DOWN worked through both notices, extra input at each end stayed within bounds, and BACK returned through the menu to the running face. [Raw simulator-window evidence](../../design/store/runtime/polish-0.1.1/notices/). Owner physical notice navigation remains pending.
+- [Five native product captures and labelled canvases](../../design/store/README.md) show all four palettes and the fictional `NIGHT SHIFT / FIELD TERMINAL` custom header. Garmin's App Settings Editor changed the real running release; **File → Save Screen Capture** produced the untouched 280 × 280 PNGs. No fixture renderer, generated concept art, recolouring or altered product pixels were used.
+- The simulator editor initially looked for a missing schema under its prior beta-test registration. The same compiler-generated release schema was transferred with Garmin's supported `monkeydo /a` to that registered simulator filename. A short `POLISH.prg` alias remained byte-identical to the release. These are simulator-only files and do not belong on the watch. The final regression launcher later stalled before executing tests; its local connection was stopped and the simulator restarted normally. The completed run above is the recorded test result.
+
+Final standalone release: `build/windows/beta/polish-0.1.1/validation-final/TOKYO2088-BETA-fenix8solar51mm-release.prg`, **37,052 bytes**, SHA-256 `d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1`. The reader UI and final product captures used this exact binary content.
+
+| Clean-source candidate export | Recorded result |
+| --- | --- |
+| Source commit | `e75af5febecfb829f0eda2a9627ba43150f222d9`; clean working tree at export |
+| Native production beta export/checker | **PASS / exit 0**, using existing Windows SDK 9.1.0 and primary profile only |
+| IQ path | `build/windows/beta/polish-0.1.1/export-review/TOKYO2088-BETA.iq` |
+| IQ identity | **59,397 bytes**; SHA-256 `27522cdf71b3992ea9a7fde0927fe0d57e0e7c44eaec5f9d7dfc72cbfdfb1487` |
+| Both packaged PRGs | **37,052 bytes** each; same SHA-256 as the standalone/captured release above |
+| Settings comparison to installed beta | All 12 complete property definitions, defaults, types and enums identical; only the seven intended display/help strings differ |
+| Notice/package checks | Complete applicable licence text in both PRGs, original stable beta UUID, fixtures excluded, exported labels/help match source |
+| Signing and preservation | Packaged public signing key matches owner-1; retained private key, both installed-beta IQ copies and owner-1 source/hash record rechecked unchanged |
+
+[Sanitized candidate evidence](evidence/beta-polish-0.1.1.json). Export and compatibility-check logs remain in the candidate output directory. This follow-up records evidence and corrects raw UI screenshot extensions to JPEG; it does not rebuild or alter the IQ.
+
+**Hold for separate upload approval.** No new beta has been uploaded or installed. The preserved installed owner beta remains `export-owner-1/TOKYO2088-BETA.iq` with source/hash evidence in [beta-owner-1.json](evidence/beta-owner-1.json), unchanged. Owner-confirmed installation, phone settings opening and palette/custom-header delivery remain valid for that beta. All other settings, restart persistence, same-beta update retention, physical notice navigation, extended/overnight reliability and battery checks remain unconfirmed. The short [update-retention test](SETTINGS.md#later-same-beta-update-retention-test--waiting-for-upload-approval) waits for upload approval and owner observations; it explicitly requires updating the same beta **without uninstalling**.
+
 ## Private beta preparation — current milestone
 
 The beta source uses separate UUID `ca80e764ffae413996a66e11abd76ed9` and name TOKYO 2088 BETA with the same primary profile, runtime renderer/resources and 12 phone properties. The new offline font-notice reader is reached only through Garmin's separate settings entry point. The production manifest and preserved wrist binary remain unchanged.
@@ -37,7 +68,7 @@ The owner's additional hardware confirmation establishes successful phone-to-wat
 
 This update records owner feedback only; the current beta build and its recorded artifact identity are unchanged. No new build, installation, settings change, upload or public release was performed for this documentation update.
 
-Optional customer-facing wording suggestions for later: “Larger telemetry” → “Larger data text”; “Equipment footer” → “Show bottom label”. These suggestions are deferred and **not implemented during this test**.
+At this owner-validation milestone, “Larger telemetry” → “Larger data text” and “Equipment footer” → “Show bottom label” were deferred and **not implemented in the installed beta**. The separately authorized local polish candidate above implements them for later review.
 
 ## Historical Store-preparation export (preserved)
 

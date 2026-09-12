@@ -26,6 +26,8 @@ Verification: the package checker finds the **entire expected UTF-8 text** in ea
 
 The compiled delivery mechanism and native reader test pass. On 12 September 2026 the owner reported successful beta installation through Android Connect IQ and a visibly loaded phone settings screen with watch-face controls. Font-notice reader visuals and real-device menu navigation remain pending; phone controls do not validate the separate reader. On the installed beta, select its watch-face settings/customization entry and **Font notices**; choose a licence, use UP/DOWN to page and BACK to return. Exact firmware menu labels still require owner confirmation.
 
+Local 0.1.1 polish follow-up: native simulator navigation exposed a watchdog failure while opening the old reader. The candidate replaces repeated prefix measurement with a binary search using the same native font metrics. Complete licence resources remain byte-for-byte unchanged. First/middle/last pages, both navigation boundaries and BACK to the face pass in the native simulator; see [validation](VALIDATION.md#local-polish-candidate-011--12-september-2026). This does not complete the owner's physical reader-navigation check or change licensing policy.
+
 ## Original-source licence options — owner decision
 
 | Option | Practical tradeoff |

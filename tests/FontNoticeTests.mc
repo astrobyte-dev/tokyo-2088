@@ -20,6 +20,8 @@ function fontNoticeDelivery(logger) {
         }
         Test.assertEqual(rebuilt,view.content);Test.assert(view.content.length()>3000);
         Test.assertEqual(pos,view.content.length());
+        // Preserve the established page counts as startup is optimized.
+        Test.assertEqual(view.starts.size(),n==0 ? 41 : 37);
         view.movePage(1);Test.assertEqual(view.page,view.starts.size()-1);
         view.page=0;view.movePage(-1);Test.assertEqual(view.page,0);
         logger.debug("Complete offline notice paginated without omission: "+view.content.length()+" chars, "+view.starts.size()+" pages.");

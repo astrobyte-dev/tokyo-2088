@@ -1,0 +1,135 @@
+{
+  "date": "2026-09-12",
+  "status": "LOCAL_CANDIDATE_NOT_UPLOADED_OR_INSTALLED",
+  "branch": "polish/customer-settings",
+  "baseCommit": "94d838247db84e2a257193fb2017be8c92c6a8af",
+  "sourceCommit": "e75af5febecfb829f0eda2a9627ba43150f222d9",
+  "workingTreeDirtyAtExport": false,
+  "version": "0.1.1",
+  "packagePath": "build/windows/beta/polish-0.1.1/export-review/TOKYO2088-BETA.iq",
+  "package": {
+    "customerSettingsSchema": "PASS",
+    "stablePropertyIds": 12,
+    "productionInputIsolation": "PASS",
+    "manifestProduct": "fenix8solar51mm",
+    "betaIdentity": true,
+    "appUuid": "ca80e764ffae413996a66e11abd76ed9",
+    "fontNoticeResources": "PASS",
+    "iqBytes": 59397,
+    "iqSha256": "27522cdf71b3992ea9a7fde0927fe0d57e0e7c44eaec5f9d7dfc72cbfdfb1487",
+    "packagedBinaries": [
+      {
+        "partNumber": "006-B4776-00",
+        "bytes": 37052,
+        "sha256": "d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1",
+        "minFirmwareVersion": "2125"
+      },
+      {
+        "partNumber": "006-B4533-00",
+        "bytes": 37052,
+        "sha256": "d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1",
+        "minFirmwareVersion": "2125"
+      }
+    ],
+    "fixturesExcluded": "PASS",
+    "compiledSettings": "PASS",
+    "packagedFontNoticeText": "PASS",
+    "storeAcceptance": "NOT TESTED"
+  },
+  "signingProvenance": "Existing temporary Windows development key; same key as installed owner beta",
+  "samePackagedSigningPublicKey": true,
+  "retainedPrivateKeyUnchanged": true,
+  "productionManifestUnchanged": true,
+  "installedBetaPreserved": {
+    "sourceCommit": "c5c54b968cd812b69957b166012f16273a335e4c",
+    "iqSha256": "cb5f5e6d3ba6bcb730c8421df84478d819e51c61ad41cc9384fbc40b3901738d",
+    "bothIqCopiesUnchanged": true,
+    "ownerEvidenceRecordUnchanged": true
+  },
+  "nativeTests": {
+    "passed": 9,
+    "failed": 0,
+    "errors": 0,
+    "launcherExit": 0,
+    "logs": "build/windows/beta/polish-0.1.1/validation-final/"
+  },
+  "packagedSettingsComparison": {
+    "all12PropertyDefinitionsIdentical": true,
+    "defaultsTypesEnumsUnchanged": true,
+    "changedDisplayStrings": [
+      "ReadableTitle",
+      "FooterTitle",
+      "HeaderModeHelp",
+      "CustomTextHelp",
+      "CityHelp",
+      "CitySubtitleHelp",
+      "FooterHelp"
+    ]
+  },
+  "noticeReader": {
+    "initialInteractiveResult": "Watchdog Tripped Error - Code Executed Too Long opening DejaVu/Arev; retained initial release-run.log",
+    "fix": "Binary search using native font metrics instead of measuring each growing prefix",
+    "completeLicenceResourcesUnchanged": true,
+    "nativeCharacters": [
+      4763,
+      4243
+    ],
+    "nativePages": [
+      41,
+      37
+    ],
+    "visuallyCheckedPages": {
+      "DejaVuArev": [
+        1,
+        21,
+        41
+      ],
+      "NotoOFL": [
+        1,
+        19,
+        37
+      ]
+    },
+    "nativeSimulatorOpeningClippingNavigationAndReturn": "PASS",
+    "ownerPhysicalNavigation": "PENDING",
+    "rawWindowEvidence": [
+      {
+        "file": "design/store/runtime/polish-0.1.1/notices/dejavu-first.jpg",
+        "sha256": "b927dd8ee581af6f2716e6d76f3a80e6921e50ee1dd0dbbd4d92c4eb5a7586ef"
+      },
+      {
+        "file": "design/store/runtime/polish-0.1.1/notices/dejavu-last.jpg",
+        "sha256": "e2c281e7c7c6eab45be2117b3d8f69fcc724f329277693a07816f2f977b77549"
+      },
+      {
+        "file": "design/store/runtime/polish-0.1.1/notices/dejavu-middle.jpg",
+        "sha256": "0034ae732c5ba90ab8b53336388e614bea037a5fddd96ba7aefd0d5283a59d3c"
+      },
+      {
+        "file": "design/store/runtime/polish-0.1.1/notices/noto-first.jpg",
+        "sha256": "040238f58a996f54e0841139256ee74957c20a239263d3d3b5e5f5469ffe79df"
+      },
+      {
+        "file": "design/store/runtime/polish-0.1.1/notices/noto-last.jpg",
+        "sha256": "19944a2759176b65f0e0b61ca91efbfe2eb66bd245c80e96b760cd25fb286170"
+      },
+      {
+        "file": "design/store/runtime/polish-0.1.1/notices/noto-middle.jpg",
+        "sha256": "76466a7ec1ab51a7b2f6932a6dbe14ea259c3bb657a95b4091c78683fb1af0c9"
+      },
+      {
+        "file": "design/store/runtime/polish-0.1.1/notices/returned-to-face.jpg",
+        "sha256": "69339507832596e1ff1fccb0f16ba4715d4366dbe5033a53fcb22ffa277c4a69"
+      }
+    ]
+  },
+  "artworkManifest": "design/store/artwork/polish-0.1.1/artwork-manifest.json",
+  "hardwareStatus": {
+    "installedOwnerBeta": "Owner-confirmed installation, phone settings opening, palette and custom-header delivery",
+    "restartPersistence": "NOT REPORTED",
+    "sameBetaUpdateRetention": "PENDING SEPARATE UPLOAD APPROVAL AND OWNER OBSERVATIONS",
+    "otherSettingsExtendedReliabilityAndBattery": "PENDING"
+  },
+  "uploadAuthorized": false,
+  "candidateInstalled": false
+}

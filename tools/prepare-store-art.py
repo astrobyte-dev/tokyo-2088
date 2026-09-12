@@ -6,6 +6,7 @@ The source file is never rewritten. Artwork is labelled in its manifest/captions
 """
 import hashlib
 import json
+import argparse
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageCms
 
@@ -63,4 +64,59 @@ def main():
     (OUT/'artwork-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(manifest,indent=2))
 
-if __name__=='__main__':main()
+def prepare_polish():
+    source_dir=ROOT/'design/store/runtime/polish-0.1.1'
+    output_dir=OUT/'polish-0.1.1'
+    output_dir.mkdir(parents=True,exist_ok=True)
+    icc=ImageCms.ImageCmsProfile(ImageCms.createProfile('sRGB')).tobytes()
+    def font(size,bold=False):
+        return ImageFont.truetype(str(ROOT/'assets-src'/('DejaVuSansCondensed-Bold.ttf' if bold else 'DejaVuSansCondensed.ttf')),size)
+    variants=[('classic-red-final','Classic Red'),('neon-cyan','Neon Cyan'),
+              ('monochrome','Monochrome'),('amber','Amber'),('custom-header','Custom header')]
+    records=[]
+    sheet=Image.new('RGB',(1600,440),'#202326');sheet_draw=ImageDraw.Draw(sheet)
+    sheet_draw.text((20,15),'TOKYO 2088 / Native simulator captures / Simulated data',font=font(24,True),fill='white')
+    for index,(slug,title) in enumerate(variants):
+        source=source_dir/(slug+'-280.png')
+        digest=hashlib.sha256(source.read_bytes()).hexdigest()
+        face=Image.open(source).convert('RGB');assert face.size==(280,280)
+        canvas=Image.new('RGB',(720,840),'#202326');draw=ImageDraw.Draw(canvas)
+        draw.text((48,27),'TOKYO 2088',font=font(24,True),fill='#b7bdc4')
+        draw.text((48,65),title,font=font(36,True),fill='white')
+        enlarged=face.resize((560,560),Image.Resampling.NEAREST)
+        canvas.paste(enlarged,(80,130))
+        draw.text((48,721),'SIMULATOR CAPTURE / SIMULATED DATA',font=font(23,True),fill='white')
+        draw.text((48,759),'fenix 8 Solar 51mm profile / Local beta 0.1.1',font=font(22),fill='#b7bdc4')
+        draw.text((48,793),'Not a watch photograph.',font=font(20),fill='#b7bdc4')
+        assert canvas.crop((80,130,640,690)).tobytes()==enlarged.tobytes()
+        target=output_dir/(slug+'-720x840.png')
+        canvas.save(target,optimize=True,icc_profile=icc)
+        assert hashlib.sha256(source.read_bytes()).hexdigest()==digest
+        sheet.paste(face,(index*320+20,94))
+        sheet_draw.text((index*320+20,59),title,font=font(22,True),fill='white')
+        sheet_draw.text((index*320+20,388),'Native 280 x 280 frame',font=font(18),fill='#b7bdc4')
+        records.append({'title':title,'source':source.relative_to(ROOT).as_posix(),
+                        'sourceSha256':digest,'sourceBytes':source.stat().st_size,
+                        'file':target.relative_to(ROOT).as_posix(),'width':720,'height':840,
+                        'bytes':target.stat().st_size,'sha256':hashlib.sha256(target.read_bytes()).hexdigest()})
+    sheet_path=output_dir/'palettes-and-custom-review.png'
+    sheet.save(sheet_path,optimize=True,icc_profile=icc)
+    manifest={'sourceKind':'Native Windows simulator Save Screen Capture of production beta release; simulated data',
+              'version':'0.1.1','profile':'fenix8solar51mm',
+              'sourcePrgSha256':'d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1',
+              'sourceBytesUnchanged':True,'colourSpace':'sRGB',
+              'transform':'Whole raw frame at exact 2x nearest-neighbour on labelled 720x840 canvas; review sheet retains native size. No cropping, recolouring or retouching of face.',
+              'customExample':{'HeaderMode':1,'HeaderLine1':'NIGHT SHIFT','HeaderLine2':'FIELD TERMINAL','Palette':0},
+              'displayedData':'Simulator local time/date; simulated 50% battery, 0 steps and 13 C. Cyan shows simulated 80 BPM; later frames show unavailable HR (--). Not owner health/device data.',
+              'portalDimensionsApproved':False,'artifacts':records,
+              'reviewSheet':{'file':sheet_path.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(sheet_path.read_bytes()).hexdigest()}}
+    (output_dir/'artwork-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps(manifest,indent=2))
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--polish',action='store_true',help='Compose the preserved 0.1.1 palette/custom captures without replacing original listing artwork.')
+    args=parser.parse_args()
+    if args.polish:prepare_polish()
+    else:main()

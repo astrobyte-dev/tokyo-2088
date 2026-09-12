@@ -1,5 +1,25 @@
 # Store artwork — actual simulator rendering
 
+## Local polish candidate 0.1.1 — 12 September 2026
+
+Five new **native Windows simulator Save Screen Capture** PNGs show the actual production beta release on `fenix8solar51mm`. Palettes and custom text were selected through Garmin's App Settings Editor and saved to the running face. The clock renderer, fonts, layout and property schema are unchanged. The captured PRG and final standalone release are byte-identical: SHA-256 `d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1`. These are local candidate images, not photographs of the installed owner beta.
+
+| Variant | Unmodified native 280 × 280 capture | Labelled 720 × 840 canvas |
+| --- | --- | --- |
+| Classic Red / Original plate | [Raw](runtime/polish-0.1.1/classic-red-final-280.png) | [Canvas](artwork/polish-0.1.1/classic-red-final-720x840.png) |
+| Neon Cyan / Original plate | [Raw](runtime/polish-0.1.1/neon-cyan-280.png) | [Canvas](artwork/polish-0.1.1/neon-cyan-720x840.png) |
+| Monochrome / Original plate | [Raw](runtime/polish-0.1.1/monochrome-280.png) | [Canvas](artwork/polish-0.1.1/monochrome-720x840.png) |
+| Amber / Original plate | [Raw](runtime/polish-0.1.1/amber-280.png) | [Canvas](artwork/polish-0.1.1/amber-720x840.png) |
+| Custom / NIGHT SHIFT / FIELD TERMINAL | [Raw](runtime/polish-0.1.1/custom-header-280.png) | [Canvas](artwork/polish-0.1.1/custom-header-720x840.png) |
+
+[Five-image review sheet](artwork/polish-0.1.1/palettes-and-custom-review.png). Each canvas labels **simulator capture / simulated data** and preserves the whole frame at exact 2× nearest-neighbour scaling. No clock pixels are cropped, recoloured, retouched or generated. Raw source hashes, dimensions and transforms are in the [manifest](artwork/polish-0.1.1/artwork-manifest.json). `python tools/prepare-store-art.py --polish` recreates these canvases without replacing the original listing artwork. Visual QA found clear captions, complete frames and no stretching. The 720 × 840 canvases are local review assets; their acceptance by the live listing form has not been tested.
+
+The captures show the simulator's local time/date on 12 September, 50% battery, 0 steps and 13°C. Cyan shows simulated 80 BPM; later captures show unavailable HR (`--`) after the cached sample expires. This is simulated data, not owner health/device data. The earlier pre-reader-fix Red capture remains under ignored `build/windows/beta/polish-0.1.1/validation/classic-red-before-reader-fix.png` and is not used in these product canvases.
+
+Full simulator-window evidence for the notice reader is retained under [runtime/polish-0.1.1/notices](runtime/polish-0.1.1/notices/): DejaVu/Arev pages 1/21/41, Noto/OFL pages 1/19/37 and return to the face. These are raw UI screenshots for navigation review, not product listing images or hardware-navigation evidence.
+
+## Preserved original listing artwork
+
 `runtime/store-prep-classic-red-280.png` is an unchanged **native Windows simulator Save Screen Capture** of the ordinary production release on the `fenix8solar51mm` profile, captured 11 September 2026. The face displayed 08:57 PM, Friday 11 September, Classic Red, Original plate, simulated 50% battery/zero steps and unavailable HR/weather. These are simulated data, not the owner's health/device data.
 
 The captured release is the new Store-prep build, **not** the preserved wrist candidate. Its 25,612-byte PRG SHA-256 is `b18891337d16544063ea118b69d589c60789cd912a57ff59ec5b82f4e6a41d92`. It was built from production `monkey.jungle` with `-r`, signed with the retained temporary Windows development key. Test/capture fixtures were not used. The final committed source/export association is in [validation](../../docs/store/VALIDATION.md).

@@ -2,7 +2,9 @@
 
 This workflow creates a **local review package**, not an upload or installation. Use the existing installed Windows SDK; no SDK switch, toolchain download, asset regeneration or signing-key generation is part of this workflow.
 
-For the current authorized private beta, use the same helpers with `-Beta`:
+The local 0.1.1 polish candidate is recorded in [validation](VALIDATION.md#local-polish-candidate-011--12-september-2026), under `build/windows/beta/polish-0.1.1/`. It uses the same beta UUID/key and is **not uploaded or installed**. Any further export must use another fresh output directory. The commands below are the **historical owner-1 workflow**; preserve those existing output files and do not rerun builds into them.
+
+The beta uses the same helpers with `-Beta`:
 
 ```powershell
 powershell.exe -NoProfile -File tools/build.ps1 test -Beta -DeveloperKey $releaseKeyPath -OutputDir build/windows/beta/validation-final
