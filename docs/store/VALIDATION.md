@@ -2,7 +2,7 @@
 
 ## Hardware wear and device-log evidence — 19 September 2026
 
-**Owner statement:** the owner has worn the fenix 8 Solar 51mm with TOKYO 2088 as the active face continuously since the face was first sideloaded on 11 September 2026, through the 0.1.0 owner-only beta and the 0.1.1 beta update on 12 September. No recurrence of the issue #1 black screen has been reported on the full-repaint builds.
+**Owner statement:** the owner has worn the fenix 8 Solar 51mm with a TOKYO 2088 face continuously since the first sideload on 11 September 2026: the 0.1.0 sideload, then the owner-only beta (0.1.0 and 0.1.1), and from the afternoon of 12 September the KiezelPay TEST_MODE build `TKPAYT01` (same renderer plus the payment library; its storage files on the watch were still being updated on 19 September). No recurrence of the issue #1 black screen has been reported on any full-repaint build.
 
 **Read-only device inspection over MTP, 19 September 2026.** Files were listed and the Connect IQ error log copied to a local scratch folder; nothing on the watch was modified, and no raw device file is committed.
 

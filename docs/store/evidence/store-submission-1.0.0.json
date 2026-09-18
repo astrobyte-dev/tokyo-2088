@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-19",
+  "status": "SUBMITTED_APP_PENDING",
+  "listingId": "cf802fe8-f538-4922-b1b0-2825e40d90c6",
+  "appUuid": "d8c8adfe21c74bdd97fa2088ac010001",
+  "version": "1.0.0",
+  "distribution": "paid; KiezelPay; 24-hour trial; one-time USD 2.50",
+  "package": {
+    "file": "TOKYO2088.iq",
+    "bytes": 72333,
+    "sha256": "cf19ddad7efb922aa406e24c4ccfc7aa6544af4423aa256e853855d1d984aa29",
+    "prgBytes": 44652,
+    "prgSha256": "3fa638947a830fd8d3e1bbe2327b10b3f234b36523405e933453f9581b817366",
+    "testMode": false,
+    "sourceBranch": "codex/public-kiezelpay",
+    "sourceCommit": "e00816e6853e9bd07c77dd5109bd8d34a970c004"
+  },
+  "signing": {
+    "publicSpkiSha256": "5fcd2fb841ba636fb94b3c41928ad1649c5239921fecc94a02cac2a768f749b5",
+    "offDeviceEncryptedBackupVerified": "2026-09-12"
+  },
+  "portal": {
+    "signatureMessage": "Signature check failed. (green panel, Status: Verified)",
+    "knownGarminBug": "CIQQA-4716",
+    "submittedAnyway": true,
+    "result": "App pending; review up to 3 days"
+  },
+  "listing": {
+    "category": "Digital",
+    "privacyCollects": true,
+    "privacyUrl": "https://github.com/astrobyte-dev/tokyo-2088/blob/main/PRIVACY.md",
+    "monetization": "Yes / Other / Third-Party Payments",
+    "appMigration": false,
+    "images": "store-icon-500.png, hero-en-1440x720.png, five release-1.0.0 canvases"
+  },
+  "notSubmitted": [
+    "build/windows/store-prep/release-1.0.0 (retired ID, payment-free)",
+    "build/windows/store-prep/release-1.0.0-newid (fresh ID, payment-free)",
+    "build/windows/store-prep/release-1.0.0-altkey"
+  ]
+}

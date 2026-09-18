@@ -5,9 +5,12 @@ Native Monkey C / Connect IQ watch face for the **Garmin fēnix 8 Solar 51mm** (
 ![Classic Red, native 280 × 280 simulator capture](design/store/runtime/polish-0.1.1/classic-red-final-280.png)
 ![Custom header, native 280 × 280 simulator capture](design/store/runtime/polish-0.1.1/custom-header-280.png)
 
-## Status: release 1.0.0 prepared for the Connect IQ Store
+## Status: release 1.0.0 submitted to the Connect IQ Store
 
-- Production manifest `manifest.xml` is version **1.0.0**. The runtime source and resources are identical to the owner-tested beta 0.1.1.
+Submitted on 19 September 2026 as a paid watch face: 24-hour trial, then a one-time US$2.50 unlock through KiezelPay. Listing `cf802fe8-f538-4922-b1b0-2825e40d90c6`, app UUID `d8c8adfe21c74bdd97fa2088ac010001`, version 1.0.0. Garmin review takes up to three days. The submitted package was built from the KiezelPay integration on branch `codex/public-kiezelpay` (`public.jungle`, `manifest-public.xml`); that branch is not yet merged here. `manifest.xml` and `monkey.jungle` on this branch build the payment-free variant under a separate UUID and are not what is published. Details in [docs/store/README.md](docs/store/README.md).
+
+
+- Runtime source and resources are identical to the owner-tested beta 0.1.1; the public build adds the KiezelPay wrapper, Background and Communications permissions.
 - Release and native-test builds compile with no warnings on Connect IQ SDK 9.1.0. **9 native simulator test groups pass, 0 failed, 0 errors.**
 - The beta was installed on the owner's actual fēnix 8 Solar 51mm through the Connect IQ app. Phone settings delivery, same-beta update retention, restart persistence and both offline font notices were confirmed on hardware.
 - Store copy, screenshots, icon and hero image are prepared under [docs/store](docs/store/README.md) and [design/store](design/store/README.md).
