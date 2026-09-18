@@ -1,0 +1,79 @@
+{
+  "sourceKind": "Native Windows simulator Save Screen Capture of production beta release; simulated data",
+  "version": "1.0.0",
+  "profile": "fenix8solar51mm",
+  "captureBinary": "Beta 0.1.1 release PRG; runtime source and resources are identical to the labelled version (only manifest identity/version differ).",
+  "sourcePrgSha256": "d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1",
+  "sourceBytesUnchanged": true,
+  "colourSpace": "sRGB",
+  "transform": "Whole raw frame at exact 2x nearest-neighbour on labelled 720x840 canvas; review sheet retains native size. No cropping, recolouring or retouching of face.",
+  "customExample": {
+    "HeaderMode": 1,
+    "HeaderLine1": "NIGHT SHIFT",
+    "HeaderLine2": "FIELD TERMINAL",
+    "Palette": 0
+  },
+  "displayedData": "Simulator local time/date; simulated 50% battery, 0 steps and 13 C. Cyan shows simulated 80 BPM; later frames show unavailable HR (--). Not owner health/device data.",
+  "portalDimensionsApproved": false,
+  "artifacts": [
+    {
+      "title": "Classic Red",
+      "source": "design/store/runtime/polish-0.1.1/classic-red-final-280.png",
+      "sourceSha256": "b38c09f9da16ded8d048a9a22fe47ddc0a4a6d91c00c7f241c4cc98d46601e98",
+      "sourceBytes": 3046,
+      "file": "design/store/artwork/release-1.0.0/classic-red-final-720x840.png",
+      "width": 720,
+      "height": 840,
+      "bytes": 25821,
+      "sha256": "182e43ae78dfbd11c942bae220ba3bd83d0aa12560fd60fb9e0b2e25c1d0bf3f"
+    },
+    {
+      "title": "Neon Cyan",
+      "source": "design/store/runtime/polish-0.1.1/neon-cyan-280.png",
+      "sourceSha256": "8951c48873dd9fbd3456a810c6fbbc5d7546572eb94ab77bf7302daebe759685",
+      "sourceBytes": 3146,
+      "file": "design/store/artwork/release-1.0.0/neon-cyan-720x840.png",
+      "width": 720,
+      "height": 840,
+      "bytes": 25687,
+      "sha256": "86f89f54d25d4777becb16920496a30045b0f3c5df8a4e588b3f2b79063e166e"
+    },
+    {
+      "title": "Monochrome",
+      "source": "design/store/runtime/polish-0.1.1/monochrome-280.png",
+      "sourceSha256": "7d90c5059d9c1d7d83cdbf1e9bf47bf2b81043f751d1efc38fa6319155e98a5f",
+      "sourceBytes": 3189,
+      "file": "design/store/artwork/release-1.0.0/monochrome-720x840.png",
+      "width": 720,
+      "height": 840,
+      "bytes": 25160,
+      "sha256": "6c825c8c776127f4b33b12bd0b54deae0f25c30d77fe9dadc08f1a637e69297d"
+    },
+    {
+      "title": "Amber",
+      "source": "design/store/runtime/polish-0.1.1/amber-280.png",
+      "sourceSha256": "040ea024a7ef7ba446d38e0b95d07d63e9e76bbc8a7ba82d83cffecba4b124f5",
+      "sourceBytes": 3150,
+      "file": "design/store/artwork/release-1.0.0/amber-720x840.png",
+      "width": 720,
+      "height": 840,
+      "bytes": 24287,
+      "sha256": "3f9fa3d109ea17dffd2768fc9610fc1e86593934a1049e4f2c3fd16d3a25a1c5"
+    },
+    {
+      "title": "Custom header",
+      "source": "design/store/runtime/polish-0.1.1/custom-header-280.png",
+      "sourceSha256": "c6e53bb4d208835d0512adef5194a34801434565a218c94a6c48a4995d3ae55f",
+      "sourceBytes": 3099,
+      "file": "design/store/artwork/release-1.0.0/custom-header-720x840.png",
+      "width": 720,
+      "height": 840,
+      "bytes": 26815,
+      "sha256": "39114b0a054a297f9a3928633b3933b5da48f5704bc690ee4d3c3066e9df33bb"
+    }
+  ],
+  "reviewSheet": {
+    "file": "design/store/artwork/release-1.0.0/palettes-and-custom-review.png",
+    "sha256": "acaa0b669120ffc184f1f646e4264fc92bb499848cb0cdc7dfb791c179b05493"
+  }
+}

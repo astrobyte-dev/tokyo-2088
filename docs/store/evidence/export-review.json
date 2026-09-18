@@ -1,0 +1,39 @@
+﻿{
+    "sourceCommit":  "f912b162ccf667d49e586221aabba133bcb9dbb4",
+    "workingTreeDirtyAtExport":  false,
+    "signingProvenance":  "TemporaryDevelopment",
+    "sdk":  "9.1.0 / 2026-03-09-6a872a80b",
+    "relativePath":  "build/windows/store-prep/export-review/TOKYO2088-store-prep.iq",
+    "nativeExportExit":  0,
+    "packageCheckExit":  0,
+    "checks":  {
+                   "customerSettingsSchema":  "PASS",
+                   "stablePropertyIds":  12,
+                   "productionInputIsolation":  "PASS",
+                   "manifestProduct":  "fenix8solar51mm",
+                   "iqBytes":  44379,
+                   "iqSha256":  "a082dd6936afe3dc7afb54f4879f970750a31f1c66b424af586f9cba73f22529",
+                   "packagedBinaries":  [
+                                            {
+                                                "partNumber":  "006-B4776-00",
+                                                "bytes":  25612,
+                                                "sha256":  "b18891337d16544063ea118b69d589c60789cd912a57ff59ec5b82f4e6a41d92",
+                                                "minFirmwareVersion":  "2125"
+                                            },
+                                            {
+                                                "partNumber":  "006-B4533-00",
+                                                "bytes":  25612,
+                                                "sha256":  "b18891337d16544063ea118b69d589c60789cd912a57ff59ec5b82f4e6a41d92",
+                                                "minFirmwareVersion":  "2125"
+                                            }
+                                        ],
+                   "fixturesExcluded":  "PASS",
+                   "compiledSettings":  "PASS",
+                   "storeAcceptance":  "NOT TESTED"
+               },
+    "overwriteGuard":  "PASS",
+    "hardwareFolderGuard":  "PASS",
+    "noticeDelivery":  "Sidecars preserved; actual Store customer delivery remains a gate",
+    "storeUpload":  "NOT PERFORMED",
+    "hardwareInstall":  "NOT PERFORMED"
+}

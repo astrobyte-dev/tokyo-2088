@@ -1,4 +1,4 @@
 project.manifest = tests/preview-manifest.xml
 base.sourcePath = source;tests
 base.resourcePath = resources
-base.excludeAnnotations = test
+base.excludeAnnotations = test;fixture;capture

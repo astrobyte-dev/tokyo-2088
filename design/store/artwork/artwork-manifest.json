@@ -1,0 +1,34 @@
+{
+  "source": "design/store/runtime/store-prep-classic-red-280.png",
+  "sourceSha256": "7b2b429ea7af47dfed8970e2b37634d463e36691617c198f911b7464abced077",
+  "sourceKind": "Native Windows simulator Save Screen Capture of production release; simulated data",
+  "sourceBytesUnchanged": true,
+  "colourSpace": "sRGB",
+  "officialDimensionsSource": "https://developer.garmin.com/brand-guidelines/connect-iq/",
+  "portalUploadAndByteLimitsVerified": false,
+  "iconCaption": "TOKYO 2088, Classic Red \u2014 simulator preview, simulated data",
+  "transform": "Icon: uniform nearest-neighbour resize and circular mask. Hero: exact 2x nearest-neighbour. Screenshot: untouched 280px frame on caption canvas.",
+  "artifacts": [
+    {
+      "file": "design/store/artwork/store-icon-500.png",
+      "width": 500,
+      "height": 500,
+      "bytes": 5403,
+      "sha256": "fe37cecb80d780465235acd4734b32c96a9d89e2a8809114e121f9ee4b8902b2"
+    },
+    {
+      "file": "design/store/artwork/hero-en-1440x720.png",
+      "width": 1440,
+      "height": 720,
+      "bytes": 40738,
+      "sha256": "d14e0ceeeeb1d1325777fb6bc5f14969b71deb2755f385669a4b5bd0110d5052"
+    },
+    {
+      "file": "design/store/artwork/screenshot-classic-red-500.png",
+      "width": 500,
+      "height": 500,
+      "bytes": 16625,
+      "sha256": "ce9fe67f7189c566b8bc58e8b7c15f5956acb1fd8e52fc03f776c1dfbd1ee473"
+    }
+  ]
+}

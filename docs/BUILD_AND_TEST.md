@@ -1,3 +1,5 @@
+> For native Windows commands, temporary signing provenance and safe retesting, see [Windows build and retest](WINDOWS_BUILD_AND_RETEST.md). The Linux environment and results below are historical.
+
 > Current hardware status: initially working, intermittent black-screen defect OPEN; see [investigation](BLACK_SCREEN_INVESTIGATION.md). Build instructions below reproduce a new artifact; do not overwrite the preserved release during review.
 
 # Build, simulator and Linux installation — 11 September 2026

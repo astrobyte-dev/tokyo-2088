@@ -1,0 +1,112 @@
+﻿{
+    "date":  "2026-09-11",
+    "sourceCommit":  "c5c54b968cd812b69957b166012f16273a335e4c",
+    "workingTreeDirtyAtExport":  false,
+    "signingProvenance":  "Existing temporary Windows development key; explicitly approved for owner beta only",
+    "packagePath":  "build/windows/beta/export-owner-1/TOKYO2088-BETA.iq",
+    "package":  {
+                    "customerSettingsSchema":  "PASS",
+                    "stablePropertyIds":  12,
+                    "productionInputIsolation":  "PASS",
+                    "manifestProduct":  "fenix8solar51mm",
+                    "betaIdentity":  true,
+                    "appUuid":  "ca80e764ffae413996a66e11abd76ed9",
+                    "fontNoticeResources":  "PASS",
+                    "iqBytes":  58738,
+                    "iqSha256":  "cb5f5e6d3ba6bcb730c8421df84478d819e51c61ad41cc9384fbc40b3901738d",
+                    "packagedBinaries":  [
+                                             {
+                                                 "partNumber":  "006-B4776-00",
+                                                 "bytes":  36540,
+                                                 "sha256":  "ac462d3575e37c866e47fedaf0ddbd56ec817b1db5836b800604983d4f6fe726",
+                                                 "minFirmwareVersion":  "2125"
+                                             },
+                                             {
+                                                 "partNumber":  "006-B4533-00",
+                                                 "bytes":  36540,
+                                                 "sha256":  "ac462d3575e37c866e47fedaf0ddbd56ec817b1db5836b800604983d4f6fe726",
+                                                 "minFirmwareVersion":  "2125"
+                                             }
+                                         ],
+                    "fixturesExcluded":  "PASS",
+                    "compiledSettings":  "PASS",
+                    "packagedFontNoticeText":  "PASS",
+                    "storeAcceptance":  "Private beta package/signature verified and entry created; not public-release approval"
+                },
+    "nativeTests":  {
+                        "errors":  0,
+                        "launcherExit":  0,
+                        "failed":  0,
+                        "passed":  9
+                    },
+    "noticeCharacters":  {
+                             "DejaVuArev":  4763,
+                             "NotoOFL":  4243
+                         },
+    "noticePages":  {
+                        "DejaVuArev":  41,
+                        "NotoOFL":  37
+                    },
+    "nativeReaderPagination":  "PASS",
+    "readerVisualInspection":  "PENDING",
+    "overwriteGuard":  "PASS",
+    "betaBuildOutputGuard":  "PASS",
+    "betaUploaded":  true,
+    "liveAccountVerified":  true,
+    "liveOwnerOnlyScopeVerified":  true,
+    "phoneInstall":  "OWNER-CONFIRMED: existing owner-only beta installed on actual Garmin fenix 8 Solar 51mm through Android Connect IQ",
+    "phoneSettingsScreen":  "OWNER-CONFIRMED: opens and displays watch-face controls; earlier owner update referenced supplied screenshot",
+    "settingsDelivery":  {
+                             "palette":  "OWNER-CONFIRMED: Android Connect IQ palette changes reach the actual watch face",
+                             "customHeader":  "OWNER-CONFIRMED: Android Connect IQ custom identity text changes reach the actual watch header"
+                         },
+    "restartPersistence":  "NOT YET REPORTED",
+    "settingsTransportAndPersistence":  "PARTIAL: palette and custom header delivery owner-confirmed; restart persistence not yet reported",
+    "fontNoticeNavigation":  "PENDING",
+    "extendedReliability":  "PENDING",
+    "physicalWearAndBattery":  "PENDING",
+    "watchOperations":  "Owner confirms beta installation and palette/custom header changes; no agent watch operations",
+    "ownerValidationUpdate":  {
+                                  "date":  "2026-09-12",
+                                  "evidenceSource":  "Owner hardware confirmation of installation, phone settings opening and palette/custom header delivery; earlier report referenced supplied phone settings screenshot",
+                                  "device":  "Garmin fenix 8 Solar 51mm",
+                                  "sameBetaUuidUpdateRetention":  "PENDING",
+                                  "currentBetaChanged":  false,
+                                  "rebuildOrReinstallPerformedForUpdate":  false,
+                                  "settingsChangesPerformedForUpdate":  false,
+                                  "publicRelease":  "NONE",
+                                  "deferredWordingSuggestions":  [
+                                                                    {
+                                                                        "current":  "Larger telemetry",
+                                                                        "suggested":  "Larger data text"
+                                                                    },
+                                                                    {
+                                                                        "current":  "Equipment footer",
+                                                                        "suggested":  "Show bottom label"
+                                                                    }
+                                                                ],
+                                  "wordingChangesImplemented":  false
+                              },
+    "blocker":  null,
+    "uploadVerification":  {
+                               "date":  "2026-09-11",
+                               "count":  1,
+                               "submittedBy":  "Owner",
+                               "verifiedBrowser":  "Chrome",
+                               "developerDisplayName":  "Astrobyte",
+                               "name":  "TOKYO 2088 BETA",
+                               "version":  "0.1.0",
+                               "internalVersion":  1,
+                               "badge":  "BETA",
+                               "price":  "Free",
+                               "scope":  "Owner-only download and testing, explicitly disclosed by Garmin",
+                               "dashboardStatus":  "Pending",
+                               "detailDownloadEnabled":  true,
+                               "entryLocation":  "Private local record; omitted from Git",
+                               "sourceAndRetainedIqRehashed":  "PASS",
+                               "temporaryKeyRetained":  "PASS",
+                               "newBuild":  "NONE",
+                               "publicRelease":  "NONE",
+                               "merchantOrPaymentActivation":  "NONE"
+                           }
+}
