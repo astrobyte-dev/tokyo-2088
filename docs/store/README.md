@@ -1,5 +1,13 @@
 # TOKYO 2088 - release preparation
 
+## Submitted to the Store — 19 September 2026
+
+**Public 1.0.0 submitted as a paid app (KiezelPay, 24-hour trial, one-time US$2.50).** Listing `cf802fe8-f538-4922-b1b0-2825e40d90c6`, app UUID `d8c8adfe21c74bdd97fa2088ac010001`, package `TOKYO2088.iq` 72,333 bytes, SHA-256 `cf19ddad7efb922aa406e24c4ccfc7aa6544af4423aa256e853855d1d984aa29`, signed with the dedicated permanent public key (SPKI SHA-256 `5fcd2fb8…`). Status: App pending; Garmin review takes up to three days. Form values: Digital; privacy Yes with the main-branch PRIVACY.md URL; Monetization Yes, Other, Third-Party Payments; App Migration No. The upload form showed `Signature check failed.` in its green panel, which is Garmin's acknowledged bug CIQQA-4716 for first uploads; submission proceeded and was accepted into review.
+
+The submitted package and its evidence were produced by the companion Codex track (12 to 16 September 2026) outside this repository. Its source is preserved on branch `codex/public-kiezelpay` (commits `e00816e`, `c25bad0` on top of `ce1dee3`); merge it into main to make the repository match the published app. The KiezelPay barrel, product configuration and signing keys stay in ignored private folders. [Structured record](evidence/store-submission-1.0.0.json).
+
+The payment-free 1.0.0 exports made earlier the same day (retired-ID and fresh-ID packages) were not submitted; the fresh ID `92f2e364b0f34a829a8e350ce8f88f86` now simply identifies the payment-free internal build of `manifest.xml`, distinct from the published app.
+
 ## Public release 1.0.0 — prepared 19 September 2026
 
 Production `manifest.xml` is now version **1.0.0** under a fresh production UUID `92f2e364b0f34a829a8e350ce8f88f86`. The earlier production ID `d8c8adfe21c74bdd97fa2088ac010001` was never published; on 19 September 2026 the Store upload form reported `Signature check failed` for a 1.0.0 package under that ID, signed with the same key Garmin had verified for the beta. That ID had only ever existed on the watch as the original Linux-signed sideload, so it was retired rather than debugged. Runtime source and resources are identical to the owner-tested beta 0.1.1 (source commit `e75af5febecfb829f0eda2a9627ba43150f222d9`); only the manifest identity and version differ. Release and test builds compiled with no warnings on SDK 9.1.0 and all 9 native test groups passed on 19 September 2026. Release-labelled screenshot canvases are under `design/store/artwork/release-1.0.0/` and the [listing copy](LISTING.md) points at them.
