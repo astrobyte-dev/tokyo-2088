@@ -4,7 +4,7 @@
 
 Production `manifest.xml` is now version **1.0.0** under the unchanged production UUID `d8c8adfe21c74bdd97fa2088ac010001`. Runtime source and resources are identical to the owner-tested beta 0.1.1 (source commit `e75af5febecfb829f0eda2a9627ba43150f222d9`); only the manifest identity and version differ. Release and test builds compiled with no warnings on SDK 9.1.0 and all 9 native test groups passed on 19 September 2026. Release-labelled screenshot canvases are under `design/store/artwork/release-1.0.0/` and the [listing copy](LISTING.md) points at them.
 
-Owner decisions still recorded at upload time: publisher/support contact, free or paid distribution, and confirming the existing signing key as the permanent Store key with a recoverable backup. Extended wear and measured battery use remain unrecorded; issue #1 stays open until multi-day wear on a full-repaint build is reported.
+Owner decisions still recorded at upload time: publisher/support contact, free or paid distribution, and confirming the existing signing key as the permanent Store key with a recoverable backup. The owner reports continuous wear since 11 September 2026 with no black-screen recurrence on the full-repaint builds, and a read-only inspection of the watch on 19 September found no Connect IQ error log entry for TOKYO 2088 ([evidence](VALIDATION.md#hardware-wear-and-device-log-evidence--19-september-2026)). Battery use is still not measured.
 
 The sections below are the preserved beta 0.1.1 record.
 

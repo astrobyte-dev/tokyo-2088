@@ -12,7 +12,7 @@ Native Monkey C / Connect IQ watch face for the **Garmin fēnix 8 Solar 51mm** (
 - The beta was installed on the owner's actual fēnix 8 Solar 51mm through the Connect IQ app. Phone settings delivery, same-beta update retention, restart persistence and both offline font notices were confirmed on hardware.
 - Store copy, screenshots, icon and hero image are prepared under [docs/store](docs/store/README.md) and [design/store](design/store/README.md).
 
-Known limitations, stated plainly: overnight wear and measured battery use have not been recorded. [Issue #1](https://github.com/astrobyte-dev/tokyo-2088/issues/1), an intermittent black screen reported on the original 0.1.0 sideload, remains open. That build skipped drawing on same-minute updates; every update now repaints the full face, and the defect has not been reported on the fixed builds. Product images are simulator captures with simulated data, not watch photographs.
+Known limitations, stated plainly: battery use has not been measured. [Issue #1](https://github.com/astrobyte-dev/tokyo-2088/issues/1), an intermittent black screen reported on the original 0.1.0 sideload, was traced to that build skipping drawing on same-minute updates; every update now repaints the full face. The owner has worn the face continuously since 11 September 2026 with no recurrence, and a read-only inspection of the watch on 19 September found no Connect IQ error log entry for TOKYO 2088 ([evidence](docs/store/VALIDATION.md#hardware-wear-and-device-log-evidence--19-september-2026)). Product images are simulator captures with simulated data, not watch photographs.
 
 ## Features
 

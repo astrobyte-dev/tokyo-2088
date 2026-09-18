@@ -1,5 +1,21 @@
 # Executed release-preparation validation
 
+## Hardware wear and device-log evidence — 19 September 2026
+
+**Owner statement:** the owner has worn the fenix 8 Solar 51mm with TOKYO 2088 as the active face continuously since the face was first sideloaded on 11 September 2026, through the 0.1.0 owner-only beta and the 0.1.1 beta update on 12 September. No recurrence of the issue #1 black screen has been reported on the full-repaint builds.
+
+**Read-only device inspection over MTP, 19 September 2026.** Files were listed and the Connect IQ error log copied to a local scratch folder; nothing on the watch was modified, and no raw device file is committed.
+
+| Check | Observed |
+| --- | --- |
+| Device | fenix 8 - 51mm, Solar; part number 006-B4533-00; firmware 2331 (unchanged since the first-install record) |
+| `GARMIN/Apps/LOGS/CIQ_LOG.YML` | **Absent.** No active Connect IQ error log exists on the watch. |
+| `GARMIN/Apps/LOGS/CIQ_LOG.BAK` | 462 bytes, last modified 2 November 2025. Contains one entry for an unrelated third-party app, before TOKYO 2088 existed. **No TOKYO 2088 entry.** |
+| Other log files | Two text logs from 2024, predating this project. |
+| `GARMIN/Apps/SETTINGS` | `TOKYO2088-fenix8solar51mm.SET` (11 September, the original sideload's settings) is present alongside a Store-installed settings file last written 12 September. Contents were not read. |
+
+Interpretation, stated carefully: Connect IQ writes a `CIQ_LOG.YML` entry whenever an app terminates on an unhandled error. Eight days of continuous wear with no entry means the face has not crashed on this watch during that period, on either the original 0.1.0 sideload or the full-repaint betas. This is consistent with the issue #1 diagnosis (skipped drawing on same-minute updates, not an exception) and with the fix. It is an owner report plus a log inspection, not an instrumented reliability test; battery use is still not measured.
+
 ## Owner 0.1.1 update and final presentation review — 12 September 2026
 
 **Portal evidence: companion Codex task's handoff, relayed by the owner.** That task directly performed and observed the 0.1.1 upload. Garmin displayed **Status: Verified**, **Signature: Verified** and the unchanged beta manifest identity. After final submission, the existing listing showed **version 0.1.1 (Internal: 2)**, **BETA**, and the explicit **owner-only download/test notice**. These are completed portal checks attributed to the companion task, not a fresh portal inspection by this presentation task.
