@@ -14,7 +14,7 @@ import importlib.util
 
 ROOT = Path(__file__).resolve().parents[1]
 NS = {'iq': 'http://www.garmin.com/xml/connectiq'}
-UUID = 'd8c8adfe21c74bdd97fa2088ac010001'
+UUID = '92f2e364b0f34a829a8e350ce8f88f86'
 BETA_UUID = 'ca80e764ffae413996a66e11abd76ed9'
 
 

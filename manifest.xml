@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
- <iq:application id="d8c8adfe21c74bdd97fa2088ac010001" type="watchface" name="@Strings.AppName" entry="TokyoApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0" version="1.0.0">
+ <iq:application id="92f2e364b0f34a829a8e350ce8f88f86" type="watchface" name="@Strings.AppName" entry="TokyoApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0" version="1.0.0">
   <iq:products><iq:product id="fenix8solar51mm"/></iq:products>
   <iq:permissions/>
   <iq:languages><iq:language>eng</iq:language></iq:languages><iq:barrels/>
