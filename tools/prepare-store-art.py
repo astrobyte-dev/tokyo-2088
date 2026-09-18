@@ -64,9 +64,9 @@ def main():
     (OUT/'artwork-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(manifest,indent=2))
 
-def prepare_polish():
+def prepare_polish(version='0.1.1',out_name='polish-0.1.1',label='Local beta 0.1.1'):
     source_dir=ROOT/'design/store/runtime/polish-0.1.1'
-    output_dir=OUT/'polish-0.1.1'
+    output_dir=OUT/out_name
     output_dir.mkdir(parents=True,exist_ok=True)
     icc=ImageCms.ImageCmsProfile(ImageCms.createProfile('sRGB')).tobytes()
     def font(size,bold=False):
@@ -86,7 +86,7 @@ def prepare_polish():
         enlarged=face.resize((560,560),Image.Resampling.NEAREST)
         canvas.paste(enlarged,(80,130))
         draw.text((48,721),'SIMULATOR CAPTURE / SIMULATED DATA',font=font(23,True),fill='white')
-        draw.text((48,759),'fenix 8 Solar 51mm profile / Local beta 0.1.1',font=font(22),fill='#b7bdc4')
+        draw.text((48,759),'fenix 8 Solar 51mm profile / '+label,font=font(22),fill='#b7bdc4')
         draw.text((48,793),'Not a watch photograph.',font=font(20),fill='#b7bdc4')
         assert canvas.crop((80,130,640,690)).tobytes()==enlarged.tobytes()
         target=output_dir/(slug+'-720x840.png')
@@ -102,7 +102,8 @@ def prepare_polish():
     sheet_path=output_dir/'palettes-and-custom-review.png'
     sheet.save(sheet_path,optimize=True,icc_profile=icc)
     manifest={'sourceKind':'Native Windows simulator Save Screen Capture of production beta release; simulated data',
-              'version':'0.1.1','profile':'fenix8solar51mm',
+              'version':version,'profile':'fenix8solar51mm',
+              'captureBinary':'Beta 0.1.1 release PRG; runtime source and resources are identical to the labelled version (only manifest identity/version differ).',
               'sourcePrgSha256':'d5a0b647b711b426125b6f7c5a1434a5678b3d53eab0678104046bb0e3e415d1',
               'sourceBytesUnchanged':True,'colourSpace':'sRGB',
               'transform':'Whole raw frame at exact 2x nearest-neighbour on labelled 720x840 canvas; review sheet retains native size. No cropping, recolouring or retouching of face.',
@@ -117,6 +118,8 @@ def prepare_polish():
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--polish',action='store_true',help='Compose the preserved 0.1.1 palette/custom captures without replacing original listing artwork.')
+    parser.add_argument('--release',action='store_true',help='Compose the same captures labelled for public release 1.0.0 into artwork/release-1.0.0.')
     args=parser.parse_args()
-    if args.polish:prepare_polish()
+    if args.release:prepare_polish('1.0.0','release-1.0.0','Release 1.0.0')
+    elif args.polish:prepare_polish()
     else:main()

@@ -1,5 +1,9 @@
 # Store artwork — actual simulator rendering
 
+## Release 1.0.0 canvases — 19 September 2026
+
+`python tools/prepare-store-art.py --release` composes the same five unchanged native 280 × 280 frames from `runtime/polish-0.1.1/` onto canvases labelled **Release 1.0.0** under [artwork/release-1.0.0](artwork/release-1.0.0/), with their own [manifest](artwork/release-1.0.0/artwork-manifest.json). The frames were captured from the beta 0.1.1 release binary; its runtime source and resources are identical to 1.0.0. The `polish-0.1.1` canvases are retained unchanged as history.
+
 ## Final presentation and readability review — 12 September 2026
 
 Reviewed the five existing **native 280 × 280 production-release frames at native pixel dimensions**, not only the enlarged listing canvases. These are simulator observations; physical lighting, eyesight and viewing-distance readability have not been measured.

@@ -1,5 +1,13 @@
 # TOKYO 2088 - release preparation
 
+## Public release 1.0.0 — prepared 19 September 2026
+
+Production `manifest.xml` is now version **1.0.0** under the unchanged production UUID `d8c8adfe21c74bdd97fa2088ac010001`. Runtime source and resources are identical to the owner-tested beta 0.1.1 (source commit `e75af5febecfb829f0eda2a9627ba43150f222d9`); only the manifest identity and version differ. Release and test builds compiled with no warnings on SDK 9.1.0 and all 9 native test groups passed on 19 September 2026. Release-labelled screenshot canvases are under `design/store/artwork/release-1.0.0/` and the [listing copy](LISTING.md) points at them.
+
+Owner decisions still recorded at upload time: publisher/support contact, free or paid distribution, and confirming the existing signing key as the permanent Store key with a recoverable backup. Extended wear and measured battery use remain unrecorded; issue #1 stays open until multi-day wear on a full-repaint build is reported.
+
+The sections below are the preserved beta 0.1.1 record.
+
 **Presentation review only; no public launch.** The companion Codex task's handoff confirms the completed **0.1.1 owner-only beta upload**; physical update and watch checks are **owner-reported**. Custom identity text and palette survived its Connect IQ update and a subsequent watch restart. Both font notices opened and navigated on the physical watch, and exiting returned to the working face. Overnight reliability and measured battery use remain untested.
 
 ## Current milestone: owner-tested beta 0.1.1

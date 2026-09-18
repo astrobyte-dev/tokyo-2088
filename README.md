@@ -1,36 +1,49 @@
 # TOKYO 2088
 
-**Store preparation:** [review package, customer settings, payment/licensing decisions and launch gates](docs/store/README.md). The new customer-default build passes eight native test groups and production export checks; it has not replaced the build on the owner's wrist. The preserved redraw candidate has positive initial owner feedback; overnight and battery validation remain pending. PR #2 stays unmerged and issue #1 stays open.
+Native Monkey C / Connect IQ watch face for the **Garmin fēnix 8 Solar 51mm** (`fenix8solar51mm`, 280 × 280 MIP). Oversized stacked time, vertical 東京 / 2088 lettering, four restrained palettes and an identity plate you can make your own.
 
-**Windows redraw candidate:** the same-minute cleared-surface regression now passes after a minimal full-update fix. Physical issue #1 remains open. See [Windows results and evidence](docs/WINDOWS_REDRAW_RESULTS.md) and [Windows build/signing/retest instructions](docs/WINDOWS_BUILD_AND_RETEST.md). The Linux milestone below is historical.
+![Classic Red, native 280 × 280 simulator capture](design/store/runtime/polish-0.1.1/classic-red-final-280.png)
+![Custom header, native 280 × 280 simulator capture](design/store/runtime/polish-0.1.1/custom-header-280.png)
 
-Native Monkey C / Connect IQ watch face for **fēnix 8 Solar 51mm (`fenix8solar51mm`), 280 × 280 MIP**. Classic Red is the default.
+## Status: release 1.0.0 prepared for the Connect IQ Store
 
-**Hardware defect open:** the owner reports that the installed face initially works on the fēnix 8 Solar 51mm but occasionally goes completely black, with no visible IQ error icon. Trigger, duration and recovery are unknown. Prior simulator passes do not resolve this defect. Start with [the investigation and source map](docs/BLACK_SCREEN_INVESTIGATION.md).
+- Production manifest `manifest.xml` is version **1.0.0**. The runtime source and resources are identical to the owner-tested beta 0.1.1.
+- Release and native-test builds compile with no warnings on Connect IQ SDK 9.1.0. **9 native simulator test groups pass, 0 failed, 0 errors.**
+- The beta was installed on the owner's actual fēnix 8 Solar 51mm through the Connect IQ app. Phone settings delivery, same-beta update retention, restart persistence and both offline font notices were confirmed on hardware.
+- Store copy, screenshots, icon and hero image are prepared under [docs/store](docs/store/README.md) and [design/store](design/store/README.md).
 
-Device-specific debug/test/release builds and four native simulator test groups previously passed. The release transfer was verified by matching MTP readback checksum. See [handoff scope and reproduction](docs/GITHUB_HANDOFF.md) and [sanitized first install](docs/FIRST_INSTALL.md).
+Known limitations, stated plainly: overnight wear and measured battery use have not been recorded. [Issue #1](https://github.com/astrobyte-dev/tokyo-2088/issues/1), an intermittent black screen reported on the original 0.1.0 sideload, remains open. That build skipped drawing on same-minute updates; every update now repaints the full face, and the defect has not been reported on the fixed builds. Product images are simulator captures with simulated data, not watch photographs.
 
-![Actual running Monkey C face — Classic Red, 280 × 280](design/simulator/classic-red-0827-280.png)
-![Actual running Monkey C face — HOBART, 280 × 280](design/simulator/hobart-0827-280.png)
+## Features
 
-- Release PRG and package are preserved locally, excluded from Git; [recorded identity](docs/evidence/installed-release-build-info.json).
-- [Build, Linux MTP installation and removal](docs/BUILD_AND_TEST.md)
-- [Executed tests, memory measurements and limitations](docs/TEST_RESULTS.md)
-- [Native captures and 4× nearest-neighbour copies](design/simulator/README.md)
-- [Device support](docs/DEVICE_SUPPORT.md) · [design decisions](docs/DESIGN_DECISIONS.md)
-- [Production renderer](source/TokyoView.mc) · [settings](source/Settings.mc) · [data](source/Data.mc)
-- [Editable numerals](assets-src/numerals.json) · [asset generator](tools/generate_assets.py)
+- Time and date in the watch's local time, follow-device / 12-hour / 24-hour, optional hour leading zero.
+- Battery percentage and stripe, steps, recent heart rate and Garmin cached outdoor temperature (`--` when unavailable, `OLD` after one hour).
+- Palettes: Classic Red (default), Neon Cyan, Monochrome, Amber.
+- Identity plate: Original (ASTROBYTE / INDUSTRIES), Custom two-line text, Manual city and subtitle, or Hidden. No GPS or automatic city lookup.
+- Seconds off by default, or shown while the watch is active.
+- Larger data text and decorative bottom label toggles.
+- Offline DejaVu / Arev and Noto / SIL OFL font notices from the face's settings menu.
 
-Preserved: huge stacked local time, vertical 東京 / 2088, red structural accents, date column, battery stripes and editable two-line identity plate. The concept board is reference material, never a runtime background. Data in simulator captures is simulated, not a physical sensor reading.
+## Build and test (Windows)
 
-```bash
-python3 tools/check_assets.py
-./tools/build.sh debug
-./tools/build.sh test
-./tools/build.sh release
-./tools/simulator.sh start       # keep open in a separate terminal
-./tools/simulator.sh test
-./tools/simulator.sh run-release
+```powershell
+powershell.exe -NoProfile -File tools/build.ps1 release -DeveloperKey <private key .der> -OutputDir build/windows/<new folder>
+powershell.exe -NoProfile -File tools/build.ps1 test    -DeveloperKey <private key .der> -OutputDir build/windows/<new folder>
+powershell.exe -NoProfile -File tools/simulator.ps1 start
+powershell.exe -NoProfile -File tools/simulator.ps1 test -OutputDir build/windows/<new folder>
+powershell.exe -NoProfile -File tools/export-store.ps1 -DeveloperKey <private key .der> -SigningProvenance OwnerApprovedPermanent -OutputDir build/windows/store-prep/<new folder>
+python tools/check-store-prep.py --iq build/windows/store-prep/<new folder>/TOKYO2088-store-prep.iq
 ```
 
-The 40 asset checks and four executed native test groups are different checks. The Garmin test launcher reports exit code 1 even when its framework reports all four passing; see the preserved raw results before interpreting automation status. Other devices and automatic city detection remain deferred. This is a hardware-test build, not a claim of production readiness.
+Keep the private key outside the repository. Linux equivalents are in `tools/*.sh`. Always pass a fresh output folder; the default folders hold preserved artifacts.
+
+## Documentation
+
+- [Store release preparation, listing copy, settings, privacy, licensing, signing](docs/store/README.md)
+- [Executed validation and evidence](docs/store/VALIDATION.md)
+- [Device support](docs/DEVICE_SUPPORT.md) · [Design decisions](docs/DESIGN_DECISIONS.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Privacy](PRIVACY.md)
+- Historical: [black-screen investigation](docs/BLACK_SCREEN_INVESTIGATION.md) · [Windows redraw fix](docs/WINDOWS_REDRAW_RESULTS.md) · [original brief](TOKYO_2088_BRIEF.md)
+- [Production renderer](source/TokyoView.mc) · [settings](source/Settings.mc) · [data](source/Data.mc) · [font notices](source/FontNotices.mc)
+- [Editable numerals](assets-src/numerals.json) · [asset generator](tools/generate_assets.py)
+
+Other devices and automatic city detection remain deferred. The concept board in `design/reference` is reference material only, never a runtime background.

@@ -41,15 +41,15 @@ Use these existing labelled canvases in this exact order. The unchanged native f
 
 | Order | Existing listing canvas | Caption / alt text | Native 280 × 280 |
 | --- | --- | --- | --- |
-| 1 | [Classic Red](../../design/store/artwork/polish-0.1.1/classic-red-final-720x840.png) | Classic Red with the original identity plate. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/classic-red-final-280.png) |
-| 2 | [Neon Cyan](../../design/store/artwork/polish-0.1.1/neon-cyan-720x840.png) | Neon Cyan, the same layout with a cyan accent. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/neon-cyan-280.png) |
-| 3 | [Monochrome](../../design/store/artwork/polish-0.1.1/monochrome-720x840.png) | Monochrome with white and grey details. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/monochrome-280.png) |
-| 4 | [Amber](../../design/store/artwork/polish-0.1.1/amber-720x840.png) | Amber with a warm accent. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/amber-280.png) |
-| 5 | [Custom header](../../design/store/artwork/polish-0.1.1/custom-header-720x840.png) | Custom plate: NIGHT SHIFT / FIELD TERMINAL, a fictional text example in Classic Red. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/custom-header-280.png) |
+| 1 | [Classic Red](../../design/store/artwork/release-1.0.0/classic-red-final-720x840.png) | Classic Red with the original identity plate. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/classic-red-final-280.png) |
+| 2 | [Neon Cyan](../../design/store/artwork/release-1.0.0/neon-cyan-720x840.png) | Neon Cyan, the same layout with a cyan accent. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/neon-cyan-280.png) |
+| 3 | [Monochrome](../../design/store/artwork/release-1.0.0/monochrome-720x840.png) | Monochrome with white and grey details. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/monochrome-280.png) |
+| 4 | [Amber](../../design/store/artwork/release-1.0.0/amber-720x840.png) | Amber with a warm accent. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/amber-280.png) |
+| 5 | [Custom header](../../design/store/artwork/release-1.0.0/custom-header-720x840.png) | Custom plate: NIGHT SHIFT / FIELD TERMINAL, a fictional text example in Classic Red. Native simulator capture; simulated data. | [Raw](../../design/store/runtime/polish-0.1.1/custom-header-280.png) |
 
-[Five-image review sheet](../../design/store/artwork/polish-0.1.1/palettes-and-custom-review.png) · [Actual-size readability review and provenance](../../design/store/README.md#final-presentation-and-readability-review--12-september-2026)
+[Five-image review sheet](../../design/store/artwork/release-1.0.0/palettes-and-custom-review.png) · [Actual-size readability review and provenance](../../design/store/README.md#final-presentation-and-readability-review--12-september-2026)
 
-These existing canvases identify local beta 0.1.1. They are ready for review now; confirm that the version label still accurately describes the final public package before using them in a public listing. Manual city, active seconds and larger-data mode are explained by the copy, not represented as pictured in this screenshot set.
+These canvases are labelled Release 1.0.0. The underlying frames were captured from the beta 0.1.1 release binary, whose runtime source and resources are identical to 1.0.0; only the manifest identity and version differ. Manual city, active seconds and larger-data mode are explained by the copy, not represented as pictured in this screenshot set.
 
 ## Release notes — proposed first public release
 
