@@ -13,7 +13,7 @@ Beta identity is stable: `ca80e764ffae413996a66e11abd76ed9`, name **TOKYO 2088 B
 - Provenance: temporary Windows development RSA-4096 key, retained privately outside the repository and cloud-synced project. Exact local key and hardware archive paths are in private local records, not this public document.
 - Controlled transfer and independent readback were recorded before positive initial owner feedback. There is **no verified original Linux-binary rollback backup** on this PC; the owner accepted the built-in-face fallback. Existing private settings/log backups and the tested release archive are retained.
 
-The Store-prep package has different customer defaults and a different binary. It has not been installed on the physical watch. The production UUID remains `d8c8adfe21c74bdd97fa2088ac010001`; the beta has a separate identity as described above. The retained signing key was not replaced.
+The Store-prep package has different customer defaults and a different binary. It has not been installed on the physical watch. The production UUID was `d8c8adfe21c74bdd97fa2088ac010001` until 19 September 2026; the public release uses `92f2e364b0f34a829a8e350ce8f88f86` (see the store README). The beta keeps its separate identity. The retained signing key was not replaced.
 
 ## Decision before the first public-release upload
 

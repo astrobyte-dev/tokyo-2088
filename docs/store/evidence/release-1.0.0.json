@@ -1,11 +1,12 @@
 {
   "date": "2026-09-19",
   "version": "1.0.0",
-  "sourceCommit": "85f67bca9f2a91869f4db375728a2e1d19df481e",
+  "appUuid": "92f2e364b0f34a829a8e350ce8f88f86",
+  "sourceCommit": "b29de1cbf74807ac04c1300df40609f6204bc0f5",
   "workingTreeDirtyAtExport": false,
   "signingProvenance": "OwnerApprovedPermanent; same key as owner beta 0.1.1 (packaged dev_key.pub SHA-256 1c4b1680151a0298c9d13092189c5bde95b4605ba3a61e92e6db4ef7aa04f01d in both packages)",
   "sdk": "9.1.0 / 2026-03-09-6a872a80b",
-  "relativePath": "build/windows/store-prep/release-1.0.0/TOKYO2088-store-prep.iq",
+  "relativePath": "build/windows/store-prep/release-1.0.0-newid/TOKYO2088-store-prep.iq",
   "nativeExportExit": 0,
   "packageCheckExit": 0,
   "checks": {
@@ -14,21 +15,21 @@
     "productionInputIsolation": "PASS",
     "manifestProduct": "fenix8solar51mm",
     "betaIdentity": false,
-    "appUuid": "d8c8adfe21c74bdd97fa2088ac010001",
+    "appUuid": "92f2e364b0f34a829a8e350ce8f88f86",
     "fontNoticeResources": "PASS",
-    "iqBytes": 59422,
-    "iqSha256": "23abdd36352d3ba2f9f92f0d67ce62bcd2a3b659609fa98d0ca7e54fc8228d19",
+    "iqBytes": 59441,
+    "iqSha256": "66447c1e9f1921e2e1847c469ee9d98368debf718c0f112ed32da61f4f7e0938",
     "packagedBinaries": [
       {
         "partNumber": "006-B4776-00",
         "bytes": 37052,
-        "sha256": "60fabe78fec6480fc858a873a791397c4c2aa5cdfe856b4eef5f6a7e850c0622",
+        "sha256": "705398cae4cd24fc19ed8123cf79bb325845373c04062e32914393334f0fce86",
         "minFirmwareVersion": "2125"
       },
       {
         "partNumber": "006-B4533-00",
         "bytes": 37052,
-        "sha256": "60fabe78fec6480fc858a873a791397c4c2aa5cdfe856b4eef5f6a7e850c0622",
+        "sha256": "705398cae4cd24fc19ed8123cf79bb325845373c04062e32914393334f0fce86",
         "minFirmwareVersion": "2125"
       }
     ],
@@ -43,5 +44,10 @@
     "errors": 0,
     "launcherExit": 0
   },
-  "storeUpload": "PENDING OWNER PORTAL SUBMISSION"
+  "storeUpload": "PENDING OWNER PORTAL SUBMISSION",
+  "supersededExport": {
+    "appUuid": "d8c8adfe21c74bdd97fa2088ac010001",
+    "iqSha256": "23abdd36352d3ba2f9f92f0d67ce62bcd2a3b659609fa98d0ca7e54fc8228d19",
+    "portalResult": "Status: Verified; Signature check failed (19 September 2026)"
+  }
 }
